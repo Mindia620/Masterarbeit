@@ -1,0 +1,187 @@
+% Dokumenteinstellungen und Anpassungen
+\input{resources/settings/settings}
+\input{resources/styles/adjustments}
+\input{resources/settings/glossary}
+
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\hspace*{-0.2cm}
+\vfill
+}}}
+
+% Neuer Befehl um Subsubsubkapitel schreiben zu können
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+\makeglossaries
+
+
+\begin{document}
+
+\include{titles/graduation}
+% Variablen für das Deckblatt
+\Title{Kalkulation und Abrechnung von IT Services}
+\authorFirstname{Nick Ansgar}
+\authorLastname{Stelzer}
+\professor{Teubner}
+\typeofwork{Seminararbeit}
+\dateausgabe{18.01.2024}
+\dateabgabe{29.01.2024}
+\emailstudent{nick.stelzer@saria.com}
+
+%\include{titles/eidesstatt}
+%\include{titles/sperrvermerk}
+
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+
+% Javascript als Sprache für die lstings
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, that, globals, let, const},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+\lstset{
+    language=JavaScript,
+    numbers=none,
+    frame=leftline,
+    tabsize=2,
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+
+
+
+
+
+% Entfernen der Seitenzahlen und BackroundPic als Hintergrund nutzen
+\pagenumbering{gobble}
+\AddToShipoutPicture{\BackgroundPic}
+
+% Titelblatt erzeugen
+\maketitle
+\newpage
+
+%\makesperrvermerk
+\thispagestyle{empty}
+% Abstract und Inhaltsverzeichnisse einfügen (Nummerierung römisch ab Inhaltsverzeichnis)
+%\input{chapter/0_Abstract.tex}
+\ClearShipoutPicture
+\thispagestyle{empty}
+\newpage
+\pagenumbering{Roman}
+\newgeometry{left=3.8cm,right=3cm,top=3cm,bottom=2.5cm}
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Seite}\par}
+\restoregeometry
+\newpage
+
+
+
+\newpage
+
+\printglossary
+
+\newpage
+\section*{Abkürzungsverzeichnis} 
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis} 
+\begin{acronym}[Bash]
+\acro{ad}[AD]{Active Directory}
+\acro{ao}[AO]{Anwendungs-Outsourcing}
+\acro{bzw}[bzw.]{beziehungsweise}
+\acro{csi}[CSI]{Continual Service Improvement}
+\acro{dcom}[DCOM]{Distributed Component Object Model}
+\acro{dwh}[DWH]{Data Warehouse}
+\acro{bpo}[BPO]{Geschäftsprozess-Outsourcing}
+\acro{erp}[ERP]{Enterprise Ressource Planning}
+\acro{etc}[etc.]{et cetera}
+\acro{ggf}[ggf.]{gegebenenfalls}
+\acro{gitlfs}[Git LFS]{Git Large File Storage}
+\acro{iis}[IIS]{Informationsinfrastruktur}
+\acro{int}[Int]{Integer}
+\acro{itam}[ITAM]{IT Asset Management}
+\acro{itil}[ITIL]{Information Technology Infrastructure Library}
+\acro{itsm}[ITSM]{IT Service Management}
+\acro{kpi}[KPI]{Key Performance Indicator}
+\acro{rums}[RUMS]{Remondis Umwelt Management System}
+\acro{sla}[SLA]{Service Level Agreement}
+\acro{spoc}[SPOC]{Single Point of Contact}
+\acro{svs}[SVS]{Service Value System}
+\acro{ua}[u.a.]{unter anderem}
+\acro{ue}[UE]{Unreal Engine}
+\acro{vs}[VS]{Visual Studio}
+\acro{whs}[WHS]{Westfälische Hochschule}
+\acro{zb}[z.B.]{zum Beispiel}
+
+\end{acronym}
+Die in dieser Arbeit erwähnten Unternehmens-, Produkt- oder Markenbezeichnungen können Marken oder eingetragene Markenzeichen der jeweiligen Eigentümer sein. Die Wiedergabe von Marken- und/oder Warenzeichen in dieser Arbeit berechtigt nicht zu der Annahme, dass diese als frei von Rechten Dritter zu betrachten seien. Alle erwähnten Marken- und/oder Warenzeichen unterliegen uneingeschränkt den länderspezifischen Schutzbestimmungen und den Besitzrechten der jeweiligen eingetragenen Eigentümer.
+\newpage
+
+\listoffigures
+\newpage
+
+
+% Kapitel einfügen
+\pagenumbering{arabic}
+\input{chapter/1_Einleitung}
+\newpage
+\input{chapter/2_Theorie}
+\newpage
+\input{chapter/3_Unternehmen}
+\newpage
+\input{chapter/4_Analyse}
+%\newpage
+%\input{chapter/5_Zielbild}
+\newpage
+\input{chapter/6_Anforderungen}
+\newpage
+\input{chapter/7_Fazit}
+
+% Bibliografie einfügen
+\printbibliography[
+heading=bibintoc,
+title={Literaturverzeichnis}
+]
+\newpage
+
+%Appendix
+%\input{chapter/Anhang}
+
+% Eidesstattliche Erklärung erzeugen
+\pagenumbering{gobble}
+\AddToShipoutPicture{\BackgroundPic}
+%\makeeidesstatt
+\addcontentsline{toc}{chapter}{Eidesstattliche Erklärung}
+\thispagestyle{empty}
+
+\end{document}

@@ -1,0 +1,58 @@
+\makeatletter
+\newcommand*{\Title}[1]{\gdef\@Title{#1}}
+\newcommand*{\authorLastname}[1]{\gdef\@authorLastname{#1}}
+\newcommand*{\authorFirstname}[1]{\gdef\@authorFirstname{#1}}
+\newcommand*{\emailstudent}[1]{\gdef\@emailstudent{#1}}
+\newcommand*{\typeofwork}[1]{\gdef\@typeofwork{#1}}
+\newcommand*{\dateausgabe}[1]{\gdef\@dateausgabe{#1}}
+\newcommand*{\dateabgabe}[1]{\gdef\@dateabgabe{#1}}
+\newcommand*{\professor}[1]{\gdef\@professor{#1}}
+
+\renewcommand*{\maketitle}{
+	\begin{titlepage}
+
+		\newgeometry{left=2cm,right=2.5cm,top=2.5cm,bottom=2cm}
+        \begin{center}
+         \includegraphics[width=80mm,height=80mm,%
+    keepaspectratio]{resources/images/UniMuensterLogo.png}   
+        \vskip 3 cm
+            
+			\begingroup
+				\fontsize{22pt}{26.4pt}\selectfont
+				{\textbf \@Title\par}
+			\endgroup
+            
+			\vskip 1.44cm
+
+			\begingroup
+			\fontsize{12pt}{14.4pt}\selectfont
+			\textbf{ \@typeofwork\\
+            im Studiengang IT-Management\\
+            der Universität Münster Professional School
+            }
+			\endgroup
+\vskip 1.44cm
+\begingroup
+			\fontsize{12pt}{14.4pt}\selectfont
+			vorgelegt von\\
+            \@authorFirstname \hspace{1mm}\@authorLastname\\
+            Email: \@emailstudent\par
+            
+			\endgroup
+   \end{center}
+   \vskip 1.44cm
+			\begingroup
+			\fontsize{12pt}{14.4pt}\selectfont
+
+            \begin{tabular}{ l l }
+             Themensteller: & Prof. Dr. \@professor \\ 
+             Ausgabedatum: & \@dateausgabe\\  
+             Abgabedatum: & \@dateabgabe   
+            \end{tabular}
+			\endgroup
+
+
+		\restoregeometry
+	\end{titlepage}
+}
+\makeatother

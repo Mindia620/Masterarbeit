@@ -1,0 +1,23 @@
+
+\appendix
+\thispagestyle{empty}
+\newgeometry{left=3.8cm,right=2.5cm,top=10cm,bottom=2.5cm}
+\begingroup
+\fontsize{30pt}{40pt}\selectfont
+\begin{center}
+    {\bfseries Appendix}
+\end{center}
+\endgroup
+\restoregeometry
+\newpage
+\section[Appendix]{}
+
+\counterwithin{figure}{section}
+\numberwithin{figure}{section}
+\setcounter{figure}{0}    
+\renewcommand\thefigure{\Alph{section}.\arabic{figure}}
+\renewcommand\thetable{\Alph{section}.\arabic{figure}}
+
+
+
+\newpage

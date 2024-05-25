@@ -1,0 +1,106 @@
+\section{Anforderungen an die ITSM-Lösung}\label{sec:6anfoderungen}
+In diesem Kapitel werden basierend auf der IST-Analyse und dem Zielbild des \ac{itsm} die Anforderungen an eine \ac{itsm}-Lösung erarbeitet.
+\\
+Ein One Pager, der die Priorisierung und weitere relevante Informationen zusammenfasst, wurde erstellt, um eine klare Übersicht zu schaffen und diese Informationen effizient an potenzielle Anbieter während der Ausschreibung weiterzugeben.
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.4, keepaspectratio]{resources/images/SARIA ITSM Tool Anforderungen.pdf}
+	\caption{Anforderungen an eine \ac{itsm}-Lösung und deren Priorisierung}
+	\label{fig:anforderungenitsm}
+\end{figure}
+\subsection{Incident Management}\label{subsec:6incidentmngmnt}
+Die neue ITSM-Lösung soll im Incident Management der SARIA IT gezielt Verbesserungen bringen, insbesondere in der Unterscheidung zwischen Incidents und Serviceanfragen sowie in der effizienteren Ticketbearbeitung.
+Kunden sollen die Möglichkeit haben, Incidents jederzeit und von jedem Gerät aus zu melden.
+Eine anpassbare Gestaltung des Incident-Formulars ist dafür unerlässlich, um eine standardisierte und umfassende Erfassung der Incidents zu ermöglichen.
+\\
+Die Lösung sollte auch eine flexible Anpassung von Prioritäten und die Integration von Service Level Agreements (\ac{sla}s) ermöglichen, um eine effizientere Ticketbearbeitung zu gewährleisten und die Flexibilitätsmängel des bisherigen Systems zu überwinden.
+\\
+Des Weiteren wird erwartet, dass die ITSM-Lösung die Zusammenarbeit bei Incidents und Problemen erleichtert.
+Dies umfasst Funktionen für effektive Teamarbeit und verbesserte Koordination zwischen den Beteiligten, um die Bearbeitung von Tickets zu beschleunigen und durch das bisherige System entstandene Verzögerungen zu reduzieren.
+
+\subsection{Problem Management}\label{subsec:6problemmngmnt}
+Ein kritischer Aspekt der neuen Lösung sollte die Möglichkeit sein, eine direkte Verbindung zwischen Incidents und identifizierten Problemen herzustellen.
+Diese Funktionalität ist essenziell, um eine effiziente Analyse und Behebung von wiederkehrenden oder komplexen Incidents zu ermöglichen, die auf tiefer liegende Probleme hinweisen.
+\\
+Neben der technischen Lösung sind organisatorische Maßnahmen erforderlich, um das Problem Management effektiv zu implementieren.
+Diese Maßnahmen sind zwar nicht Teil der unmittelbaren Einführung der ITSM-Lösung, sollten jedoch im Anschluss an die Implementierung festgelegt und umgesetzt werden.
+Hierbei geht es um die Definition von Prozessen und Verantwortlichkeiten im Rahmen des Problem Managements, einschließlich der Entwicklung von Richtlinien für die Identifizierung, Analyse und Behebung von Problemen sowie für die Kommunikation mit den Stakeholdern.
+\\
+Die neue ITSM-Lösung sollte daher nicht nur die technische Funktionalität bieten, um Incidents und Probleme miteinander zu verknüpfen, sondern auch flexibel genug sein, um die Integration zukünftiger organisatorischer Änderungen im Problem Management zu unterstützen.
+
+\subsection{Asset Management \& CMDB}\label{subsec:6assetmngmnt}
+Ein effektives Asset Management ist wichtig, um eine ganzheitliche 360-Grad-Perspektive auf die Kunden zu gewährleisten.
+Es spielt auch eine wichtige Rolle im Rahmen des Financial Managements\footnote{siehe Kapitel \ref{subsec:6itfinancialmngmnt} auf S. \pageref{subsec:6itfinancialmngmnt}}, indem es eine transparentere Darstellung der finanziellen Aspekte ermöglicht und zur Aufdeckung versteckter Kosten beiträgt, wie beispielsweise diejenigen, die durch ungenutzte Hardware entstehen.
+\\
+Des Weiteren ist die Implementierung eines Software Asset Managements erforderlich, das in der Lage ist, die auf den Geräten installierte Software zu identifizieren.
+Dies ist notwendig, um den bisherigen Mangel an Übersicht zu beenden und sicherzustellen, dass ausschließlich offiziell genehmigte und geprüfte Software verwendet wird.
+\\
+Basierend auf vorherigen Erfahrungen sollte die neue Lösung eine einfachere Möglichkeit bieten, einen Überblick über alle Assets zu erhalten und diese effektiv zu analysieren.
+
+\subsection{License Management}\label{subsec:6licensemngmngt}
+Da das bisherige License Management über das System des Schwesterunternehmens läuft, wird ein eigenes System benötigt. Dies soll ebenfalls durch das \ac{itsm}-Tool abgebildet werden können.
+Insbesondere die Integration mit dem Asset Management ist erforderlich, um eine Übersicht der aktuell genutzten Lizenzen zu erhalten. Somit soll es möglich sein schnell erkennen zu können, ob alle benötigten Lizenzen bereits vorhanden sind oder weitere Lizenzen bestellt werden müssen.
+
+Auch soll diese Übersicht dem IT Financial Management erlauben, den Kunden bessere und transparente Berichte zu erstellen, um die Kostenanalyse in der IT zu vereinfachen.
+\subsection{Service Catalogue \& Service Request Management}\label{servicecatandservicerequestmngmnt}
+Angesichts des Ziels der IT, einen professionelleren und transparenteren Service anzubieten, wird von der neuen ITSM-Lösung erwartet, dass sie über einen Self-Service einen Servicekatalog bereitstellt. Dies ermöglicht es der IT-Abteilung, nicht nur Kunden über die verfügbaren Services zu informieren, sondern auch die erforderlichen Informationen für die Serviceerfüllung auf einem standardisierten Weg zu sammeln.
+
+Darüber hinaus wird angestrebt, dass die ITSM-Lösung Automatisierungsoptionen bietet. Obwohl diese für die Einführungsphase nicht unbedingt erforderlich sind, bieten sie Aussichten auf eine Weiterentwicklung der Serviceangebote und eine Vereinfachung des Servicebetriebs.
+\subsection{Service Level Management}
+Die Implementierung eines effizienten Service Level Managements im neuen \ac{itsm}-System der SARIA IT ist essenziell, um eine hohe Qualität und Zuverlässigkeit der IT-Dienste sicherzustellen.
+Eine Schlüsselfunktion des Systems ist die Fähigkeit, spezifische \ac{sla}s für verschiedene Services sowie für die Bearbeitung von Incidents und Problemen festzulegen und zu verwalten.
+Diese \ac{sla}s müssen klare, messbare Leistungsindikatoren enthalten, die es ermöglichen, die Einhaltung der vereinbarten Service-Standards effektiv zu überwachen.
+\\
+Ein wesentlicher Aspekt des Service Level Managements ist die kontinuierliche Überwachung und Berichterstattung über die Leistung der IT-Dienste. Das System sollte detaillierte Berichte erstellen können, die nicht nur die Einhaltung der \ac{sla}s aufzeigen, sondern auch Informationen über Leistungsprobleme und deren Ursachen bereitstellen. Diese Transparenz ist entscheidend für die Identifikation von Verbesserungsbereichen und die Steigerung der Kundenzufriedenheit.
+\\
+Ein weiterer wichtiger Faktor ist die Flexibilität des Systems bei der Anpassung der \ac{sla}s an dynamische Geschäftsanforderungen. Die Fähigkeit des Systems, \ac{sla}s zu modifizieren und an aktuelle Bedürfnisse anzupassen, ist entscheidend, um eine schnelle Reaktion auf Veränderungen im IT-Umfeld zu ermöglichen.
+\\
+Zusätzlich ist die Kommunikation der \ac{sla}s an die Kunden ein kritischer Bestandteil des Service Level Managements. Die neue ITSM-Lösung sollte in der Lage sein, \ac{sla}s transparent und verständlich an die Kunden zu kommunizieren. Dies fördert das Vertrauen der Kunden in die IT-Dienste und trägt zur Schaffung einer transparenten und verantwortungsbewussten Servicekultur bei.
+\\
+Die Benutzerfreundlichkeit und Intuitivität des Systems sind ebenfalls wichtig, um eine einfache Handhabung und effektive Verwaltung der \ac{sla}s zu gewährleisten. Dies unterstützt das IT-Personal in der effizienten Nutzung des Systems und hilft, die Qualität der IT-Dienste kontinuierlich zu verbessern.
+\\
+Insgesamt wird das Service Level Management im neuen \ac{itsm}-System der SARIA IT dazu beitragen, die Qualität, Zuverlässigkeit und Transparenz der IT-Dienste zu verbessern und die Kundenzufriedenheit zu steigern.
+\subsection{Knowledge Management}
+Die Möglichkeit eine Knowledge Database aufzubauen, die insbesondere die Kunden benutzen können, soll die IT dabei unterstützen einen Self-Service aufzubauen. Auch eine Möglichkeit für die User Feedback zu den genutzten Knowledge Einträgen sollte vorhanden sein, um die Qualität der Einträge weiter zu erhöhen.
+\subsection{Change Management}
+Das Change Management ist wie in der Analyse benannt, noch nicht standardisiert vorhanden, daher wird eine Möglichkeit benötigt, eingehende Change Requests organisiert und userfreundlich erfassen und bewerten zu können. Eine Möglichkeit mit einem Change Advisory Board zu arbeiten, wäre im neuen Tool hilfreich, aber nicht zwingend notwendig.
+Freigaben müssen möglich sein und die Verfolgung der Changes auch im Nachgang für eventuelle Audits ist erforderlich.
+\subsection{Self-Service}
+Optimal für die SARIA IT wäre ein Service Portal für die Kunden, um alle Informationen transparent an einem Ort verfügbar zu machen.
+Nicht nur Tickets sollen über das Portal möglich sein, sondern auch der Zugang zur Knowledge Database und der Option, Freigaben zu erteilen.
+Dies ist insbesondere für die Führungskräfte wichtig, damit eine transparente Darstellung für beide Seiten, sowohl IT als auch operative Einheiten, über Kosten und Nutzung ermöglicht wird.
+
+\subsection{Release Management}
+Für die SARIA IT ist die Einführung eines effektiven Release Managements innerhalb des neuen ITSM-Systems von entscheidender Bedeutung. Ein zentraler Fokus liegt auf der Entwicklung eines strukturierten Planungs- und Durchführungsrahmens für Softwarefreigaben, der klare Zeitpläne, Ressourcenzuweisungen und Verantwortlichkeiten umfasst.
+\\
+Das System muss außerdem in der Lage sein, potenzielle Risiken bei der Einführung neuer Releases zu identifizieren und Maßnahmen zur Risikominderung zu ergreifen. Eine enge Integration mit anderen ITSM-Prozessen, insbesondere mit dem Change Management und dem Configuration Management, ist erforderlich, um Konsistenz und Effizienz zu gewährleisten.
+\\
+Eine umfassende Dokumentation und effektive Berichterstattungsfunktionen sind unerlässlich, um eine transparente Übersicht über den Status und die Auswirkungen der Releases zu ermöglichen. Zudem muss das System benutzerfreundlich und anpassbar sein, um den spezifischen Bedürfnissen der SARIA IT gerecht zu werden und eine hohe Nutzerakzeptanz zu sichern.
+
+\subsection{IT Financial Management}\label{subsec:6itfinancialmngmnt}
+Die Integration eines umfassenden IT Financial Managements in das neue ITSM-System der SARIA IT ist entscheidend, um eine effektive Verwaltung und Kontrolle der IT-bezogenen Finanzen zu gewährleisten. Dieses System soll nicht nur die finanzielle Planung und Budgetierung unterstützen, sondern auch eine enge Verknüpfung zum IT Controlling aufweisen, um eine optimale Ressourcenallokation und Kostenkontrolle zu ermöglichen.
+\\
+Im Kern des IT Financial Managements steht die Fähigkeit des Systems, detaillierte Finanzdaten zu erfassen und zu verarbeiten. Dies umfasst die Überwachung aller Kosten, die mit dem Betrieb und der Wartung der IT-Infrastruktur, der Entwicklung und Implementierung neuer IT-Projekte sowie dem Erwerb von Hard- und Software verbunden sind. Eine genaue und zeitnahe Erfassung dieser Daten ist für die Erstellung präziser Budgets und Finanzberichte unerlässlich.
+\\
+Eine weitere wichtige Anforderung ist die Integration von IT Controlling-Funktionen. Diese ermöglichen eine kontinuierliche Überwachung und Bewertung der finanziellen Performance der IT-Dienste, einschließlich der Analyse von Abweichungen zwischen geplanten und tatsächlichen Ausgaben. Durch diese Funktionen kann die SARIA IT fundierte Entscheidungen treffen, um die Effizienz ihrer IT-Investitionen zu maximieren und eine wirtschaftliche Nutzung der IT-Ressourcen sicherzustellen.
+\\
+Das System sollte außerdem in der Lage sein, detaillierte Berichte und Analysen zur Verfügung zu stellen, die die Grundlage für strategische Entscheidungen im Bereich des IT Financial Managements bilden. Diese Berichte sollten Einblicke in die Kosten-Nutzen-Verhältnisse verschiedener IT-Dienste und -Projekte bieten und es dem Management ermöglichen, die finanzielle Effektivität der IT-Strategie zu beurteilen.
+\\
+Schließlich ist eine enge Integration des IT Financial Managements und IT Controllings mit anderen ITSM-Prozessen erforderlich, um eine ganzheitliche Sicht auf die IT-Leistungen zu gewährleisten. Dies hilft dabei, die finanziellen Auswirkungen von Änderungen in der IT-Landschaft besser zu verstehen und unterstützt eine effektive Steuerung und Optimierung der IT-Services.
+\\
+Die Implementierung eines leistungsstarken IT Financial Management- und Controlling-Systems im Rahmen des ITSM-Systems wird der SARIA IT dabei helfen, ihre IT-Finanzen transparent zu verwalten, die Rentabilität zu steigern und eine fundierte finanzielle Planung und Steuerung der IT-Dienste sicherzustellen.
+\subsection{Out of Scope}
+Da \ac{itil} sehr umfangreich ist und viele Anbieter viele Optionen für ihre Kunden bieten wollen, hat die SARIA Themen ausgeschlossen, die nicht als Teil der Anforderungen einer neuen \ac{itsm}-Lösung betrachtet werden sollen.
+Dies liegt daran, dass diese bereits im Unternehmen durch andere Lösungen abgebildet werden oder zum aktuellen Zeitpunkt als nicht kritisch betrachtet werden.
+\subsubsection{Demand \& Project Management}
+Das Demand und Project Managment wird durch das Team Demand \& Project Management betreut. Diese legen die Prozesse und Vorgänge unabhängig von der IT-Governance fest.
+Aufgrund eines aktuell stattfindenden Projekts zur Einführung einer eigenen Lösung zur Abbildung der Projekte und des Demand Managements, wird diese Thematik nicht in die Anforderungen an eine \ac{itsm}-Lösung eingegliedert.
+Aufgrunddessen ist das Demand \& Project Management keine Anforderung für die neue \ac{itsm}-Lösung der SARIA IT.
+\subsubsection{Enterprise Architecture Management}
+Viele Anbieter bieten ebenfalls Möglichkeiten zur Abbildung der Architektur durch die \gls{cmdb} an.
+Dies wird jedoch nicht benötigt, da die SARIA erst vor eineinhalb Jahren ein neues Tool eingeführt hat.
+Eine Integration der Daten aus der neuen \ac{itsm}-Lösung ist wünschenswert, aber nicht zwingend erforderlich.
+\subsubsection{Monitoring}
+Auch im Monitoring-Bereich gibt es viele Anbieter, die diese in eine \ac{itsm}-Lösung integrieren.
+Die SARIA verwendet jedoch ein Open-Source-Tool für das Monitoring von Servern, Services, \ac{etc}.
+Daher wird auch das Monitoring nicht in den Anforderungen aufgenommen, um \ac{ggf} doppelte Kosten zu vermeiden.
