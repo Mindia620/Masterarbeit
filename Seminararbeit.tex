@@ -3,6 +3,8 @@
 \input{resources/styles/adjustments}
 \input{resources/settings/glossary}
 
+\addbibresource{Seminararbeit.bib}
+
 \usepackage{mathptmx}
 \usepackage{graphicx}
 \usepackage{subcaption}
@@ -10,6 +12,9 @@
 \usepackage{color}
 \usepackage{listings}
 \usepackage{eso-pic}
+\usepackage{footnote}
+
+
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -21,6 +26,7 @@
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
+
 \usepackage{fontspec}
 \setmainfont{Arial}
 
@@ -36,8 +42,8 @@
 \authorLastname{Stelzer}
 \professor{Teubner}
 \typeofwork{Seminararbeit}
-\dateausgabe{18.01.2024}
-\dateabgabe{29.01.2024}
+\dateausgabe{01.09.2024}
+\dateabgabe{01.09.2024}
 \emailstudent{nick.stelzer@saria.com}
 
 %\include{titles/eidesstatt}
@@ -51,34 +57,7 @@
   {ü}{{\"u}}1
   {ä}{{\"a}}1
   {ö}{{\"o}}1
-}
-
-% Javascript als Sprache für die lstings
-\lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, that, globals, let, const},
-  keywordstyle=\color{blue}\bfseries,
-  ndkeywords={class, export, boolean, throw, implements, import, this},
-  ndkeywordstyle=\color{darkgray}\bfseries,
-  identifierstyle=\color{black},
-  sensitive=false,
-  comment=[l]{//},
-  morecomment=[s]{/*}{*/},
-  commentstyle=\color{gray}\ttfamily,
-  stringstyle=\color{red}\ttfamily,
-  morestring=[b]',
-  morestring=[b]"
-}
-\lstset{
-    language=JavaScript,
-    numbers=none,
-    frame=leftline,
-    tabsize=2,
-    rulesepcolor=\color{gray},
-    rulecolor=\color{black},
-    captionpos=b,
-    breaklines=true,
-    breakatwhitespace=false,
-}
+c}
 
 
 
@@ -119,6 +98,7 @@
 \acro{ad}[AD]{Active Directory}
 \acro{ao}[AO]{Anwendungs-Outsourcing}
 \acro{bzw}[bzw.]{beziehungsweise}
+\acro{ccta}[CCTA]{Central Computing and Telecommunications Agency}
 \acro{csi}[CSI]{Continual Service Improvement}
 \acro{dcom}[DCOM]{Distributed Component Object Model}
 \acro{dwh}[DWH]{Data Warehouse}
@@ -127,13 +107,18 @@
 \acro{etc}[etc.]{et cetera}
 \acro{ggf}[ggf.]{gegebenenfalls}
 \acro{gitlfs}[Git LFS]{Git Large File Storage}
+\acro{IaaS}[IaaS]{Infrastructure as a Service}
 \acro{iis}[IIS]{Informationsinfrastruktur}
+\acro{ikt}[IKT]{Informations- und Kommunikationstechnologie}
 \acro{int}[Int]{Integer}
 \acro{itam}[ITAM]{IT Asset Management}
 \acro{itil}[ITIL]{Information Technology Infrastructure Library}
 \acro{itsm}[ITSM]{IT Service Management}
+\acro{iv}[IV]{Informationsverarbeitung}
 \acro{kpi}[KPI]{Key Performance Indicator}
+\acro{mssp}[MSSP]{Managed Security Service Provider}
 \acro{rums}[RUMS]{Remondis Umwelt Management System}
+\acro{SaaS}[SaaS]{Software as a Service}
 \acro{sla}[SLA]{Service Level Agreement}
 \acro{spoc}[SPOC]{Single Point of Contact}
 \acro{svs}[SVS]{Service Value System}
@@ -142,9 +127,10 @@
 \acro{vs}[VS]{Visual Studio}
 \acro{whs}[WHS]{Westfälische Hochschule}
 \acro{zb}[z.B.]{zum Beispiel}
-
 \end{acronym}
-Die in dieser Arbeit erwähnten Unternehmens-, Produkt- oder Markenbezeichnungen können Marken oder eingetragene Markenzeichen der jeweiligen Eigentümer sein. Die Wiedergabe von Marken- und/oder Warenzeichen in dieser Arbeit berechtigt nicht zu der Annahme, dass diese als frei von Rechten Dritter zu betrachten seien. Alle erwähnten Marken- und/oder Warenzeichen unterliegen uneingeschränkt den länderspezifischen Schutzbestimmungen und den Besitzrechten der jeweiligen eingetragenen Eigentümer.
+Die in dieser Arbeit erwähnten Unternehmens-, Produkt- oder Markenbezeichnungen können Marken oder eingetragene Markenzeichen der jeweiligen Eigentümer sein.
+Die Wiedergabe von Marken- und/oder Warenzeichen in dieser Arbeit berechtigt nicht zu der Annahme, dass diese als frei von Rechten Dritter zu betrachten seien.
+Alle erwähnten Marken- und/oder Warenzeichen unterliegen uneingeschränkt den länderspezifischen Schutzbestimmungen und den Besitzrechten der jeweiligen eingetragenen Eigentümer.
 \newpage
 
 \listoffigures
@@ -160,12 +146,12 @@ Die in dieser Arbeit erwähnten Unternehmens-, Produkt- oder Markenbezeichnungen
 \input{chapter/3_Unternehmen}
 \newpage
 \input{chapter/4_Analyse}
+\newpage
+\input{chapter/5_Zielbild}
+\newpage
+%\input{chapter/6_Anforderungen}
 %\newpage
-%\input{chapter/5_Zielbild}
-\newpage
-\input{chapter/6_Anforderungen}
-\newpage
-\input{chapter/7_Fazit}
+%\input{chapter/7_Fazit}
 
 % Bibliografie einfügen
 \printbibliography[

@@ -1,20 +1,264 @@
 \section{Grundlagen von IT-Services und IT Kosten}
 \subsection{IT Service Management}
-\gls{itsm} bezeichnet einen Ansatz zur Verwaltung und Bereitstellung von IT-Dienstleistungen, der darauf abzielt, die IT-Ressourcen eines Unternehmens effizient zu nutzen und die Geschäftsziele zu unterstützen.
-Dabei liegt der Fokus nicht nur auf der Technologie, sondern auch auf der Bereitstellung und dem Support von qualitati hochwertigen IT-Dienstleistungen, sogenannten IT-Services.
+\ac{itsm} bezeichnet einen Ansatz zur Verwaltung und Bereitstellung von IT-Dienstleistungen, der darauf abzielt, die IT-Ressourcen eines Unternehmens effizient zu nutzen und die Geschäftsziele zu unterstützen.
+Dabei liegt der Fokus nicht nur auf der Technologie, sondern auch auf der Bereitstellung und dem Support von qualitativ hochwertigen IT-Dienstleistungen, sogenannten IT-Services.
 
-Ein zentraler Bestandteil von \gls{itsm} ist die \gls{itil}, ein Framework, das Best Practices für das \gls{itsm} bereitstellt.
-Sie wurde Ende der 1980er Jahre von der britischen Regierungsbehörde CCTA entwickelt, um den reibungslosen IT-Einsatz in britischen Behörden zu gewährleisten.
-Heute ist ITIL ein internationaler Standard für das \gls{itsm}.
-Nach der ersten Version folgte \gls{itil} V2, welches eine systematischere und konsolidierte Struktur einführt, die in acht Kernpublikationen unterteilt wurde.
-Mit \gls{itil} V3 wurde der Fokus auf den gesamten Lebenszyklusn IT-Services gelegt. Dabei sind die Phasen Strategie, Entwurf, Umsetung und Betrieb inkludiert.
-Die aktuellste Version, \gls{itil} V4, erweitert das Framework, um agile und DevOps-Praktikenbesser integrieren zu können.
-Die ITIL hat sich kontinuierlich weiterentwickelt und wurde angepasst, um den sich ändernden Anforderungen und Technologien im Bereich des IT-Managements gerecht zu werden./footcite[5-13]{teubnerITServiceManagementNeues2008}
-\subsubsection{IT-Services}
-IT-Services sind zentraler Bestandteil des \gls{itsm} die Dienstleistungen die von einer IT-Abteilung erbracht werden.
-Dabei sind sie spezifisch auf das Unternehmen zugeschnitten.
-Es gibt unterschiedliche Definitionen von IT-Services.
-Während \gls{itil} in der neuesten Ausgabe V4 IT-Services \footcite{axelosITILFoundationITIL2019} als Service basierend auf Informationstechnologie definiert, wird Berger/footcite[17]{bergerKonzeptionUndManagement2005} in seiner Definition detaillierter. Laut ihm sind IT-Dienstleistungen darüber definiert, ob "der Nutzung von IT-Systemen des Leistungsgebers als Potentialfaktor eine entscheidende Rolle im Rahmen des Dienstleistungsprozesses zukommt"," der externe Faktor, an dem die Dienstleistung erbracht wird, ein IT-System ist" oder "das Ergebnis der Dienstleistung die Nutzungsmöglichkeit eines IT-Systems ist oder einen unmittelbaren Beitrag hierzu leistet".
+Um das \ac{itsm} in die Praxis umzusetzen gibt es unterschiedliche Ansätze.
+Eine häufig verwendete Sammlung von \glqq{}Best Practices\grqq{} ist die \ac{itil}.
+Sie ist ein Framework, welches  Ende der 1980er Jahre von der britischen Regierungsbehörde \ac{ccta} entwickelt wurde, um den reibungslosen IT-Einsatz in britischen Behörden zu gewährleisten.
+Nach der ersten Version folgte \ac{itil} V2, welches eine systematischere und konsolidierte Struktur einführt, die in acht Kernpublikationen unterteilt wurde.
+Mit \ac{itil} V3 wurde der gesamte Lebenszyklus von IT-Services detailliert beschrieben. Dabei sind die Phasen Strategie, Entwurf, Umsetzung und Betrieb inkludiert.
+Die aktuelle Version, \ac{itil} V4, geht von einer präzisen Beschreibung von Prozessen über zu einer groberen Übersicht von notwendigen Prozessen, um auch die Entwicklung der modernen agilen Prozesse und DevOps Praktiken zu integrieren.
+\ac{itil} wurde kontinuierlich weiterentwickelt und angepasst um den sich ändernden Anforderungen und Technologien im Bereich des \ac{itsm} gerecht zu werden.\footcite[5-13]{teubnerITServiceManagementNeues2008}
+
+\subsection{IT-Services}
+\label{subsec:itservices}
+Bei IT-Services handelt es sich um Leistungen, die meist von einer IT-Abteilung erbracht werden und dem Unternehmen die Verwendung von IT-Ressourcen ermöglichen.
+Daher sind sie ein bedeutender Teil des \ac{itsm}.
+Oft sind die IT-Services spezifisch auf Unternehmen zugeschnitten, wenn Sie von internen IT-Abteilungen erbracht werden.
+Mittlerweile sind auch Standard IT-Services durch externe Partner erhätlich, wie etwa bei der Verwendung von Cloud Ressourcen.
+\\
+In der fachlichen Diskussion gibt unterschiedliche Definitionen von IT-Services.
+Während \ac{itil} in der neuesten Ausgabe V4 IT-Services \footcite{axelosITILFoundationITIL2019} als Service basierend auf Informationstechnologie definiert, wird Berger\footcite[17]{bergerKonzeptionUndManagement2005} in seiner Definition detaillierter.
+Nach Bergers Arbeit sind IT-Dienstleistungen darüber definiert, ob \glqq{}der Nutzung von IT-Systemen des Leistungsgebers als Potentialfaktor eine entscheidende Rolle im Rahmen des Dienstleistungsprozesses zukommt\grqq{},\glqq{}der externe Faktor, an dem die Dienstleistung erbracht wird, ein IT-System ist\grqq{} oder \glqq{}das Ergebnis der Dienstleistung die Nutzungsmöglichkeit eines IT-Systems ist oder einen unmittelbaren Beitrag hierzu leistet\grqq{}.
 Dabei bleibt Berger sehr allgemein und macht keine Unterschiede zwischen internen und externen Dienstleistungen.
-Auch Krcmar\footcite{krcmarInformationsmanagement2015a} folgt dieser Definition.
-Er zeigt zudem auf, dass die Leistungserbringung eines IT-Services "alle Aktivitäten der IT, welche in ihrer Summe dazu führen, dass der Kunde die vereinbarte Dienstleistung in der vereinbarten Qualität erhält ohne selbst die Verantwortung für bestimmte Kosten und Risiken tragen zu müssen".
+Auch Krcmar\footcite{krcmarInformationsmanagement2015} folgt dieser Definition.
+Er zeigt zudem auf, dass die Leistungserbringung eines IT-Services \glqq{}alle Aktivitäten der IT umfasst, welche in ihrer Summe dazu führen, dass der Kunde die vereinbarte Dienstleistung in der vereinbarten Qualität erhält, ohne selbst die Verantwortung für bestimmte Kosten und Risiken tragen zu müssen\grqq{}.\footcite[545]{krcmarInformationsmanagement2015}
+Zusätzlich erläutert Berger den Begriff des \glqq{}IT-Systems\grqq{} um die IT-Servicedefinition als Kombination aus IT-Systemen und IT-Verrichtungen vereinfacht darzustellen.
+Ein \glqq{}IT-System\grqq{} wird von Berger definiert als eine Gesamtheit, die aus mehreren Komponenten der Informationstechnologie besteht und sowohl Hard- als auch Software umfasst, deren Zweck es ist, bestimmte Aufgaben zu erfüllen.\footcite[vgl.][17]{bergerKonzeptionUndManagement2005}
+Teubner verwendet zur vereinfachten Darstellung Abbildung \ref{fig:itservicealsergebnisderkombinationvonitleistungen}. Hier ist am Beispiel eines \glqq{}computergestützten Büroarbeitsplatzes\grqq{} die Zusammenwirkung von IT-Betriebsmitteln mit den nötigen Verrichtungen wie Wartung und Betrieb als IT-Service ersichtlich.\footcite[37]{teubnerITServiceManagementNeues2008}
+\begin{figure} [H]
+	\centering
+	\includegraphics[page={14},scale=0.6, keepaspectratio]{resources/images/Teubner_IT-Service als Egerbnis der Kombination von IT-Leistungen und IT-Ressourcen.png}
+	\caption{IT-Service als Ergebnis der Kombination von IT-Leistungen und IT-Ressourcen am Beispiel des IT-Service Arbeitsplatz\footcite[36]{teubnerITServiceManagementNeues2008}}
+	
+\end{figure}
+\label{fig:itservicealsergebnisderkombinationvonitleistungen}
+\\
+Auf der Grundlage der Konzepte von Teubner und Berger die sich gegenseitig ergänzen, lassen sich IT-Services als Kombination aus der Bereitstellung und Nutzung von IT-Systemen, sowie der notwendigen IT-bezogenen Tätigkeiten definieren.
+Die Hinzunahme von Krcmars Definition legt Zusätzlich die Darstellung aus Kundensicht nahe, die die Möglichkeit haben, IT-Infrastrukturen, Anwendungen und Ressourcen zur Unterstützung ihrer Geschäftsprozesse zu nutzen, ohne die Verantwortung dafür übernehmen zu müssen.
+
+
+\subsection{IT-Servicekatalog}
+\label{subsec:itservicekatalog}
+Um eine Übersicht aller IT-Services zu erhalten, werden IT-Servicekataloge verwendet.
+Krcmar erläutert, dass IT-Servicekataloge das Ziel verfolgen \glqq{}die von der IT-Abteilung angebotenen Leistungen für alle beteiligten Akteure verständlich abzubilden.\grqq{}\footcite[555]{krcmarInformationsmanagement2015}
+Dabei wird das Serviceangebot durch den Servicegeber verantwortet. Dieser kann einer interne IT-Abteilung sein oder ein externer IT-Dienstleister.
+\glqq{}Auf der Nachfrage-Seite steht der Servicenehmer.\grqq{}\footcite[555]{krcmarInformationsmanagement2015}
+Die Kommunikation der beiden Akteure erfolgt auf Basis des IT-Servicekatalogs. Dabei bestellt der Servicenehmer den benötigten Bedarf an IT-Services.
+Dieser wird dann durch den Servicegeber über die IT-Services bereitgestellt, unabhängig von der eigenen (internen) oder externen Erbringung der Leistung.\footcite[555]{krcmarInformationsmanagement2015}
+Zur anschaulichen Darstellung verwendet Krcmar\footcite[555]{krcmarInformationsmanagement2015} eine Abbildung aus seinem Paper \glqq{}Handlungsleitfaden IT-Services und IT-Servicekataloge für mittelständische Unternehmen.\grqq{}\footcite[19]{rudolphHandlungsleitfadenITServicesUnd2008}
+\begin{figure} [H]
+	\centering
+	\includegraphics[page={14},scale=0.5, keepaspectratio]{resources/images/Krcmar_Akteure im IT-Serviceverhältnis.png}
+	\caption{Akteure im IT-Serviceverhältnis\footcite[19]{rudolphHandlungsleitfadenITServicesUnd2008}}
+	\label{fig:akteureimitserviceverhältnis}
+\end{figure}
+
+\subsection{Managed Services und Management Services}
+Ein Managed Service beschreibt einen IT-Service, bei dem \glqq{}sowohl der Ressourceneinsatz als auch die Durchführung der Verrichtungen in den Händen des Service Providers liegen.\grqq{} (vgl. Abbildung \ref{fig:akteureimitserviceverhältnis})\footcite[38]{teubnerISSN14383985Print}.
+Dabei liegt die Wahl der IT-Betriebsmittel zur Erfüllung des IT-Services bei dem Service Provider.
+Es erfolgt kein Einsatz von kundenseitigen Ressourcen zur Serviceerbringung.\footcite[38]{teubnerISSN14383985Print}
+\\
+Somit sind Managed IT-Services, IT-Services im engeren Sinne des ITSM und unterstreichen die Definition von Krcmar in Kapitel \ref{subsec:itservices}: "[...],dass der Kunde die vereinbarte Dienstleistung in der vereinbarten Qualität erhält ohne selbst die Verantwortung für bestimmte Kosten und Risiken tragen zu müssen."
+\\
+In der Praxis kann es vorkommen, dass der Service Provider "Verrichtungen an der \ac{iis} des Kunden vornimmt und damit an fremden IT-Betriebsmitteln."\footcite[38]{teubnerISSN14383985Print}
+Somit leistet der Service Provider einen Beitrag zur Erbringung des gesamten IT-Services.
+Hierbei handelt es sich um hybride Dienstleistungen, bei denen sowohl die Betriebsmittel als auch die Verrichtungen des Kunden und des Dienstleisters gemeinsam zur Serviceerbringung beitragen.
+Der Service Provider kann in diesem Fall nicht die erfolgreiche Erbringung des IT-Services im engeren Sinne garantieren, da diese auch von den vom Auftraggeber eingesetzten Betriebsmitteln und den selbst zu erbringenden Servicebeiträgen abhängen.\footcite[vgl.][38]{teubnerISSN14383985Print}
+Wenn im Folgenden von IT-Service gesprochen wird, ist grundsätzlich ein Managed IT-Service gemeint, sofern nicht anders ausgeführt.
+\\
+Die Abgrenzung zwischen Managed Services und Management Services ist auch in der Praxis des Outsourcings relevant.
+Während beim traditionellen Outsourcing IT-Betriebsmittel und Mitarbeiter vollständig zum Dienstleister verlagert werden, hat sich in der modernen Praxis ein differenzierter Ansatz etabliert.
+Heute wird eher ein selektives Outsourcing einzelner Bereiche der \ac{iv} empfohlen. Eine spezifische Form dieses Ansatzes ist das Outtasking, bei dem gezielt nur einzelne Aufgaben (Tasks) fremd vergeben werden, ohne dass die IT-Betriebsmittel zum Dienstleister übergehen.
+
+\subsection{Differenzierung IT-Services und IT-Leistungen}
+Zarnekow, Brenner und Pilgram definieren IT-Services basierend auf dem betrieblichen Nutzen, den sie erzeugen.
+Sie betrachten IT-Services als \glqq{}Bündel von IT-Leistungen, mit deren Hilfe ein Geschäftsprozess oder ein Geschäftsprodukt des Leistungsabnehmers unterstützt und dort ein Nutzen erzielt wird.\grqq{}\footcite[18]{zarnekowIntegriertesInformationsmanagement2005}
+Diese Definition hebt die Rolle von IT-Services bei der Unterstützung und Optimierung von Geschäftsprozessen hervor.
+\\
+Die Autoren verwenden den Begriff \glqq{}IT-Produkte\grqq{} zur Beschreibung dieser IT-Services.
+Dieser Begriff ist jedoch potenziell irreführend, da er im allgemeinen Sprachgebrauch stark mit physischen Objekten assoziiert wird.
+Dennoch soll diese Bezeichnung verdeutlichen, dass IT-Services spezifische Kundenbedürfnisse befriedigen und auf bestimmte Weise erbracht ("produziert") werden müssen.
+IT-Services können zudem weitgehend automatisiert mithilfe von IT-Betriebsmitteln erbracht werden, ähnlich der industriellen Massenproduktion von Sachgütern.\footcite[vgl.][40-41]{teubnerISSN14383985Print}
+\\
+Im Gegensatz zu IT-Produkten definieren Zarnekow, Brenner und Pilgram IT-Leistungen als alle Beiträge der IT-Ressourcen und Anwendungssysteme, die nicht unmittelbar einen Geschäftsnutzen stiften.
+Während IT-Produkte aus einer geschäftsorientierten Sicht des Kunden heraus definiert sind, repräsentieren IT-Leistungen eine produktionswirtschaftliche Sichtweise.\footcite[40-41]{teubnerISSN14383985Print}
+\begin{figure} [H]
+	\centering
+	\includegraphics[page={14},scale=0.5, keepaspectratio]{resources/images/teubner_IT-Leistungen als Beiträge zu geschäftsorientierten IT-Services.png}
+	\caption{IT-Leistungen als Beiträge zu geschäftsorientierten IT-Services\footcite[96]{zarnekowProduktionsmanagementITDienstleistungen2007}}
+	\label{fig:itleistungenalsbeitraegezuitservices}
+\end{figure}
+Die Autoren argumentieren, dass nur aggregierte IT-Dienstleistungen, die auf der Ebene der Geschäftsprozesse und Produkte zur Anwendung kommen, einen eigenständigen Nutzen schaffen.
+Diese Sichtweise stellt Teubner jedoch in Frage.
+Basierend auf Analysen des Outsourcing Marktes, besteht gerade im Bereich der IT-Ressourcen und Anwendungssysteme eine hohe Nachfrage.
+Dies verdeutlicht, dass auch hier eigenständige Kundenbedürfnisse existieren, die nicht unmittelbar auf das Geschäft des Kunden abzielen.\footcite[41]{teubnerISSN14383985Print}
+\\
+Um die Komplexität der IT-Services differenzierter zu betrachten, wird ein Schichtenmodell der betrieblichen Informationsinfrastruktur von Teubner herangezogen.
+Dieses Modell unterteilt die Betriebsmittel der Informations- und Kommunikationstechnik (IK-Technik) in drei funktionale Ebenen: die IK-technische Infrastruktur, die Anwendungssysteme und die betrieblichen Informationsressourcen.
+Zusätzlich wird eine Schicht \glqq{}Non-IT Facilities\grqq{} hinzugefügt, die gebäude- und sicherheitstechnische Voraussetzungen umfasst.
+Jede dieser Schichten leistet eigenständige Beiträge zur IT-Unterstützung des Geschäfts.
+Die untergeordneten Schichten stellen ihre Leistungen den jeweils übergeordneten Schichten zur Verfügung, während die übergeordneten Schichten Anforderungen an die untergeordneten Schichten stellen.
+Beispielsweise werden betriebliche Informationsressourcen über Anwendungssysteme bereitgestellt, die wiederum auf einer IK-technischen Infrastruktur aufsetzen.\footcite[41-42]{teubnerISSN14383985Print}
+\begin{figure} [H]
+	\centering
+	\includegraphics[page={14},scale=0.5, keepaspectratio]{resources/images/teubner_wertschöpfungstiefe der Informationsinfrastruktur.png}
+	\caption{Wertschöpfungstiefe der Informationsinfrastruktur\footcite[42]{teubnerISSN14383985Print}}
+	\label{fig:wertschoepfungstiefederinformationsstruktur}
+\end{figure}
+
+Teubner charakterisiert Managed Services durch folgende Eigenschaften:
+\begin{itemize}
+    \item \glqq{}IT-Services werden unter Einsatz eines komplexen Bündels von IT-Betriebsmitteln und IT-bezogener Verrichtungen erbracht, die zusammen eine homogene Dienstleistung bereitstellen.\grqq{}\footcite[44]{teubnerISSN14383985Print}
+    \item \glqq{}IT-Services müssen beim Kunden einen eigenständigen Nutzen stiften. Dabei kann dieser \glqq{}unmittelbar auf der Ebene der Geschäftsprozesse liegen oder auch darin, dass auf Seiten des Kunden bestimmte technische Voraussetzungen für die Erbringung seiner geschäftsorienteirten IT-Services geschaffen werden\grqq{}\footcite[44]{teubnerISSN14383985Print}
+    \item Für den Kunden ist die vereinbarte Dienstleistung und der dadurch erzielte Nutzen entscheidend. Die Frage nach der Erbringung und den dafür verwendeten Ressourcen obliegt primär dem Dienstleister.\footcite[44]{teubnerISSN14383985Print}
+    \item Die Verantwortung für die korrekte Erbringung der Dienstleistung liegt vollständig beim Dienstleister, der auch alle Risiken trägt. Dafür muss dieser uneingeschränkte Kontrolle über die eingesetzten IT-Ressourcen und die Prozesse der Leistungserbringung erhalten.\footcite[44]{teubnerISSN14383985Print}
+    \item Um Skaleneffekte zu erreichen, muss der Dienstleister einen breiten Markt bedienen und darf sich nicht nur auf die spezifischen Bedürfnisse eines einzelnen Kunden konzentrieren, wie es oft bei internen IT-Abteilungen der Fall ist.\footcite[44]{teubnerISSN14383985Print}
+    \item Marktfähige IT-Services müssen einzeln kalkulierbar sein. Dafür ist es notwendig, dass die eingesetzten Ressourcen (IT-Ressourcen, Personal), Leistungsprozesse und Leistungsbeziehungen in der Kostenrechnung abgebildet werden können.\footcite[44]{teubnerISSN14383985Print}
+    \item Die Voraussetzungen für die Angebotserstellung marktfähiger Dienstleistungen sind bei Managed Services gut, da sich die Prozesse der Dienstleistungserbringung bis zu einem gewissen Grad standardisieren lassen. Dies ist bei Management Services schwieriger, da hier die Infrastruktur und das Personal des Kunden als externe Faktoren in den Dienstleistungsprozess einfließen.\footcite[44]{teubnerISSN14383985Print}
+\end{itemize}
+
+
+\subsection{Marktorientierung im IT-Service-Management: Von  der internen Funktion zur unternehmerischen Dienstleistungseinheit}
+Marktorientierung im \ac{itsm} bedeutet, dass die traditionelle Sichtweise der internen \ac{iv}-Organisation als Funktionsbereich zu einem unternehmerischen Selbstverständnis erweitert wird.
+Dies bedeutet, dass sich die \ac{iv}-Organisation als eigenständiges \glqq{}Business innerhalb des Unternehmens\grqq{} versteht und als interner Anbieter von IT-Dienstleistungen auftritt.
+Kann die \ac{iv}-Organisation bestimmte Dienstleistungen nicht selbst erbringen, hat sie die Möglichkeit, diese von externen Anbietern zu beziehen, die diese effizienter oder besser erbringen können.\footcite[49]{teubnerISSN14383985Print}
+\\
+Die \ac{iv}-Organisation agiert somit auch als Nachfrager von Dienstleistungen auf dem externen Markt.
+Es entstehen Kunden-Anbieter-Beziehungen, in denen die \ac{iv}-Organisation ihre Dienstleistungen marktfähig und wettbewerbsorientiert anbietet.
+Nach Teubner gibt es einige Autoren, die eine Entwicklung von IT-Services hin zu Commodities sehen, also standardisierten Dienstleistungen, die auf globalen Märkten gehandelt werden können.
+Dies zwingt interne \ac{iv}-Bereiche, sich in Wettbewerb mit externen Anbietern zu begeben und erfordert von ihnen ein unternehmerisches Handeln.\footcite[49]{teubnerISSN14383985Print}
+\\
+Die Marktorientierung fördert somit eine Professionalisierung und Kommerzialisierung der IT-Services.
+\ac{iv}-Organisationen müssen ihre Leistungen proaktiv planen und in Verantwortung für Kosten und Qualität treten.
+Dies umfasst auch die Nutzung externer Beschaffungsmärkte, um Dienstleistungen effizienter zu erbringen.
+Die Transformation der \ac{iv}-Organisation erfordert daher eine Neuausrichtung auf den Markt, was sowohl interne als auch externe Kundenbeziehungen beeinflusst.\footcite[50]{teubnerISSN14383985Print}
+\\
+Durch diese Marktorientierung werden \ac{iv}-Organisationen gezwungen, sich an den Marktmechanismen zu orientieren und ihre Dienstleistungen kosteneffizient und kundenorientiert zu gestalten.
+Dies erfordert eine kontinuierliche Anpassung und Optimierung der angebotenen IT-Services, um den Anforderungen des Marktes gerecht zu werden.\footcite[50]{teubnerISSN14383985Print}
+\\
+Teubner führt weiterhin aus, dass viele \glqq{}interne \ac{iv}-Abteilungen die kostenrechnerischen Vorraussetzungen für ein marktgerechtes Auftreten nicht erfüllen\grqq{}.
+Daher werden sie häufig als Hilfskostenstelle oder Cost Center geführt.
+Dies ist vertretbar, solange der \ac{iv}-Bereich keine Leistungen für den Absatzmarkt erbringt.
+Allerdings stellt Teubner heraus, dass die \ac{iv}-Kosten in den meisten Unternehmen 4\% oder mehr des Umsatzes darstellen und eine verursachungsgerechte Verrechnung erforderlich ist.\footcite[51]{teubnerISSN14383985Print}
+\\
+Eine innerbetriebliche Verrechnung der Kosten über eine \ac{iv}-Hilfskostenstelle kann dies nicht sicherstellen.
+Auch wenn die \ac{iv} als Cost-Center gesteuert wird und dabei Budgetverantwortung sowie Leistungsvorgaben erhält, ist eine verursachungsgerechte Zurechnung der anfallenden Kosten auf die tatsächlich erbrachten Leistungseinheiten nicht erforderlich.\footcite[51]{teubnerISSN14383985Print}
+\\
+Marktnäher ist die Steuerung der \ac{iv} als Service Center oder Profit Center.
+Beim Service Center werden Verrechnungspreise für die von der \ac{iv} bereitgestellten Leistungen festgelegt, die kostendeckend sein müssen und mit Marktpreisen verglichen werden.
+Das Angebot richtet sich nach der innerbetrieblichen Nachfrage. Beim Profit Center agiert die \ac{iv} als eigenständige Einheit, die nach Gewinn strebt und Zugang zum externen Markt hat.
+Einkauf, Leistungserstellung, Planung, Kalkulation und Vertrieb des Leistungsprogramms sollten demnach in ihrer Verantwortung liegen.\footcite[51]{teubnerISSN14383985Print}
+\\
+In einer Profit-Center-Organisation ist der IT-Service nicht nur ein Kostenträger, sondern auch ein Absatz- und eigenständiges Kalkulationsobjekt (siehe Abbildung \ref{fig:itservicealskostentraeger}).
+Die Kalkulation sollte grundsätzlich aus drei Perspektiven betrachtet werden:
+\begin{itemize}
+    \item Kostenbasierte Kalkulation: Der Preis, den der Kunde für die Inanspruchnahme eines IT-Services zahlt, sollte die Kosten der Serviceerbringung decken.
+    \item Marktpreisbasierte Kalkulation: Der Preis sollte sich am marktüblichen Niveau für vergleichbare Dienstleistungen orientieren.
+    \item Nutzenbasierte Kalkulation: Der Preis muss im Verhältnis zum betriebswirtschaftlichen Nutzen stehen, den der IT-Service für den Kunden erbringt. Der Nutzen bestimmt den maximalen Preis, den der Kunde bereit ist zu zahlen.
+\end{itemize}
+Obwohl es bereits schwierig ist, die Kosten der Serviceerbringung genau zu bestimmen, liegt die größte Herausforderung vermutlich in der nutzenbasierten Kalkulation.
+Die Bezugsgrößen für die Abrechnung der Serviceinanspruchnahme sollten in Beziehung zum erzielten Kundennutzen stehen und für den Kunden nachvollziehbar sein.
+Nur unter dieser Voraussetzung kann der Kunde die Inanspruchnahme von Services sinnvoll steuern.\footcite[53]{teubnerISSN14383985Print}
+\begin{figure} [H]
+	\centering
+	\includegraphics[page={14},scale=0.5, keepaspectratio]{resources/images/Teubner_IT-Abteilung als Profit Center.png}
+	\caption{IT-Abteilung als Profitcenter\footcite[52]{teubnerISSN14383985Print}}
+	\label{fig:itservicealskostentraeger}
+\end{figure}
+
+\subsection{Service Level Agreements}
+\label{subsec:sla}
+\glqq{}Ein \ac{sla} ist eine schriftliche, messbare Vereinbarung zwischen einem IT-Serviceprovider und einem IT-Kunden über die Pflichten, Rechte und Konditionen bezüglich der Erbingung eines spezifischen IT-Service.\grqq{}\footcite[560]{krcmarInformationsmanagement2015} 
+Dabei liegt die Standardisierung und Messung der Qualität der erbrachten Dienstleistungen im Vordergrund.
+Eine Unterscheidung von \ac{sla} im engeren Sinne und weiteren Sinne ist möglich, wird meistens aber vermieden.
+Dabei enthält ein \ac{sla} im weiteren Sinne, sowohl die Definition des Inhaltes, den Umfang der Leistung als auch die Definition der einzelnen Servicelevel und der drohenden Sanktionen bei Nichteinhalten des \ac{sla}.
+Ein \ac{sla} im engeren Sinne beschreibt lediglich die Service Level und die davon abhängigen Sanktionen.\footcite[560\psq]{krcmarInformationsmanagement2015} 
+\\
+Um die \ac{sla}s einhalten zu können, muss es ebenfalls möglich sein, diese zu erheben.
+Dabei ist es unerlässlich, die dafür erforderlichen Messgrößen, Messmethoden und Erhebungszeiträume zu definieren.
+Die hierfür möglichen Kombinationen sind endlos.
+Es können zum Beispiel Reaktionszeiten, Bearbeitungszeiten, aber auch Personalaufwände oder Verfügbarkeiten als Messgrößen verwendet werden.
+Nach Krcmar lassen sich \ac{sla} in drei Arten unterscheiden:\footcite[561]{krcmarInformationsmanagement2015} 
+\begin{itemize}
+	\item Outputorientierte Service Level: Dabei werden Anforderungen an die Qualität der Leistungen definiert.
+	\item Prozessbezogene Service Level: Hier wird der Leistungserstellungsprozess in den Vordergrund gesetzt und die Anforderungen daran definiert.
+	\item Inputorientierte Service Level: Es werden an die im Leistungsprozess eingesetzten Inputfaktoren spezifische Anfordungen beschrieben.
+\end{itemize}
+
+\section{Abrechnung und Kalkulation von IT-Services}
+\label{2:abrechnungundkalkulation}
+Im folgenden Kapitel werden die Möglichkeiten zur Abrechnung und Kalkulation von IT-Services dargestellt.
+\subsection{Kalkulationsmethoden: Welche Methoden gibt es zur Kalkulation von IT Services (z.B. Kostenstellenrechnung, Prozesskostenrechnung)?}
+\label{subsec:Kalkulationsmethoden}
+In der Literatur werden unterschiedliche Möglichkeiten zur Leistungsverrechnung der IT-Kosten diskutiert.
+\subsubsection{Umlageverfahren}
+Die reine Kostenumlage ist besonders durch ihre einfache und schnelle Umsetzbarkeit gekennzeichnet.
+IT-Kosten werden dabei pauschal anhand von Bezugsgrößen wie der \glqq{}Anzahl der Arbeitsplatzrechner\grqq{} oder der \glqq{}Anzahl der Anwender\grqq{} verteilt.
+Diese Einfachheit bringt jedoch erhebliche Nachteile mit sich, da viele wichtige Ziele, wie die verursachergerechte Kostenverteilung und Kostentransparenz, nur unzureichend erreicht werden.\footcite[52]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+\\
+Die Verursachergerechtigkeit hängt stark vom gewählten Verteilungsschlüssel ab.
+Oft spiegeln diese Schlüssel nicht die tatsächliche Nutzung der IT-Leistungen wieder.
+Eine pauschale Umlage der Entwicklungskosten über die Anzahl der Anwender kann z.B. nicht berücksichtigen, dass bestimmte Bereiche überdurchschnittlich viele Anforderungen an Änderungen oder Weiterentwicklungen der genutzten Anwendungssysteme stellen und daher mehr IT-Ressourcen beanspruchen.\footcite[52-53]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+\\
+Gadatsch beschreibt, dass Umlageverfahren dem IT-Kunden keine Transparenz über Auswirkungen seiner Entscheidungen und auch keinen Anreiz für Kostensenkungen bieten.\footcite[200]{gadatschMasterkursITControlling2010}
+Zusätzlich sind keine direkten Auswirkungen auf die Kostenverursachung und -höhe in den IT-Bereichen sowie auf die Kundenorientierung zu erwarten, besonders dann nicht, wenn die IT-Kostenstellen stets vollständig entlastet werden.\footcite[53]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+\subsubsection{Direkte Leistungsverrechnung}
+Bei der direkten Leistungsverrechnung wird versucht, Größen zu finden, die die tatsächliche Inanspruchnahme von IT-Leistungen repräsentieren.
+Beispiele aus der IT sind dafür Servicestunden, Programmierstunden oder Anzahl Druckseiten.
+Um den Preis für die Leistung je Kostenstelle zu berechnen, werden die dafür anfallenden Kosten auf die gesamte erbrachte Menge je Leistungsart verteilt.
+Bei Projekten ist dies auf Basis von Arbeitszeitnachweisen recht einfach umsetzbar.\footcite[53]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+\\
+Anders ist es bei technisch orientierten Bereichen der IT.
+Die Nutzung von CPU-Zeiten oder Speicherkapazitäten kann technisch gemessen, aber nur schwer an Kunden vermittelt werden.
+Mit höherer Genauigkeit der Messung steigt auch der Aufwand.
+Eine detaillierte Kostenarten- und -stellenrechnung im IT-Bereich ist dafür eine Voraussetzung.
+Ein gut ausgebautes Verfahren erfüllt die Ziele der Verursachergerechtigkeit und Kostentransparenz und kann das Kostenbewusstsein der Empfänger moderat steigern.
+Allerdings führen Unwirtschaftlichkeiten in der IT-Abteilung lediglich zu Preiserhöhungen und ein Verzicht auf IT-Leistungen durch Fachabteilungen wirkt sich nur preislich aus.
+Dadurch fehlt die Motivation für beide Seiten, wirtschaftlicher zu handeln.\footcite[53,216]{schroederProduktorientierteITLeistungsverrechnungBei2007,gadatschMasterkursITControlling2010}
+\subsubsection{Prozessorientierte Leistungsverrechnung}
+Eine weitere Möglichkeit der Verrechnung von IT-Kosten ist die Verrechnung auf Basis von Prozessen.\footcite[128 \psqq]{gerlingerProzessorientierteIVLeistungsverrechnungWeg2000}
+Dabei werden nicht die Kostenstellen als Leistungsempfänger angesehen, sondern die Geschäftsprozesse.
+Die Anzahl der Durchführungen der Geschäftsprozesse wird dabei als Basis für die Kostenverrechnung herangezogen.
+Dazu ist eine Analyse der relevanten Prozesse nötig, sowie die Zuordnung von IT-Leistungen auf diese Prozesse.
+Bei dieser Art der Berechnung gestaltet es sich schwierig Kosteneinsparungen vorzunehmen, da die Geschäftsprozesse \glqq{}naturgemäß geschäftsgetrieben sind und zwingend ausgeführt werden müssen.\grqq{}\footcite[53\psq]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+
+\subsubsection{Produktorientierte Leistungsverrechnung}
+
+Produktorientierte Leistungsverrechnung zielt darauf ab, die Vergleichbarkeit mit externen Anbietern zu ermöglichen und somit marktähnliche Verhältnisse zu schaffen.
+Dies ist besonders wichtig, wenn die IT-Abteilung ausgegliedert wird und externe Kunden bedient werden sollen.
+Die Methode beinhaltet die Bündelung von IT-Dienstleistungen wie Netzwerkressourcen, Serverkapazitäten und Supportleistungen zu vorab definierten Produkten (z.B. PC-Arbeitsplatz), die zu festen Preisen angeboten werden.
+\\
+Die Preisermittlung erfolgt entweder basierend auf den Kosten der Leistungserbringung oder im Vergleich zu Preisen ähnlicher externer Produkte.
+Die Verrechnung basiert auf der Anzahl der abgenommenen Produkte, was für den Kunden verständlicher und leichter zu kommunizieren ist, als eine direkte Leistungsverrechnung auf Basis technischer Parameter.
+\\
+Durch diese Produktbündelung tritt die Verursachergerechtigkeit zwar in den Hintergrund, doch die Kundenorientierung wird stark betont.
+Wenn die Produkte marktgerecht gestaltet sind, können externe Benchmarks Druck auf den IT-Bereich ausüben, effizient und wirtschaftlich zu arbeiten.
+Bei kostenorientierter Preisermittlung wird deutlich, wann die interne IT teurer ist als externe Anbieter. Marktpreisvorgaben führen bei höheren internen Kosten zu Unterdeckungen in der IT-Kostenstelle.\footcite[54\psqq]{schroederProduktorientierteITLeistungsverrechnungBei2007}
+
+\subsection{Abrechnungsmethoden für IT-Services}
+\subsubsection{Kostenbasierte Abrechnung}
+Die kostenbasierte Abrechnung ist eine der grundlegendsten Methoden zur Preisgestaltung und Abrechnung von IT-Services.
+Bei dieser Methode werden die tatsächlich anfallenden Kosten für die Bereitstellung eines IT-Services ermittelt und direkt an den Kunden weitergegeben.
+Diese Methode nutzt die vorhandenen Daten aus dem Rechnungswesen, um einen Verrechnungspreis zu bestimmen, der alle entstandenen Kosten deckt.
+Kostenbasierte Abrechnungsmethoden sind in der Regel leicht zu verwalten und bieten eine hohe Transparenz, da sie auf konkreten, nachvollziehbaren Kostengrößen basieren.\footcite[220]{weberEinfuhrungControlling2020}
+\\
+Ein Nachteil der kostenbasierten Abrechnung ist jedoch die Problematik der verursachungsgerechten Zurechnung von Gemeinkosten.
+Oftmals gelingt es nicht, die Gemeinkosten exakt den verursachenden Bereichen zuzuordnen, was dazu führen kann, dass Abteilungen mit Kosten belastet werden, für die sie nicht verantwortlich sind.\footcite[220]{weberEinfuhrungControlling2020}
+
+\subsubsection{Marktpreisbasierte Abrechnung}
+Die marktpreisbasierte Abrechnung setzt auf Verrechnungspreise, die sich an den Marktpreisen für vergleichbare externe Leistungen orientieren.
+Diese Methode wird besonders dann angewendet, wenn ein klar definierter externer Markt für die erbrachten IT-Services existiert und die Marktpreise leicht zugänglich sind.
+Der Vorteil dieser Methode liegt in ihrer Objektivität und Akzeptanz, da Marktpreise intersubjektiv überprüfbar sind und in der Regel nicht manipuliert werden können.\footcite[22\psq]{weberEinfuhrungControlling2020}
+\\
+Allerdings ist die Anwendung marktbasierter Verrechnungspreise an die Bedingung geknüpft, dass ein funktionierender und vergleichbarer Markt existiert.
+Ist dies nicht der Fall, so kann die marktpreisbasierte Abrechnung fehlerhafte oder ungenaue Ergebnisse liefern, die nicht den tatsächlichen wirtschaftlichen Bedingungen entsprechen.\footcite[220\psq]{weberEinfuhrungControlling2020}
+
+\subsubsection{Verhandlungsbasierte Abrechnung}
+Die verhandlungsbasierte Abrechnung bietet eine flexible Methode zur Festlegung von Verrechnungspreisen, insbesondere in dezentralen Organisationsstrukturen.
+Hierbei werden die Preise zwischen den beteiligten Abteilungen oder Geschäftsbereichen durch Verhandlungen festgelegt.
+Dies fördert die Autonomie der Geschäftsbereiche und motiviert die beteiligten Manager, da sie einen direkten Einfluss auf die Preisgestaltung haben.\footcite[222\psq]{weberEinfuhrungControlling2020}
+\\
+Jedoch birgt diese Methode auch Risiken, wie erhöhte Verhandlungskosten und die Gefahr von dysfunktionalem Verhalten, etwa durch die Vernachlässigung von Verbundeffekten aufgrund von Ressortegoismus.
+Solche Verhandlungen können zu suboptimalen Ergebnissen führen, die nicht im besten Interesse des Gesamtunternehmens liegen.\footcite[222\psq]{weberEinfuhrungControlling2020}
