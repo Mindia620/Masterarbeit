@@ -7,8 +7,13 @@ Um das \ac{itsm} in die Praxis umzusetzen gibt es unterschiedliche Ansätze.
 Eine häufig verwendete Sammlung von \glqq{}Best Practices\grqq{} ist die \ac{itil}.
 Sie ist ein Framework, welches  Ende der 1980er Jahre von der britischen Regierungsbehörde \ac{ccta} entwickelt wurde, um den reibungslosen IT-Einsatz in britischen Behörden zu gewährleisten.
 Nach der ersten Version folgte \ac{itil} V2, welches eine systematischere und konsolidierte Struktur einführt, die in acht Kernpublikationen unterteilt wurde.
-Mit \ac{itil} V3 wurde der gesamte Lebenszyklus von IT-Services detailliert beschrieben. Dabei sind die Phasen Strategie, Entwurf, Umsetzung und Betrieb inkludiert.
+Insbesondere die Publikationen Service Delivery und Service Support waren für die Anwender von besonderer Bedeutung.
+Die Prinzipien von \ac{itil} V2 gelten auch heute noch, jedoch wird meistens ac{itil} V3 oder V4 verwendet.
+Mit \ac{itil} V3 wurde der gesamte Lebenszyklus von IT-Services detailliert beschrieben.
+Dabei sind die fünf Publikationen Service Strategy, Service Design, Service Transition, Service Operation und Continual Service Improvement entstanden.
+Diese führen den \ac{itil} Service-Lifecycle ein, der in Anlehnung an die Methodik \glqq{}Plan-Do-Check-Act\grqq{} die Kompatibilität von \ac{itil} an den ISO-Standard 20000 (Service Management) erhöht.\footcite[]{ISOIEC200002}
 Die aktuelle Version, \ac{itil} V4, geht von einer präzisen Beschreibung von Prozessen über zu einer groberen Übersicht von notwendigen Prozessen, um auch die Entwicklung der modernen agilen Prozesse und DevOps Praktiken zu integrieren.
+Durch diesen ganzheitlichen Ansatz wurden die vorherig eingeführten Service-Lifecycle-Prozesse wieder entfernt.
 \ac{itil} wurde kontinuierlich weiterentwickelt und angepasst um den sich ändernden Anforderungen und Technologien im Bereich des \ac{itsm} gerecht zu werden.\footcite[5-13]{teubnerITServiceManagementNeues2008}
 
 \subsection{IT-Services}
@@ -16,7 +21,7 @@ Die aktuelle Version, \ac{itil} V4, geht von einer präzisen Beschreibung von Pr
 Bei IT-Services handelt es sich um Leistungen, die meist von einer IT-Abteilung erbracht werden und dem Unternehmen die Verwendung von IT-Ressourcen ermöglichen.
 Daher sind sie ein bedeutender Teil des \ac{itsm}.
 Oft sind die IT-Services spezifisch auf Unternehmen zugeschnitten, wenn Sie von internen IT-Abteilungen erbracht werden.
-Mittlerweile sind auch Standard IT-Services durch externe Partner erhätlich, wie etwa bei der Verwendung von Cloud Ressourcen.
+Mittlerweile sind auch Standard IT-Services durch externe Partner erhätlich, wie etwa bei der Bereitstellung von Cloud Ressourcen.
 \\
 In der fachlichen Diskussion gibt unterschiedliche Definitionen von IT-Services.
 Während \ac{itil} in der neuesten Ausgabe V4 IT-Services \footcite{axelosITILFoundationITIL2019} als Service basierend auf Informationstechnologie definiert, wird Berger\footcite[17]{bergerKonzeptionUndManagement2005} in seiner Definition detaillierter.
@@ -31,23 +36,39 @@ Teubner verwendet zur vereinfachten Darstellung Abbildung \ref{fig:itservicealse
 	\centering
 	\includegraphics[page={14},scale=0.6, keepaspectratio]{resources/images/Teubner_IT-Service als Egerbnis der Kombination von IT-Leistungen und IT-Ressourcen.png}
 	\caption{IT-Service als Ergebnis der Kombination von IT-Leistungen und IT-Ressourcen am Beispiel des IT-Service Arbeitsplatz\footcite[36]{teubnerITServiceManagementNeues2008}}
-	
+
 \end{figure}
 \label{fig:itservicealsergebnisderkombinationvonitleistungen}
+\footcite[36]{teubnerITServiceManagementNeues2008}
 \\
-Auf der Grundlage der Konzepte von Teubner und Berger die sich gegenseitig ergänzen, lassen sich IT-Services als Kombination aus der Bereitstellung und Nutzung von IT-Systemen, sowie der notwendigen IT-bezogenen Tätigkeiten definieren.
-Die Hinzunahme von Krcmars Definition legt Zusätzlich die Darstellung aus Kundensicht nahe, die die Möglichkeit haben, IT-Infrastrukturen, Anwendungen und Ressourcen zur Unterstützung ihrer Geschäftsprozesse zu nutzen, ohne die Verantwortung dafür übernehmen zu müssen.
+Auf der Grundlage der Konzepte von Teubner und Berger, lassen sich IT-Services als Kombination aus der Bereitstellung und Nutzung von IT-Systemen, sowie der notwendigen IT-bezogenen Tätigkeiten definieren.
+Mit dieser Basis lässt es sich durch die Hinzunahme der Definition von Krcmar festlegen, dass aus Kundensicht ein IT-Service einen ganzheitlichen Ansatz verfolgen muss.
+Die Kunden müssen die Möglichkeit haben, IT-Infrastrukturen, Anwendungen und Ressourcen zur Unterstützung ihrer Geschätsprozesse zu nutzen, ohne dafür die Verantwortung übernehmen zu müssen.
 
 
 \subsection{IT-Servicekatalog}
 \label{subsec:itservicekatalog}
-Um eine Übersicht aller IT-Services zu erhalten, werden IT-Servicekataloge verwendet.
+
+\textbf{An andere Stelle weiter hinten verschieben um Zusammenhang nich zu unterbrechen.}
+
+Damit die Kunden eine Übersicht über die Ihnen zum aktuellen Zeitpunkt angebotenen IT-Services erhalten können, werden IT-Servicekataloge verwendet.
 Krcmar erläutert, dass IT-Servicekataloge das Ziel verfolgen \glqq{}die von der IT-Abteilung angebotenen Leistungen für alle beteiligten Akteure verständlich abzubilden.\grqq{}\footcite[555]{krcmarInformationsmanagement2015}
 Dabei wird das Serviceangebot durch den Servicegeber verantwortet. Dieser kann einer interne IT-Abteilung sein oder ein externer IT-Dienstleister.
 \glqq{}Auf der Nachfrage-Seite steht der Servicenehmer.\grqq{}\footcite[555]{krcmarInformationsmanagement2015}
 Die Kommunikation der beiden Akteure erfolgt auf Basis des IT-Servicekatalogs. Dabei bestellt der Servicenehmer den benötigten Bedarf an IT-Services.
 Dieser wird dann durch den Servicegeber über die IT-Services bereitgestellt, unabhängig von der eigenen (internen) oder externen Erbringung der Leistung.\footcite[555]{krcmarInformationsmanagement2015}
 Zur anschaulichen Darstellung verwendet Krcmar\footcite[555]{krcmarInformationsmanagement2015} eine Abbildung aus seinem Paper \glqq{}Handlungsleitfaden IT-Services und IT-Servicekataloge für mittelständische Unternehmen.\grqq{}\footcite[19]{rudolphHandlungsleitfadenITServicesUnd2008}
+Darin werden die Beziehung der Akteure anschaulich dargestellt.
+Auf der Nachfrage Seite steht der Servicenehmer, der sowohl die Fachbereiche als auch die Geschäftsführung des Unternehmens, welches die Services bezieht, beinhaltet.
+Dieser erhält das aktuelle Angebot der IT-Services aus dem IT-Servicekatalog.
+Über diesen kann der Servicenehmer die IT-Services ebenfalls bestellent.
+Auf der Seite des Angebots steht der Servicegeber, hier intern.
+Dieser pflegt und aktualisert den IT-Servicekatalog.
+Zusätzlich kann er aus dem Katalog das benötigte IT-Servicespektrum ableiten.
+Auch hat er die Möglichkeit IT-Services über externe Partner zu beziehen.
+Dabei ist es wichtig /ac{sla} mit den externen Servicegebern zu vereinbaren.
+Auch interne /ac{sla} zwischen den Servicenehmern und dem Servicegeber müssen geschlossen werden um die Servicebereitstellung zu definieren.
+Zusätzlich werden zwischen Servicegeber und -nehmer Anforderungsänderungen abgestimmt.
 \begin{figure} [H]
 	\centering
 	\includegraphics[page={14},scale=0.5, keepaspectratio]{resources/images/Krcmar_Akteure im IT-Serviceverhältnis.png}
@@ -55,12 +76,15 @@ Zur anschaulichen Darstellung verwendet Krcmar\footcite[555]{krcmarInformationsm
 	\label{fig:akteureimitserviceverhältnis}
 \end{figure}
 
+
+
 \subsection{Managed Services und Management Services}
-Ein Managed Service beschreibt einen IT-Service, bei dem \glqq{}sowohl der Ressourceneinsatz als auch die Durchführung der Verrichtungen in den Händen des Service Providers liegen.\grqq{} (vgl. Abbildung \ref{fig:akteureimitserviceverhältnis})\footcite[38]{teubnerISSN14383985Print}.
-Dabei liegt die Wahl der IT-Betriebsmittel zur Erfüllung des IT-Services bei dem Service Provider.
+Entsprechend der Definition aus Kapitel \ref{subsec:itservices} ist die Kombination aus IT-Betriebsmitteln und Verrichtungen ein IT-Service.
+Wenn \glqq{}sowohl der Ressourceneinsatz als auch die Durchführung der Verrichtungen in den Händen des Service Providers liegen\grqq{}, dann handelt es sich um einen Managed Service (vgl. Abbildung \ref{fig:akteureimitserviceverhältnis})\footcite[38]{teubnerISSN14383985Print}.
+Dabei liegt die Wahl der IT-Betriebsmittel zur Erfüllung des IT-Services bei dem Servicegeber.
 Es erfolgt kein Einsatz von kundenseitigen Ressourcen zur Serviceerbringung.\footcite[38]{teubnerISSN14383985Print}
 \\
-Somit sind Managed IT-Services, IT-Services im engeren Sinne des ITSM und unterstreichen die Definition von Krcmar in Kapitel \ref{subsec:itservices}: "[...],dass der Kunde die vereinbarte Dienstleistung in der vereinbarten Qualität erhält ohne selbst die Verantwortung für bestimmte Kosten und Risiken tragen zu müssen."
+Somit sind Managed IT-Services, IT-Services im engeren Sinne des ITSM und unterstreichen die Definition von Krcmar: "[...],dass der Kunde die vereinbarte Dienstleistung in der vereinbarten Qualität erhält ohne selbst die Verantwortung für bestimmte Kosten und Risiken tragen zu müssen."
 \\
 In der Praxis kann es vorkommen, dass der Service Provider "Verrichtungen an der \ac{iis} des Kunden vornimmt und damit an fremden IT-Betriebsmitteln."\footcite[38]{teubnerISSN14383985Print}
 Somit leistet der Service Provider einen Beitrag zur Erbringung des gesamten IT-Services.
@@ -73,6 +97,9 @@ Während beim traditionellen Outsourcing IT-Betriebsmittel und Mitarbeiter volls
 Heute wird eher ein selektives Outsourcing einzelner Bereiche der \ac{iv} empfohlen. Eine spezifische Form dieses Ansatzes ist das Outtasking, bei dem gezielt nur einzelne Aufgaben (Tasks) fremd vergeben werden, ohne dass die IT-Betriebsmittel zum Dienstleister übergehen.
 
 \subsection{Differenzierung IT-Services und IT-Leistungen}
+
+\textbf{Diesen Teil wahrscheinlich in die Definition von IT-Services integrieren}
+
 Zarnekow, Brenner und Pilgram definieren IT-Services basierend auf dem betrieblichen Nutzen, den sie erzeugen.
 Sie betrachten IT-Services als \glqq{}Bündel von IT-Leistungen, mit deren Hilfe ein Geschäftsprozess oder ein Geschäftsprodukt des Leistungsabnehmers unterstützt und dort ein Nutzen erzielt wird.\grqq{}\footcite[18]{zarnekowIntegriertesInformationsmanagement2005}
 Diese Definition hebt die Rolle von IT-Services bei der Unterstützung und Optimierung von Geschäftsprozessen hervor.
@@ -108,6 +135,7 @@ Beispielsweise werden betriebliche Informationsressourcen über Anwendungssystem
 	\label{fig:wertschoepfungstiefederinformationsstruktur}
 \end{figure}
 
+\textbf{Hier passt es auch nicht}
 Teubner charakterisiert Managed Services durch folgende Eigenschaften:
 \begin{itemize}
     \item \glqq{}IT-Services werden unter Einsatz eines komplexen Bündels von IT-Betriebsmitteln und IT-bezogener Verrichtungen erbracht, die zusammen eine homogene Dienstleistung bereitstellen.\grqq{}\footcite[44]{teubnerISSN14383985Print}
@@ -170,17 +198,17 @@ Nur unter dieser Voraussetzung kann der Kunde die Inanspruchnahme von Services s
 
 \subsection{Service Level Agreements}
 \label{subsec:sla}
-\glqq{}Ein \ac{sla} ist eine schriftliche, messbare Vereinbarung zwischen einem IT-Serviceprovider und einem IT-Kunden über die Pflichten, Rechte und Konditionen bezüglich der Erbingung eines spezifischen IT-Service.\grqq{}\footcite[560]{krcmarInformationsmanagement2015} 
+\glqq{}Ein \ac{sla} ist eine schriftliche, messbare Vereinbarung zwischen einem IT-Serviceprovider und einem IT-Kunden über die Pflichten, Rechte und Konditionen bezüglich der Erbingung eines spezifischen IT-Service.\grqq{}\footcite[560]{krcmarInformationsmanagement2015}
 Dabei liegt die Standardisierung und Messung der Qualität der erbrachten Dienstleistungen im Vordergrund.
 Eine Unterscheidung von \ac{sla} im engeren Sinne und weiteren Sinne ist möglich, wird meistens aber vermieden.
 Dabei enthält ein \ac{sla} im weiteren Sinne, sowohl die Definition des Inhaltes, den Umfang der Leistung als auch die Definition der einzelnen Servicelevel und der drohenden Sanktionen bei Nichteinhalten des \ac{sla}.
-Ein \ac{sla} im engeren Sinne beschreibt lediglich die Service Level und die davon abhängigen Sanktionen.\footcite[560\psq]{krcmarInformationsmanagement2015} 
+Ein \ac{sla} im engeren Sinne beschreibt lediglich die Service Level und die davon abhängigen Sanktionen.\footcite[560\psq]{krcmarInformationsmanagement2015}
 \\
 Um die \ac{sla}s einhalten zu können, muss es ebenfalls möglich sein, diese zu erheben.
 Dabei ist es unerlässlich, die dafür erforderlichen Messgrößen, Messmethoden und Erhebungszeiträume zu definieren.
 Die hierfür möglichen Kombinationen sind endlos.
 Es können zum Beispiel Reaktionszeiten, Bearbeitungszeiten, aber auch Personalaufwände oder Verfügbarkeiten als Messgrößen verwendet werden.
-Nach Krcmar lassen sich \ac{sla} in drei Arten unterscheiden:\footcite[561]{krcmarInformationsmanagement2015} 
+Nach Krcmar lassen sich \ac{sla} in drei Arten unterscheiden:\footcite[561]{krcmarInformationsmanagement2015}
 \begin{itemize}
 	\item Outputorientierte Service Level: Dabei werden Anforderungen an die Qualität der Leistungen definiert.
 	\item Prozessbezogene Service Level: Hier wird der Leistungserstellungsprozess in den Vordergrund gesetzt und die Anforderungen daran definiert.
@@ -190,9 +218,11 @@ Nach Krcmar lassen sich \ac{sla} in drei Arten unterscheiden:\footcite[561]{krcm
 \section{Abrechnung und Kalkulation von IT-Services}
 \label{2:abrechnungundkalkulation}
 Im folgenden Kapitel werden die Möglichkeiten zur Abrechnung und Kalkulation von IT-Services dargestellt.
-\subsection{Kalkulationsmethoden: Welche Methoden gibt es zur Kalkulation von IT Services (z.B. Kostenstellenrechnung, Prozesskostenrechnung)?}
+\subsection{Welche Methoden gibt es zur Kalkulation von IT Services (z.B. Kostenstellenrechnung, Prozesskostenrechnung)?}
 \label{subsec:Kalkulationsmethoden}
-In der Literatur werden unterschiedliche Möglichkeiten zur Leistungsverrechnung der IT-Kosten diskutiert.
+In der Literatur werden unterschiedliche Möglichkeiten zur Leistungsverrechnung der IT-Services diskutiert.
+
+\textbf{needs complete rework}
 \subsubsection{Umlageverfahren}
 Die reine Kostenumlage ist besonders durch ihre einfache und schnelle Umsetzbarkeit gekennzeichnet.
 IT-Kosten werden dabei pauschal anhand von Bezugsgrößen wie der \glqq{}Anzahl der Arbeitsplatzrechner\grqq{} oder der \glqq{}Anzahl der Anwender\grqq{} verteilt.
@@ -262,3 +292,5 @@ Dies fördert die Autonomie der Geschäftsbereiche und motiviert die beteiligten
 \\
 Jedoch birgt diese Methode auch Risiken, wie erhöhte Verhandlungskosten und die Gefahr von dysfunktionalem Verhalten, etwa durch die Vernachlässigung von Verbundeffekten aufgrund von Ressortegoismus.
 Solche Verhandlungen können zu suboptimalen Ergebnissen führen, die nicht im besten Interesse des Gesamtunternehmens liegen.\footcite[222\psq]{weberEinfuhrungControlling2020}
+
+\textbf{Inkludiere hier Erläuterungen zum Thema Controlling, Kostenstellen und Profic vs. Cost Center oder lieber in Kapitel 3}
