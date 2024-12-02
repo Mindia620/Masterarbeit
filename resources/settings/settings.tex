@@ -110,3 +110,45 @@ backend=biber]{biblatex}
 \usepackage[export]{adjustbox}
 
 \usepackage{comment}
+
+\usepackage{amssymb}% for the \blacktriangleleft symbol
+\usepackage[dvipsnames]{xcolor}
+
+\colorlet{Interviewer}{BurntOrange}
+\colorlet{Interviewee}{ForestGreen}
+
+\NewDocumentCommand{\Comment}{ O{Interviewer} +m }{
+    \colorbox{#1}{%
+        Comment: #2%
+    }    
+}
+
+\def\Interviewer{%
+    \item[%
+        \color{Interviewer}%
+        \( \blacktriangleright \) %
+        Nick Stelzer%
+    ]%
+    \def\Interviewer{%
+        \item[%
+            \color{Interviewer}%
+            \( \blacktriangleright\)%
+        ]
+    }
+}
+\def\Interviewee{%
+    \item[%
+        \color{Interviewee}%
+        \( \blacktriangleleft \) %
+        Leitung Controlling%
+    ]%
+    \def\Interviewee{%
+        \item[%
+            \color{Interviewee}%
+            \( \blacktriangleleft \)%
+        ]%
+    }%
+}
+\NewDocumentCommand{\Other}{ O{SkyBlue} m }{%
+    \item[\color{#1} #2]%
+}
