@@ -390,12 +390,83 @@ Solche Verhandlungen können zu suboptimalen Ergebnissen führen, die nicht im b
 \newpage
 % Kapitel 4
 \section{Beurteilung des ITSM im Hinblick auf die IT-Kosten- und Leistungsrechnung}
-Die klassische \ac{it-klr} basiert in vielen Unternehmen auf traditionellen Methoden der Kostenstellen- und Umlageverfahren.
-Diese Modelle stoßen zunehmend an ihre Grenzen, da sie oft nicht die tatsächliche Nutzung von IT-Services widerspiegeln und eine verursachungsgerechte Kostenzuordnung erschweren.
-Das \ac{itsm} stellt einen methodischen Ansatz zur Steuerung und Optimierung von IT-Dienstleistungen dar und bietet zahlreiche Ansätze zur Verbesserung der \ac{it-klr}.
-In diesem Kapitel wird untersucht, inwiefern \ac{itsm} eine präzisere, transparentere und steuerbare \ac{it-klr} ermöglicht.
+Die Kosten- und Leistungsrechnung (KLR) dient dazu, Kostenaufschlüsselungen und Effizienz in Unternehmen transparent zu machen.
+In der IT-Branche haben Controller oft die Aufgabe, die Zuordnung von IT-Kosten nach Verursachung zu bewältigen und die Vorteile von IT-Services transparent zu machen.
+\ac{itsm}-Frameworks wie \ac{itil} und COBIT (Control Objectives for Information and Related Technology) liefern Methoden, um IT-Services zu bestimmen und zu kontrollieren.
+Ein professionelles \ac{itsm} sorgt für Transparenz bei Leistung und Kosten, was entscheidend für Geschäftsentscheidungen ist.
+Es wird untersucht, wie \ac{itsm}-Frameworks zur Verbesserung der \ac{it-klr} beitragen, welche positiven Aspekte sich daraus ergeben, wie eine praktische Integration erfolgen kann und welche potenziellen Gefahren bestehen.
 
-\subsection{ITSM als Rahmen für eine  IT-KLR}
+\subsection{ITSM-Frameworks als Hebel für die KLR-Optimierung}
+\ac{itil} beinhaltet spezifische Prozesse für das IT-Finanzmanagement, die die Bereiche Budgetierung, Buchhaltung und Leistungsverrechnung umfassen.
+Ein Aspekt dieses Prozesses beinhaltet die Festlegung der notwendigen Strukturen für das Management von Budget- und Kostendaten sowie die Bestimmung der Verteilung der Kosten auf einzelne IT-services.
+Dadurch wird die bestehende  erweitert \ac{it-klr} – weg von rein technischen Kostenstellen hin zu Services als Kostenträger.
+\ac{itil} verlangt eine klare und gerechte Zuordnung der IT-Kosten zu genau festgelegten Services im Sinne der Serviceorientierung.
+Diese Ausrichtung ermöglicht es, IT-Bereiche wie ein Service-Center oder Profit-Center zu steuern​, was für eine marktorientierte Kostenrechnung essentiell ist.\footcite[100]{axelosITILFoundationITIL2019}
+\\
+Das Governance-Rahmenwerk COBIT legt besonderen Wert darauf, dass IT-Ressourcen effektiv genutzt und die Ziele des Unternehmens mit den IT-Zielen in Einklang gebracht werden.
+COBIT bietet speziell Richtlinien für die Modellierung und Zuweisung von Kosten.
+Ein Beispiel für die Fokussierung von COBIT liegt im Prozess APO06.04 („Model and Allocate Costs“), wo die klare Zuordnung von Kosten zu Aktivitäten und Services betont wird.\footcite{COBITAPO0604Model2024}
+Die Einhaltung dieser Vorgaben optimiert den Prozess der Kostenzuweisung, erhöht die finanzielle Transparenz und erleichtert die fundierte Entscheidungsfindung bezüglich der Ressourcenverteilung.
+COBIT verlangt außerdem, dass Kostenzuweisungsstrategien an die Unternehmensziele angepasst und regelmäßig überprüft werden - das bedeutet eine fortlaufende Optimierung der \ac{it-klr}.
+
+\subsection{Vorteile von ITSM für die Kosten- und Leistungsrechnung}
+Mithilfe der Verknüpfung von \ac{itsm}-Prinzipien mit der \ac{it-klr} können einige Vorteile für Unternehmen erreicht werden.
+Durch die Verwendung von klar definierten IT-Services, werden diese messbar.
+Dies ermöglicht eine präzise Nachverfolung und Zuodrdnung der IT-Kosten pro Service.
+Die Verwendung von Praktiken des \ac{itsm} fördert die Planung, Überwachung und Optimierung von genutzten IT-Ressourcen, welche bei einer Umsetzung zu einer präziseren Kostenkontrolle und einer insgesamt optimierten Kostenstruktur führen kann.
+\\
+Zudem kann der Wertbeitrag der IT-Services zum Unternehmen sichtbar gemacht werden und so der jeweilige Nutzen für interne oder externe Kunden den Aufwendung gegenüber gestellt werden.
+Mithilfe dieser können bessere Entscheidungen über das Service-Portfolio einer IT-Abteilung getroffen werden. Dies wird durch die Darstellung des Beitrags der IT-Services zum Geschäftsergebnis ermöglicht.
+Dadurch werden nicht nur die IT-Kosten ersichtlich, sondern es können Leistungskennzahlen abgeleitet werden, welches ein ganzheitliches Controlling ermöglicht.
+\\
+Ein großer Vorteil ist die verursachungsgerechte Allokation von Kosten.
+Statt IT-Kosten pauschal über Köpfe oder Umsatz zu verteilen, werden sie mithilfe der Kennzahlen aus den in Anspruch genommenen IT-Services verteilt.
+Dadurch wird jeder IT-Services zu einem Kostenträger mit zugehörigen Einzel- und Gemeinkosten.
+Beispielsweise können so die \plqq{}Stückkosten pro IT-Service\prqq{} ermittelt werden.\footcite[70]{teubnerISSN14383985Print}
+\\
+Zusätzlich verfolgt das \ac{itsm} eine Standardisierung und Optimierung von IT-Prozessen.
+Dadurch werden Doppelarbeiten reduziert und Abläufe effizienter, wodurch letztlich die Kosten sinken.
+Auch die Kultur der kontinuierlichen Verbesserung des \ac{itsm} fördert die Suche nach Optimierungspotenzialen.
+Dadurch können IT-Ressourcen besser verwendet werden und die IT-Kosten im Rahmen gehalten werden.
+\\
+Ein häufig vernachlässigter Vorteil besteht darin, dass die IT stärker auf die Ziele des Unternehmens ausgerichtet ist.
+\ac{itsm}-Frameworks, gewährleisten, dass finanzielle Indikatoren der IT (wie Kosten, ROI und Wertbeitrag) in einer für das Management verständlichen Sprache vermittelt werden.
+Die Kosten- und Leistungsrechnung wird dadurch zu einem gemeinsamen Instrument von IT und Management, um die Rolle der IT am Unternehmenserfolg zu lenken.
+Durch die klare Zuordnung der Kosten zu den damit verbundenen Vorteilen können IT-Investitionsentscheidungen besser gerechtfertigt werden.
+Dies führt auch dazu, dass die Fachabteilungen die IT-Kosten besser verstehen und akzeptieren können.
+\\
+Zusammenfgefasst bietet \ac{itsm} einen Ordnungsrahmen, um IT-Kosten transparent, verantwortbar und in Relation zur erbrachten Leistung darzustellen.
+Organisationen erhalten dadurch eine belastbare Grundlage für IT-interne Controllung und strategische Entscheidungen.
+
+\subsection{Herausforderungen und Risiken bei der Implementation}
+Es gibt trotz der Potenziale auch Herausforderungen und Risiken bei der Umsetzung einer \ac{it-klr} basierend auf \ac{itsm}-Grundlagen.
+\\
+Viele Unternehmen stellen fest, dass ihre vorhandene \ac{it-klr} nicht detailliert genug für IT-Services ist.
+Forschungen belegen, dass selbst bei Nutzern von \ac{itil} häufig keine Kosten- und Leistungsrechnung vorhanden ist, die es ermöglichen würde, die \plqq{}Stückkosten der IT-Services zu berechnen\prqq{}.
+In der Regel werden durch die Implementierung von \ac{itsm} zunächst Defizite in der Kostenrechnung offensichtlich.
+Es könnte passieren, dass die erwünschten Transparenzeffekte nicht eintreten, wenn die \ac{it-klr} nicht entsprechend angepasst wird.
+Der alleinige Einsatz von \ac{itsm} garantiert keinen Erfolg - die notwendigen Prozesse für die IT-Kostenrechnung müssen aktiv ausgearbeitet werden.\footcite[70]{teubnerISSN14383985Print}
+\\
+Zudem sollte die Bedeutung der organisatorischen Veränderung nicht unterschätzt werden.
+\ac{itsm} und eine transparente \ac{it-klr} führen dazu, dass auf einmal Leistungen und Ausgaben sichtbar werden.
+Es besteht die Möglichkeit, dass auf Ablehnung gestoßen wird - IT-Personal befürchtet mehr Überwachung, während Fachabteilungen die interne Abrechnung infrage stellen.
+Auch die Verantwortlichkeiten ändern sich: Service-Verantwortliche müssen zukünftig sowohl das Budget als auch die Leistung verantworten.
+Wenn kein change Management durchgeführt wird, besteht die Gefahr, dass die Prozesse nur theoretisch existieren oder sogar aktiv behindert werden.
+\\
+Ein weiteres Risiko besteht in der Datenqualität der verwendeten Daten für die \ac{it-klr}.
+Um diese ausreichend mit Daten zu versorgen, werden große Datenmengen benötigt, wie etwa Asset-Daten, Nutzungsstatistiken und Time-Tracking-Daten.
+Unpräzise oder fehlende Informationen können zu inkorrekten Ergebnissen führen und das Vertrauen stark beeinträchtigen.
+Des Weiteren ist die Frage nach der Granularität entscheiden.
+Ein zu hoher Detaillierungsgrad führt zu einer hohen Komplexität und steigert die Kosten des Systems, während ein zu grober Detaillierungsgrad wenig Mehrwert liefert.
+Um das angemessene Level zu bestimmen, ist es notwendig, Erfahrung zu sammeln und gegebenenfalls während des laufenden Betriebs Anpassungen vorzunehmen.
+
+\subsection{Fazit}
+Die Untersuchung verdeutlicht, dass das \ac{itsm} einen beträchtlichen Nutzen für die Kosten- und Leistungsrechnung haben kann.
+Mithilfe von \ac{itsm}können IT-Services effizient als wirtschaftliche Einheiten gelenkt werden, um eine klare Transparenz über Kosten und Nutzen zu schaffen.
+Die \ac{it-klr} wird dadurch aussagekräftiger und unterstützt das Management bei Entscheidungen über IT-Budgets und -Investitionen
+Jedoch tritt dieser Vorteil nicht von selbst auf, sondern erfordert eine sorgföltige Umsetzung, um realisiert zu werden.
+
+\begin{comment}
 \ac{itsm} beruht auf dem Konzept, IT-Services als eindeutig festgelegte, quantifizierbare und kontrollierbare Dienstleistungen anzubieten.
 Eine bedeutende Schwierigkeit bei herkömmlichen IT-Kosten- und Leistungsrechnungen liegt darin, dass IT-Services oft nicht als Dienstleistungen, sondern als interne Betriebskosten angesehen werden.
 Das hat zur Folge, dass die Kostenstruktur und die wirtschaftliche Steuerung der IT undurchsichtig werden.
@@ -469,3 +540,4 @@ Unternehmen können ihre IT-Ressourcen effizienter nutzen, indem sie eine verbes
 Es ist jedoch wichtig, die IT-Kosten ganzheitlich zu betrachten, eine Servicedokumentation zu haben und eine enge Zusammenarbeit zwischen der IT-Abteilung, dem Controlling und den internen Kunden sicherzustellen.
 \\
 Diese Arbeit belegt, dass \ac{itsm} als strategisches Instrument zur Steuerung moderner IT-Kostenmodelle dient und langfristig zu gesteigerter Effizienz, Transparenz und Kostenkontrolle führt.
+\end{comment}
