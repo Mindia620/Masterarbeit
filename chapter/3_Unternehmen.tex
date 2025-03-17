@@ -1,5 +1,6 @@
 \newpage
 \section{Anwendung auf den Fall SARIA}
+\subsection{Ist-Zustand der IT-Kosten- und Leistungsrechnung bei SARIA}
 \subsubsection{Unternehmensprofil}
 Die SARIA-Gruppe, ein international operierendes Unternehmen mit Sitz in Selm, Deutschland, ist auf die Verwertung tierischer Nebenprodukte und organischer Reststoffe spezialisiert.
 Mit über 13.000 Mitarbeitern und mehr als 200 Standorten in 26 Ländern verbindet SARIA traditionelle Werte mit globaler Präsenz.
@@ -9,64 +10,86 @@ Die nachfolgende Analyse der IT-KLR beschränkt sich auf die deutschen Aktivitä
 Die IT-Kostenverrechnung bei SARIA basiert auf einem hybriden Modell, das Elemente der Kostenstellenrechnung und erste Ansätze einer Leistungsverrechnung integriert.
 Direkte Kosten, wie etwa Softwarelizenzen, werden spezifischen Abteilungen zugerechnet, während indirekte Kosten (z. B. Personalkosten, Hardware, Outsourcing) über einen pauschalen Verteilungsschlüssel auf die Tochtergesellschaften umgelegt werden.
 Dieser Schlüssel orientiert sich an der Anzahl der User-Accounts (Windows, ERP, Rechnungswesen) und wird im Rahmen der jährlichen Budgetplanung festgelegt, wobei die Verrechnung monatlich mit einem fixen Betrag erfolgt.\footnote{Interview mit Leiter Controlling in Anhang \ref{appendix:interviewcontrolling}}
-
-\subsection{Potenziale einer serviceorientierten IT-Kosten- und Leistungsrechnung für SARIA}
-Die Einführung einer serviceorientierten \ac{it-klr} bietet SARIA erhebliche Potenziale und Verbesserung der Kostensteuerung, Erhöhung der Transparenz und wirtschaftlichen Nutzung von IT-Ressourcen.
-Durch den Wechsel von einer pauschalen Umlage der IT-Kosten hin zu einer verursachungsgerechten, leistungsbezogenen Verrechnung kann SARIA nicht nur die betriebswirtschaftliche Effizienz der IT steigern, sondern auch eine bessere Kosten-Nutzen-Relation für die Fachbereiche schaffen.
-
-\subsubsection{Verbesserte Kostentransparenz durch einen IT-Servicekatalog}
-Ein wesentliches Potenzial der serviceorientierten \ac{it-klr} besteht in der Erhöhung der Transparenz von IT-Kosten.
-Gegenwärtig sind die IT-Kosten bei SARIA nur schwer nachvollziehbar, da sie auf pauschalen Verrechnungsschlüsseln basieren.
-Dies führt dazu, dass Fachbereiche die IT-Kosten als nicht steuerbaren Fixposten wahrnehmen.
-Durch die Einführung eines IT-Servicekatalogs können IT-Dienstleistungen standardisiert und mit klaren Preisstrukturen versehen werden.
 \\
-Mit einem IT-Servicekatalog lassen sich IT-Kosten in unterschiedliche Leistungspakete aufgliedern.
-Darunter können unter anderem sein, \ac{zb} Basis-IT-Dienste wie E-Mail, IT-Arbeitsplatz mit festen monatlichen Kosten pro Nutzer, aber auch individuelle Anwendungen mit Lizenzmodellen oder Speicher- und Rechenressourcen, die über tatsächlich verbrauchtem Speicherplatz oder CPU-Zeit berechnet werden.
-\\
-Mithilfe eines solchen Modells ist es für die Fachbereiche möglich, nachvollziehbar einzusehen, welche IT-Dienste sie nutzen und welche Kosten damit verbunden sind, wodurch die Planbarkeit und Steuerbarkeit von IT-Ausgaben deutlich verbessert wird.
+Das aktuelle Verfahren offenbart mehrere Schwächen, die im Folgenden dargestellt werden.
+Durch die pauschale Verteilung der IT-Kosten ergibt sich keine klare Verknüpfung zwischen den angefallenen Kosten und den tatsächlich erbrachten Dienstleistungen, sodass den Abteilungen ein Verständnis für die Kostenstruktur fehlt.
+Ferner berücksichtigt die Abrechnungsmethode nicht die tatsächliche Inanspruchnahme von IT-Dienstleistungen, was eine ungleiche finanzielle Belastung zur Folge hat und Abteilungen mit hoher Nutzung im Vergleich zu solchen mit geringer Nutzung unverhältnismäßig benachteiligt oder begünstigt.
+Ohne präzise Daten zu den erbrachten Leistungen ist zudem eine zielgerichtete Optimierung der IT-Ressourcen nicht realisierbar, wodurch eine ineffiziente Ressourcennutzung droht.
 
-\subsubsection{Verursachungsgerechte IT-Kostenverrechnung}
-Ein weiteres zentrales Potenzial besteht in der besseren Zuweisung von IT-Kosten an die tatsächlichen Verursacher.
-In der aktuellen Kostenstruktur trägt jede Abteilung einen pauschalen Anteil an den IT-Kosten, unabhängig davon, wie intensiv die IT-Services genutzt werden.
-Dies führt dazu, dass stark IT-abhängige Geschäftsbereiche dieselben IT-Kosten tragen wie Bereiche mit geringem IT-Bedarf.
-\\
-Durch eine leistungsbezogene \ac{it-klr} könnte SARIA stattdessen eine nutzungsunabhängige Verrechnung implementieren.
-Dabei könnten Helpdesk-Dienste nach Anzahl der Supportfälle oder gelösten Tickets abgerechnet werden.
-Vorstellbar ist auch die Abrechnung von Software-Lizenzen nach aktiven Nutzern oder Laufzeiten.
-\\
-Diese verursachungsgerechte Zuweisung führt dazu, dass IT-Kosten nicht mehr als unvermeidlicher Fixaufwand erscheinen, sondern als steuerbare Variable, die durch Entscheidungen der Fachbereiche beeinflusst werden kann.
+\subsection{Potenziale des ITSM für die IT-KLR bei SARIA}
+\ac{itsm} bietet einen methodischen Rahmen, um die identifizierten Defizite der aktuellen \ac{it-klr} bei SARIA zu adressieren.
 
-\subsubsection{Kostenbewusstsein und Anreiz zur effizienten IT-Nutzung}
-Ein weiterer Vorteil einer serviceorientierten \ac{it-klr} liegt in der Bewusstseinsbildung bei den Fachbereichen hinsichtlich ihres IT-Konsums.
-In einem pauschalen Umlagemodell gibt es keine direkten Anreize, IT-Ressourcen effizient zu nutzen.
-Fachbereiche nehmen IT-Leistungen in Anspruch, ohne deren tatsächliche Kosten oder wirtschaftlichen Nutzen genau zu kennen.
+\subsubsection{Verbesserung der Kostentransparenz}
+Eine der zentralen Maßnahmen zur Optimierung der IT-KLR besteht in der Einführung eines IT-Servicekatalogs.
+Durch eine strukturierte Erfassung und Normierung der verfügbaren IT-Services können die Abteilungen präzise nachvollziehen, welche IT-Services sie in Anspruch nehmen und welche Ausgaben damit verbunden sind.
+Jeder Service sollte eine eindeutige Preisstruktur erhalten, die es ermöglicht, die IT-Kosten in verschiedene Leistungspakete aufzuteilen.
 \\
-Mit einem leistungsbasierten IT-Kostenmodell werden Fachbereiche jedoch direkt für ihre IT-Nutzung verantwortlich.
-Dementsprechend müssen Abteilungen, die viel Speicherplatz benötigen, höhere Kosten als jene mit geringem Bedarf zahlen.
-Ebenfalls können so unbenutzte oder ineffizient verwendete IT-Ressourcen identifiziert und so Einsparpotenziale aufgezeigt werden.
+Beispielsweise könnte ein Standard-IT-Arbeitsplatz, bestehend aus einem Laptop, Betriebssystem, Office-Anwendungen und Helpdesk-Support, als eine fixe monatliche Pauschale abgerechnet werden.
+Im Gegensatz dazu könnten variable IT-Ressourcen wie Cloud-Speicher oder Computing-Power auf Basis des tatsächlichen Verbrauchs verrechnet werden.
+
+\subsubsection{Verursachungsgerechte Kostenverrechnung durch ITSM}
+Um die gegenwärtigen Verteilungsprobleme zu lösen, wäre es ratsam, wenn SARIA ein System einführen würde, bei dem die IT-Kosten entsprechend der Leistung verrechnet werden.
+Die Kosten der IT-Abteilung würden nicht mehr pauschal berechnet, sondern basierend auf den tatsächlich erbrachten IT-Services den einzelnen Fachabteilungen zugeordnet.
 \\
-Erfahrungen aus anderen Unternehmen zeigen, dass die Einführung einer differenzierten IT-Kostenverrechnung dazu führt, dass Fachbereiche kritischer hinterfragen, welche IT-Services sie wirklich benötigen, was insgesamt zu einer wirtschaftlicheren IT-Nutzung führt.
+Die Abrechnung des IT-Helpdesks könnte anhand der Anzahl der behandelten Tickets erfolgen, während die Zuweisung der Kosten für Softwarelizenzen auf der Anzahl der tatsächlich aktiven Nutzer pro Monat basiert.
+Dadurch könnten Fachbereiche, die viele IT-Services nutzen, einen höheren Anteil der IT-Kosten übernehmen, während andere Abteilungen finanziell entlastet werden.
 
-\subsubsection{Flexibilität durch differenzierte IT-Servicemodelle}
-Ein weiterer Vorteil einer serviceorientierten \ac{it-klr} ist die Flexibilisierung der IT-Kosten.
-Statt IT-Kosten als starres Budget zu betrachten, kann SARIA mithilfe des \ac{itsm} ein Modell etablieren, bei dem IT-Services skalierbar und bedarfsgerecht angepasst werden können.
+\subsubsection{Effizientere Ressourcennutzung}
+Ein weiterer Vorteil eines \ac{itsm}-gestützten Modells liegt in der verbesserten Steuerung der IT-Ressourcen.
+Durch die exakte Erfassung der Nutzung von IT-Services können Engpässe und ineffiziente Ressourcennutzung identifiziert werden.
+Die IT-Abteilung von SARIA könnte so beispielsweise feststellen, ob bestimmte IT-Services unter- oder überbeansprucht sind und darauf mit Kapazitätsanpassungen reagieren.
+
+\subsubsection{Schaffung eines fundierten Entscheidungsinstruments}
+Eine detailliertere IT-Kosten- und Leistungsrechnung würde es den Führungskräften ermöglichen, gut informierte Investitionsentscheidungen zu treffen.
+Mithilfe von realistischen Kosteninformationen könnte SARIA beispielsweise analysieren, wie sich eine verstärkte Digitalisierung bestimmter Prozesse finanziell auswirken würde.
+
+\subsubsection{Optimierung des IT-Service-Managements durch ITIL}
+SARIA hat bereits einige Anregungen von ITIL übernommen, was zu den ersten Grundlagen für eine strukturierte IT-Kosten- und Leistungsrechnung führt.
+Eine verstärkte Anwendung der ITIL-Prozesse könnte dazu führen, dass Budgetierung, Leistungsverrechnung und Buchhaltung weiter vereinheitlicht werden, um eine erhöhte Transparenz der Kosten zu erreichen.
+
+\subsection{Herausforderungen und Hindernisse der Implementierung}
+\subsubsection{Hoher Implementierungsaufwand}
+Ein bedeutendes Problem bei der Implementierung einer umfassenden IT-Kosten- und Leistungsrechnung ist der hohe anfängliche Aufwand.
+Es bedarf einer beträchtlichen Menge an Personal und Zeit, um die IT-Services zu erfassen und zu kategorisieren, sowie ein Abrechnungsmodell zu entwickeln.
+Besonders schwierig ist es, die klare Zuordnung von IT-Kosten zu individuellen Nutzern oder Abteilungen zu gewährleisten.
+
+\subsubsection{Unzureichende Datengrundlage}
+Derzeit existieren bei SARIA kaum detaillierte Kennzahlen zur Nutzung von IT-Services.
+Es ist herausfordernd, eine angemessene IT-Kosten- und Leistungsrechnung einzurichten, wenn keine solide Datengrundlage vorhanden ist.
+Es wäre möglich, zunächst schrittweise Monitoring-Mechanismen in das \ac{itsm}-Tool zu integrieren, um eine Grundlage für künftige Abrechnungsmodelle zu schaffen.
+Dies kann zum Beispiel durch die Dokumentation und Auswertung der von den Anwendern angefragten 
+
+\subsubsection{Akzeptanz innerhalb der Organisation}
+Die Einführung eines detaillierteren \ac{it-klr}-Systems kann auf Widerstand in der Organisation stoßen.
+Insbesondere Fachabteilungen könnten Bedenken haben, dass sie künftig höhere IT-Kosten tragen müssen oder die Abrechnung zu kompliziert wird.
+Ein schrittweiser Rollout mit transparenter Kommunikation der Vorteile könnte hier für eine höhere Akzeptanz sorgen.
+Ebenfalls sollten Schulungen und Infoveranstaltungen gehalten werden, um möglichst viele Fachbereiche in der Transformation mitzunehmen.
+
+\subsubsection{Globale Struktur von SARIA}
+Die Globalisierung der IT-Abteilung stellt eine weitere Herausforderung dar.
+Eine pauschale Umlage der IT-Kosten über Länder hinweg wird zunehmend unpraktikabel.
+Gleichzeitig sind nicht alle Länder bereits in das \ac{itsm}-Tool integriert, was eine einheitliche Umsetzung erschwert.
+Die \ac{it-klr} müsste daher länderspezifische Besonderheiten berücksichtigen und mit der geplanten \ac{itsm}-Einbindung abgestimmt werden.
+
+\subsection{Handlungsempfehlungen und Fazit}
+
+\subsubsection{Schrittweise Einführung eines differenzierten IT-KLR-Modells}
+Angesichts der hohen Komplexität empfiehlt sich eine schrittweise Implementierung der \ac{itsm}-gestützten \ac{it-klr}.
+Ein pragmatischer Ansatz könnte darin bestehen, zunächst nur ausgewählte IT-Services, wie ERP und IT-Arbeitsplatz, detaillierter zu erfassen und abzurechnen.
+Auf Basis dieser Erfahrungen könnte die \ac{it-klr} sukzessive erweitert werden.
+\subsubsection{Nutzung von ITSM zur Datenerhebung}
+Da bereits ein ITSM-Tool im Einsatz ist, könnte dieses gezielt genutzt werden, um IT-Kennzahlen zu erfassen.
+Dies würde es SARIA ermöglichen, ohne größere Zusatzaufwände eine fundierte Datenbasis für die \ac{it-klr} aufzubauen.
+\subsubsection{Transparente Kommunikation und Schulungen}
+Um Akzeptanz innerhalb der Organisation zu fördern, sollte die Einführung einer neuen \ac{it-klr} eng mit den betroffenen Abteilungen abgestimmt werden.
+Workshops oder Schulungen könnten helfen, die Vorteile der neuen Kostenrechnungsmethode zu vermitteln und Widerstände abzubauen.
+\subsubsection{Anpassung an die globalisierte IT-Struktur}
+Da SARIA sich in einem Transformationsprozess zu einer globalisierten IT-Abteilung befindet, sollte das \ac{it-klr}-Modell flexibel genug sein, um länderspezifische Unterschiede zu berücksichtigen.
+Ein hybrider Ansatz, der pauschale und nutzungsbasierte Abrechnungen kombiniert, könnte hier eine praktikable Lösung darstellen.
+Dabei kann über den Verlauf der Einführung die Pauschale gesenkt werden.
 \\
-Ein möglicher Ansatz wäre die Einführung von IT-Service-Paketen mit unterschiedlichen Leistungsniveaus:
-\begin{itemize}
-	\item Standard-IT-Services: Grundlegende IT-Servics mit niedrigen Kosten (\ac{zb} Basis-Support mit 48h-Reaktionszeit)
-	\item Premium-IT-Services: Erweiterte IT-Services mit schnellerer Unterstützung (\ac{zb} 24/7-Support mit garantierter 4h-Reaktionszeit)
-	\item On-Demand-Services: Flexibel buchbare IT-Ressourcen für kurzfristigen Bedarf (\ac{zb} zusätzliche Serverkapazität für ein Datenanalyseprojekt)
-\end{itemize}
-
-Ein solches Modell ermöglicht es Fachbereichen, ihre IT-Kosten aktiv zu steuern, indem sie zwischen unterschiedlichen Service-Levels wählen und nur die IT-Ressourcen bezahlen, die sie auch tatsächlich benötigen.\footcite[58-60]{schroederProduktorientierteITLeistungsverrechnungBei2007}
-
-\subsubsection{Fazit: Optimierungspotenziale durch eine serviceorientierte IT-KLR für SARIA}
-Durch die Implementierung einer serviceorientierten \ac{it-klr} kann SARIA eine gesteigerte Transparenz, eine verursachungsgerechte Verrechnung und eine effizientere Steuerung der IT-Ressourcen erzielen.
-Durch einen gut strukturierten IT-Servicekatalog können Fachbereiche klare Informationen über ihre IT-Nutzung erhalten und ihre finanziellen Mittel gezielt lenken.
-Die Zuweisung von IT-Kosten entsprechend der Verursachung führt gleichzeitig zu einem verantwortungsvolleren Umgang mit IT-Services und verringert die Verschwendung von Ressourcen.
-Durch verschiedene Servicemodelle können die IT-Kosten flexibilisiert werden, was eine individuelle Anpassung je nach Bedarf ermöglicht und unnötige Fixkosten vermeidet.
-Eine auf Service ausgerichtete \ac{it-klr} verbessert nicht nur die betriebswirtschaftliche Steuerung der IT insgesamt, sondern fördert auch die Kooperation zwischen IT und Fachbereichen, indem IT-Services als ökonomisch steuerbare Dienstleistungen betrachtet werden.
-
+Zusammenfassend bietet eine \ac{itsm}-gestützte \ac{it-klr} erhebliche Potenziale zur Verbesserung der Kostentransparenz und Ressourcennutzung bei SARIA.
+Die Implementierung erfordert jedoch eine schrittweise Vorgehensweise, eine solide Datengrundlage und eine enge Einbindung der betroffenen Abteilungen, um langfristig erfolgreich zu sein.
 
 \begin{comment}
 \section{Praxisbeispiel der K+S AG} \label{sec:3Praxisbeispiele}
