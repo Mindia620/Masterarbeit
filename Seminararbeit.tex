@@ -2,6 +2,8 @@
 \input{resources/settings/settings}
 \input{resources/styles/adjustments}
 \input{resources/settings/glossary}
+\input{titles/eidesstatt}
+\input{titles/sperrvermerk}
 
 \addbibresource{Seminararbeit.bib}
 
@@ -72,8 +74,12 @@ c}
 \maketitle
 \newpage
 
-%\makesperrvermerk
+\makesperrvermerk
 \thispagestyle{empty}
+\addtocontents{toc}{~\hfill\textbf{Seite}\par}
+\addcontentsline{toc}{section}{Sperrvermerk} 
+\newpage
+
 % Abstract und Inhaltsverzeichnisse einfügen (Nummerierung römisch ab Inhaltsverzeichnis)
 %\input{chapter/0_Abstract.tex}
 \ClearShipoutPicture
@@ -82,7 +88,6 @@ c}
 \pagenumbering{Roman}
 \newgeometry{left=3.8cm,right=3cm,top=3cm,bottom=2.5cm}
 \tableofcontents
-\addtocontents{toc}{~\hfill\textbf{Seite}\par}
 \restoregeometry
 
 \newpage
@@ -130,6 +135,8 @@ Alle erwähnten Marken- und/oder Warenzeichen unterliegen uneingeschränkt den l
 \newpage
 
 \listoffigures
+\vfill
+Alle Abbildungen befinden sich ebenfalls im Anhang.
 \newpage
 
 
@@ -160,10 +167,12 @@ title={Literaturverzeichnis}
 \input{chapter/Anhang}
 
 % Eidesstattliche Erklärung erzeugen
+\renewcommand{\thesection}{\arabic{chapter}}
 \pagenumbering{gobble}
 \AddToShipoutPicture{\BackgroundPic}
-%\makeeidesstatt
-\addcontentsline{toc}{chapter}{Eidesstattliche Erklärung}
+\newpage
+\makeeidesstatt
+\addcontentsline{toc}{section}{Eidesstattliche Erklärung} 
 \thispagestyle{empty}
 
 \end{document}
