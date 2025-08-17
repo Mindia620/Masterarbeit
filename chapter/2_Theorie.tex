@@ -1,52 +1,75 @@
 % Kapitel 2
 \section{Grundlagen der AI-Governance}
 \label{sec:theorie}
+Die Diskussion um die Steuerung und Kontrolle von \ac{ki} setzt zunächst eine begriffliche und konzeptionelleKlärung voraus.
+Dieses Kapitel legt die theoretischen Grundlagen, indem es zunächst zentrale Begriffe definiert (Abschnitt \ref{subsec:ki}) und anschließend den Zusammenhang zwischen IT-Governance und \ac{ai}-Governance erläutert (Abschnitt \ref{subsec:aigovernance}).
+Darauf aufbauend werden unterschiedliche Definitionen und Verständnisse von \ac{ai}-Governance vorgestellt (Abschnitt \ref{subsec:definition}), bevor eine Abgrenzung zu verwandten Konzepten wie Data Governance und AI Ethics erfolgt (Abschnitt \ref{subsec:abgrenzung}).
+Abschließend werden normative Rahmenwerke skizziert, die für die Entwicklung und Umsetzung von \ac{ai}-Governance relevant sind (Abschnitt \ref{subsec:normative_rahmenwerke}).
 
-\ac{ki} ist längst keine Zukunftstechnologie mehr, sondern durchdringt zunehmend zentrale Lebensbereiche -von Gesundheitswesen über Mobilität bis hin zu Bildung und Arbeit.
-Damit wachsen auch die Anforderungen an eine verantwortungsvolle und transparente Gestaltung von \ac{ki}-Systemen.
-Der Begriff der \ac{ki}-Governance umfasst die Prinzipien, Richtlinien und Praktiken, die sicherstellen sollen, dass \ac{ki}-Technologien ethisch, rechtlich und sozial verträglich entwickelt und eingesetzt werden.
+\subsection{Künstliche Intelligenz}
+\label{subsec:ki}
+In der Literatur gibt es unterschiedliche Definitionen für den Begriff \acf{ki}.
+\cite[3]{raiNextGenerationDigitalPlatforms2019} definieren \ac{ki} als \glqq{}die Fähigkeit einer Maschine, kognitive Funktionen auszuführen, die wir mit dem menschlichen Geist verbinden, wie Wahrnehmung, Lernen, Problemlösung und Entscheidungsfindung.\grqq{}
+In ähnlicher Weise definiert das \ac{nist} in ihrem AI Risk Management Framework \ac{ki} als ein technisches System, das Ergebnisse wie Vorhersagen, Empfehlungen oder Entscheidungen erzeugen kann, die reale oder virtuelle Umgebungen beeinflussen können.\footcite[1]{nationalinstituteofstandardsandtechnologyAIRiskManagement2021}
 \\
-\subsection{Definition von AI-Governance}
-AI-Governance umfasst sämtliche Maßnahmen, Strukturen und Regeln, die sicherstellen sollen, das KI-Systeme im Einklang mit organisationazeln Zielen, rechtlichen Vorgaben udn gesellschaftlichen Werten entwickelt und betqrieben werden.
-Verschiedene Autoren definieren AI-Governance als \glqq{}ein System aus Regeln, Praktiken, Prozessen udn technischen Mechanismen", zur Steuerung und Kontrollen von \ac{ki}-Systemen entlang ihres Lebenszyklus\cite{batoolResponsibleAIGovernance2023}.
-Dabei soll sich Governance nicht nur auf technische Aspekte konzentrieren, sondern auch ethische, soziale und rechtliche Dimensionen berücksichtigen. \cite{choungPDFMultilevelFramework}
-\\
-Eine zentrale Herausforderung der \ac{ki}-Governance ist die Balance zwischen Innovationsförderung und Risikomanagement.
-Zu den wichtigsten Aspekten gehören unter anderem Fairness, Transparenz, Rechenschaftspflicht und Sicherheit.
-\\
-\cite{mantymakiPDFPuttingAI} verstehen \ac{ki}-Governance als Brücke zwischen ethischem Anspruch und organisatorischer Realität.
-Sie soll ein Umfeld schaffen in dem Vertrauen in \ac{ki}-Systeme aufgebaut und erhalten wird.
-Auch \cite{batoolResponsibleAIGovernance2023} betonen die Notwendigkeit eines systematischen Ansatzes, der sowohl technische als auch nicht-technische Aspekte berücksichtigt.
-Sie schlagen das \glqq{}3W1H\grqq{}-Modell zur Analyse von Governance-Ansätzen vor, das sich auf die Fragen \glqq{}Was?\grqq{}, \glqq{}Warum?\grqq{}, \glqq{}Wie?\grqq{} und \glqq{}Wer?\grqq{} konzentriert.
-Der Fokus liegt dementsprechend auf \glqq{}Wer ist verantwortlich?\grqq{}, \glqq{}Was wird gesteuert?\grqq{}, \glqq{}Wann erfolgt die Steuerung?\grqq{} und \glqq{}Wie wird sie umgesetzt?\grqq{}.\cite{batoolResponsibleAIGovernance2023}
+Diese Defitionen verdeutlichen, dass \ac{ki}-Systeme nicht nur technische Werkzeuge sind, sondern tiefgreifende Auswirklungen auf gesellschaftliche Prozesse und Strukturen haben können.
+Daraus ergibt sich die Notwendigkeit einer gezielten Steuerung und Kontrolle, um sicherzustellen, dass sie im Einklang mit ethischen, rechtlichen und sozialen Standards entwickelt und eingesetzt werden.
 
-\subsection{Relevante normative Rahmenwerke}
-\subsubsection{EU AI Act}
-Der von der Euriopäischen Kommission vorgeschlagene \ac{ai}-Act ist ein umfassender Rechtsrahmen, der darauf abzielt, einheitliche Standards für die Entwicklung und den Einsatz von \ac{ki}-Systemen in der EU zu schaffen.
-Dabei werden \ac{ki}-Systeme in vier Risikokategorien eingeteilt:
+\subsection{IT-Governance als konzeptionelle Grundlage}
+\label{subsec:aigovernance}
+\ac{ai}-Governance knüpft an bestehende Governance-Ansätze an und baut insbesondere auf Konzepten der IT-Governance auf.
+Sie umfasst \glqq{}die Spezifikation von Entscheidungsrechten und Rechenschaftsmechanismen, um sicherzustellen, dass die Nutzung von IT das Verhalten in Übereinstimmung mit den strategischen Zielen des Unternehmens fördert\grqq{}.\footcite[64]{weillITGovernanceHow2004}
+\\
+Während sich IT-Governance auf Themen wie Investitionen, IT-Architektur oder Sicherheitsmanagement konzentriert, erweitert \ac{ai}-Governance diesen Rahmen um ethische, regulatorische und gesellschaftliche Dimensionen.\footcite[2-4]{choungPDFMultilevelFramework2024}
+Sie ist damit als Weiterentwicklung und Spezialisierung der IT-Governance zu verstehen, um den besonderen Herausforderungen und Risiken von \ac{ki}-Systemen gerecht zu werden.
+
+\subsection{Definition und Verständnis von AI-Governance}
+\label{subsec:definition}
+Eine einheitliche Definition von \ac{ai}-Governance existiert in der Literatur bislang nicht, es lassen sich jedoch einige zentrale Elemente identifizieren.
+\cite[2-3]{mantymakiPDFPuttingAI2025} definieren \ac{ai}-Governance als ein System von Regeln, Praktiken, Prozessen und Technologien, die sicherstellt, dass der Einsatz von \ac{ki} im Einklang mit den Werten und Zielen der Organisation sowie rechtlichen und ethischen Anforderungen steht.
+\\
+\cite[2-3]{batoolResponsibleAIGovernance2023} betonen die Betrachtung des kompletten Lebenszyklus von \ac{ki}-Systemen, von der Entwicklung über den Betrieb bis hin zur Außerbetriebnahme.
+Zur Analyse schlagen sie das \glqq{}3W1H\grqq{}-Schema vor: \glqq{}Wer ist verantwortlich?, was wird gesteuert?, wann erfolgt die Steuerung? und wie wird diese umgesetzt?\grqq{}.
+\\
+Dieser Blickwinkel wir durch \cite[2-4]{choungPDFMultilevelFramework2024} erweitert, indem sie \ac{ai}-Governance als mehrstufiges Konzept verstehen, das auf individueller, organisationaler, nationaler und internationaler Ebene etabliert werden muss, um ein belastbares Vertrauen in \ac{ki}-Systeme zu ermöglichen.
+\\
+Damit lässt sich \ac{ai}-Governance allgemein als ein interdisziplinäres Konzept verstehen, das technische, organisatorische, regulatorische und ethische Dimensionen miteinander verbindet.
+
+\subsection{Abgrenzung zu verwandten Konzepten}
+\label{subsec:abgrenzung}
+\ac{ai}-Governance überschneidet sich mit anderen Disziplinen, unterscheidet sich aber durch ihren umfassenden Anspruch:
 \begin{itemize}
-	\item \textbf{Unakzeptables Risiko:} Systeme, die gegen grundlegende Rechte verstoßen, wie z.B. Social Scoring durch Regierungen.
-	\item \textbf{Hohes Risiko:} Systeme, die in kritischen Bereichen wie Gesundheit, Verkehr oder Bildung eingesetzt werden.
-	\item \textbf{Geringes Risiko:} Systeme, die keine signifikanten Risiken für Individuen oder Gesellschaften darstellen.
-	\item \textbf{Minimalrisiko:} Systeme, die weitgehend unproblematisch sind, wie z.B. Spam-Filter.
+	\item \textbf{Data Governance:} Das Ziel der Data Governance ist die Sicherstellung von Datenqualität, -sicherheit und -verfügbarkeit. \cite[148-149]{khatriDesigningDataGovernance2010} definieren Data Governance als \glqq{}decision righs and accountabilities for setting and enforcing data-related policies\grqq{}. Damit bildet Data Governance eine notwendige Grundlage für \ac{ai}-Governance aber diese ist nicht ausreichend um die spezifischen Herausforderungen adaptiver Systeme zu steuern.
+	\item \textbf{AI Ethics:} Ethische Leitlinien, wie etwa die \textit{Ethics Guidelens for Trustworthy AI} der Europäischen Komission, formulieren normative Prinzipien wie Fairness, Transparenz, Rechenschaftspflicht oder Nicht-Diskriminierung.\footcite[14-17]{europeancomissionEthicsGuidelinesTrustworthy} Diese stellen jedoch keinen organisatorischen Umsetzungsrahmen dar.
 \end{itemize}
-Hochrisiko-Systeme unterliegen strengen Anforderungen an Transparenz, Datenqualität, Dokumentation und menschlicher Aufsicht.\cite{kimAIGovernanceContext2025}
-Für besondere Anwendungsfälle, wie z.B. biometrische Identifizierung, gelten zusätzliche Vorschriften.
+Während diese Konzepte wichtige Teilaspekte der \ac{ai}-Governance adressieren, bleibt die konkrete Umsetzung und Integration in bestehende Strukturen oft unklar.
+Die Zusammenführung der technischen, organisatorischen, ethischen und regulatorischen Dimensionen ist daher eine zentrale Herausforderung der \ac{ai}-Governance.
 
-\subsubsection{Ethics Guidelines for Trustworthy AI}
-Diese Leitlinien der Europäischen Kommission definieren \glqq{}vertrauenswürdige \ac{ki}\grqq entlang drei Achsen: Rechtmäßigkeit, Ethik und Robustheit. \cite[5]{europeancomissionEthicsGuidelinesTrustworthy}
-Die EU Komission stellt sieben konkrete Anforderungen an eine \glqq{}vertrauenswürdige \ac{ki}\grqq{}: Menschliches Handeln und Aufsicht, Technische Robustheit und Sicherheit, Datenschutz und Datenverwaltung, Transparenz, Vielfalt, Nichtdiskriminierung und Fairness, Gesellschaftliches und ökologisches Wohlergehen und Rechenschaftspflicht. /footcite[14]{europeancomissionEthicsGuidelinesTrustworthy}
-Ebenso werden 4 ethische Prinzipien definiert, die zu berücksichtigen sind: Achtung der menschlichen Autonomie, Schadensvermeidung, Gerechtigkeit und Erklärbarkeit.
+\subsection{Normative Rahmenwerke}
+\label{subsec:normative_rahmenwerke}
+Neben wissenschaftlichen Konzepten und organisationalen Perspektiven spielen normative Rahmenwerke eine zentrale Rolle für die Entwicklung und Umsetzung von \ac{ai}-Governance.
+Sie liefern konkrete Leitlinien, Standards und rechtliche Anforderungen, die Unternehmen als Orientierung dienen und gleichzeitig Mindestanforderungen festlegen.
+Besonders hervorzuheben sind vier zentrale Referenzen
 \\
-All diese Prinzipien und Vorgaben sollen dabei unterstützen \glqq{}vertrauenswürdige \ac{ki}\grqq{} in Unternehmen einzusetzen und über den gesamten Lebenszyklus der Systeme hinweg zu operationalisieren.
-
-\subsubsection{ISO/IEC 42001:2023}
-Der Standard ISO/IEC 42001 ist das erste internationale Managementsystem für \ac{ki}.
-Dieser definiert Anforderungen an Organisationen, um Governance-Prozesse systematisch zu etablieren, umzusetzen und kontinuierlich zu verbessern. \footcite[1]{isoISOIEC42001}
-Im Vordergrund stehen dabei explizit ethische Fragen, Transparenz und kontinuierliches Lernen der \ac{ki}-Systeme.
-Das Ziel ist es \ac{ki}-Governance in bestehende Managementstrukturen, wie etwa die ISO 9001 (Qualitätsmanagement) oder ISO 27001 (Information Security Management), zu integrieren.
-
-\subsubsection{NIST AI Risk Management Framework}
-Das US-amerkanische National Institute of Standards and Technology (NIST) stellt mit seinem AI Risk Management Framewok ein Instrument zur Verfügung, das Organisationen mit dem Umgang von \ac{ki}-Risiken unterstützt.
-Dabei werden vier Kernfunktionen (Govern, Map, Measure, Manage) als Basis verwendet und die Wichtigkeit einer risikoorientierten Organisationskultur betont.
-Die Funktion Govern ist dabei als übergreifendes Element gedacht, das alle anderen Funktionen durchdringt.\footcite[postnote]{bibid}
+Der \textbf{EU AI Act} ist der erste umfassende Rechtsrahmen für \acf{ki}.
+Er basiert auf einem risikobasierten Ansatz und unterscheidet zwischen unterschiedlichen Risikoklassen, die von minimalem bis hin zu inakzeptablem Risiko reichen.
+Für jede Risikoklasse werden spezifische Anforderungen an die Entwicklung, den Einsatz und die Überwachung von \ac{ki}-Systemen definiert.
+Insbesondere Hochrisiko-Systeme - etwa im Bereich biometrischer Überwachung oder im Gesundheitswesen - unterliegen strengen Anforderungen an Transparenz, Datenqualität, Dokumentation und menschlicher AUfsicht.\footcite[2]{kimAIGovernanceContext2025}
+Der EU AI Act ist deshalb wichtig, weil er einen verbindlichen rechtlichen Rahmen vorgibt, der Unternehmen dazu zwingt, Governance-Strukturen systematisch zu implementieren.
+\\
+Die \textbf{Ethics Guidelines for Trustworthy AI} definieren \glqq{}vertrauennswürdige \ac{ki}\grqq{} entlang von sieben Schlüsselprinzipien: menschliche Aufsicht, Robustheit und Sicherheit, Datenschutz und Datenmanagement, Transparenz, Diversität, Nicht-Diskriminierung und Fairness, gesellschaftliches Wohlergehen sowie Rechenschaftspflicht.\footcite[14-18]{europeancomissionEthicsGuidelinesTrustworthy}
+Sie sind deshalb bedeutsam, weil sie einen normativen Ordnungsrahmen bieten, der über rechtliche Mindestanforderungen hinausgeht und Unternehmen ethische Leitlinien für die verantwortungsvolle Nutzung von \ac{ki}-Systemen vorgibt.
+\\
+Mit \textbf{ISO/IEC 42001:2023} wurde erstmals ein internationaler Standard für ein \ac{ki}-Managementsystem veröffentlicht.
+Er beschreibt Anforderungen, wie Organisationen Prozesse zur Steuerung von \ac{ki} systematisch etablieren, umsetzen und kontinuierliche verbessern können.\footcite[1]{isoiec42001}
+Dieser Standard ist wichtig, weil er es Unternehmen ermöglicht, \ac{ai}-Governance in ihre bestehenden Managementsysteme - wie ISO 9001 (Qualitätsmanagement) oder ISO 27001 (Informationssicherheitsmanagement) - zu integrieren und dadurch Governance mess- und auditierbar zu machen.
+\\
+Das \acs{nist} AI Risk Management Framework des US-amerikanischen \acf{nist} stellt ein freiwilliges Rahmenwerk dar.
+Es beschreibt vier Kernfunktionen: \textit{Govern, Map, Measure, Manage} und versteht \glqq{}Govern\grqq{} als übergreifende Querschnittsfunktion über den gesamten Lebenszyklus eines \ac{ki}-Systems.\footcite[21-24]{nationalinstituteofstandardsandtechnologyAIRiskManagement2021}
+Dieses Framework ist relevant, da Organisationen mit seiner Hilfe ein pragmatisches Instrument nutzen können, um Risiken im Umgang mit \ac{ki} erkennen zu können und systematisch zu managen, ohne dass dies regulatorisch vorgeschrieben ist.
+\\
+Zusammenfassend zeigen diese Rahmenwerke, dass \ac{ai}-Governance nicht im luftleeren Raum entsteht, sondern durch rechtliche Vorgaben, ethische Prinzipien und internationale Standards geprägt wird.
+Während der EU AI Act verbindliche Mindestanforderungen definiert, geben die Ethics Guidelines normative Orieniterung, die über gesetzliche Anforderungen hinausgeht.
+ISO/IEC 42001 übersetzt Governance in überprüfbare Managementprozessen und das \ac{nist} AI RMF bietet Unternehmen ein praxisnahes Instrument für das Risikomanagement.
+Gemeinsam bilden diese Rahmenwerke den normativen Kontext, in dem unternehmensinterne Governance-Strukturen ausgestaltet werden müssen.
+Sie dienen damit zugleich als Referenzpunkt für die Analyse und Bewertung bestehender Modelle, wie sie im folgenden Kapitel vorgestellt werden.
