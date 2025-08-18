@@ -1,23 +1,85 @@
-% Analyse
-\section{Analyse}
+% Vergleich und Bewertung (Matrix)
+\section{Vergleich und Bewertung (Matrix)}
+\label{sec:vergleichbewertung}
+Ziel dieses Kapitels ist es, die fünf zuvor eingeführten Ansätze (\ac{iso}\ac{iec} 42001, EU AI Act, NIST AI RMF, Multilevel Framework, Hourglass Model) entlang eines einheitlichen Kriterienkatalogs systematisch zu vergleichen.
+Die Bewertung erfolgt transparent, nachverfolgbar und mit Quellenbezug zu Kapitel \ref{sec:modellederaigovernance} sowie Interviewaussagen.
+Ergebnis sind eine priorisierte Auswahlempfehlung und Szenarien, in denen spezifische Modelle besondere Stärken aufweisen.
 
+\subsection{Bewertungslogik und Datengrundlage}
+\label{subsec:bewertungslogik}
+Als Datengrundlage dienen die fünf zuvor beschriebenen Modelle aus Kapitel \ref{sec:modellederaigovernance}, deren Stärken und Schwächen und Interview-Insights (Anhang \ref{appendix:interviewleitfaden}).
+Die Bewertung erfolgt anhand des folgenden Kriterienkatalogs, dabei wird pro Modell je Kriterium ein Wert von 1 (schwach) bis 5 (stark) vergeben, inklusive knapper Begründung und Quellenangabe.
+Im Anschluss an die Bewertung wird ein Gesamtwert (gewichtetes Mittel) gebildet und ggf. Sensitivitäts-Checks durchgeführt.
+
+\subsection{Kriterienkatalog}
+\label{subsec:kriterienkatalog}
+Der Kriterienkatalog umfasst drei Dimensionen mit insgesamt zwölf Kriterien (K1–K12):
+
+\paragraph{Regulatorische/strategische Anforderungen}
+\begin{enumerate}
+  \item[K1] \textbf{Verbindlichkeit \& Durchsetzbarkeit:} Existenz und Wirksamkeit verbindlicher Regeln, Eskalations- und Sanktionsmechanismen (Policies, Freigaben, Stop-Kriterien). Rating 1–5.
+  \item[K2] \textbf{Regulatorische Passung (EU/Branche):} Anschlussfähigkeit an EU-/sektorale Vorgaben und Zukunftsfähigkeit (Standardisierung, Codes of Practice). Rating 1–5.
+  \item[K3] \textbf{Strategische Steuerbarkeit:} Klarheit von Zielbildern, Risikotoleranzen, Rollen/Ownern, Gremien und Entscheidungstoren. Rating 1–5.
+\end{enumerate}
+
+\paragraph{Operative Umsetzbarkeit}
+\begin{enumerate}
+  \item[K4] \textbf{Lebenszyklus-Management:} Abdeckung von Scoping, Entwicklung/Deployment, Betrieb/Monitoring und Außerbetriebnahme. Rating 1–5.
+  \item[K5] \textbf{Prüfbarkeit/Auditierbarkeit:} Nachvollziehbarkeit von Entscheidungen, Modellen, Daten und Freigaben (Logs, Doku, Artefakte, Audits). Rating 1–5.
+  \item[K6] \textbf{Mess- \& Metrikreife:} Verfügbarkeit/Eignung von Metriken und Tests (Robustheit, Bias/Fairness, Erklärbarkeit, Sicherheit/Privacy). Rating 1–5.
+  \item[K7] \textbf{Skalierbarkeit \& Integration:} Anschluss an bestehende Systeme/Prozesse (z.\,B.\ ISO/ISMS, internes Kontrollsystem, MLOps). Rating 1–5.
+  \item[K8] \textbf{Ressourcen \& Komplexität:} Implementierungs- und Betriebslast (Zeit, Personal, Budget), insbesondere KMU-Tauglichkeit. Rating 1–5.
+\end{enumerate}
+
+\paragraph{Wert- \& Stakeholderbezug}
+\begin{enumerate}
+  \item[K9] \textbf{Grundrechts-/Ethiknähe \& Betroffenenfokus:} Fairness, Nichtdiskriminierung, Transparenz, Contestability. Rating 1–5.
+  \item[K10] \textbf{Stakeholder- \& Kontextsensitivität:} Einbindung relevanter Stakeholder (z.\,B.\ DSB, CISO, Betriebsrat), Umgang mit kulturellen/organisationalen Unterschieden. Rating 1–5.
+  \item[K11] \textbf{GPAI-/Ökosystem-Tauglichkeit:} Umgang mit Anbieter-/Lieferkettenanforderungen (Model Cards, Datenherkunft/IP, Kennzeichnung synthetischer Inhalte, Downstream-Hinweise). Rating 1–5.
+  \item[K12] \textbf{Reifegrad \& Praxisbelege:} Evidenzen aus Praxis/Piloten, Lessons Learned, Anschluss an Standardisierung. Rating 1–5.
+\end{enumerate}
+
+\paragraph{Skalenanker (für konsistente Bewertungen)}
+\emph{Generische Anker} (für alle Kriterien, domänenspezifisch zu präzisieren): 
+1=\emph{rudimentär/uneinheitlich}; 
+3=\emph{teilweise vorhanden, Lücken erkennbar}; 
+5=\emph{systematisch etabliert, evidenzgestützt, auditfähig}.
+Bei Bedarf werden pro Kriterium exemplarische Anker im Bewertungsdokument ergänzt (z.\,B.\ für K4: 5=\emph{Lifecycle inkl.\ Drift-/Incident-Management mit KPIs}).
+
+\subsection{Scoring- und Gewichtungsschema}
+\label{subsec:scoringgewichtung}
+Die Bewertung erfolgt auf einer Skala von 1 bis 5.
+Als \emph{Baseline} werden folgende Gewichte vorgeschlagen: 
+\emph{Regulatorisch/strategisch} 40\,\% (K1–K3), 
+\emph{Operativ} 40\,\% (K4–K8), 
+\emph{Wert/Stakeholder} 20\,\% (K9–K12).
+Die Gewichte werden szenariobasiert angepasst (vgl.\ \ref{subsec:sensitivitaet}).
 
 \subsection{Methodisches Vorgehen: Qualitative Experteninterviews}
-Zur empirischen Fundierung der Arbeit wurden qualitative Experteninterviews mit zentralen Stakeholdern im Unternehmen durchgeführt.
-Ziel dieser Interviews war es, Anforderungen, Herausforderungen und Risiken im Zusammenhang mit der Governance von Künstlicher Intelligenz aus verschiedenen fachlichen Perspektiven herauszuarbeiten.
-Die gewonnenen Erkenntnisse bilden eine Grundlage für die Bewertung bestehender AI-Governance-Modelle und die Auswahl eines geeigneten Modells für den betrachteten Unternehmenskontext.
-\\
-Die Interviews wurden in Form halbstrukturierter Leitfadeninterviews durchgeführt.
-Diese Methode eignet sich besonders, um Expertenwissen systematisch, aber flexibel zu erheben und ermöglicht es, sowohl vergleichbare Aussagen zu generieren als auch auf individuelle Schwerpunkte der Interviewpartner einzugehen.
-Der entwickelte Interviewleitfaden gliederte sich in mehrere Themenblöcke, darunter der aktuelle Umgang mit KI im Unternehmen, wahrgenommene Risiken, Anforderungen an Governance-Strukturen sowie Einschätzungen zur Eignung verschiedener Steuerungsansätze.
-Der Leitfaden ist im Anhang der Arbeit dokumentiert.
-\\
-Befragt wurden der Chief Information Officer (CIO), der Leiter der IT-Sicherheit (CISO), der Datenschutzbeauftragte sowie – sofern verfügbar – der Compliance-Verantwortliche und die Leitung des Personalbereichs.
-Alle Gesprächspartner stammen aus dem eigenen Unternehmensumfeld und wurden aufgrund ihrer Funktion und Entscheidungskompetenz gezielt ausgewählt.
-Die Gespräche wurden per Microsoft Teams durchgeführt und mit Zustimmung der Beteiligten transkribiert bzw. auf Grundlage des automatisch generierten Transkripts dokumentiert.
-Die Auswertung erfolgte mittels qualitativer Inhaltsanalyse: Zentrale Aussagen wurden thematisch kategorisiert, gegenübergestellt und anschließend in aggregierter Form analysiert.
-Um die Anonymität der Gesprächspartner zu wahren, werden keine Namen oder Funktionsbezeichnungen direkt genannt; Zitate erfolgen in anonymisierter Form.
-\\
-Die Interviews liefern wertvolle Einblicke in organisationsspezifische Herausforderungen und Erwartungen im Umgang mit Künstlicher Intelligenz.
-Sie ermöglichen es, konkrete Anforderungen an Governance-Strukturen abzuleiten und die theoretisch betrachteten Modelle im Lichte praktischer Bedürfnisse kritisch zu reflektieren.
+\label{subsec:interviews}
+Zur empirischen Fundierung wurden halbstrukturierte, modell-agnostische Experteninterviews mit zentralen Stakeholdern (CIO, CISO, DSB, ggf.\ Compliance/HR) im eigenen Unternehmenskontext geführt.
+Ziel war es, Anforderungen, Risiken, Praktiken und Lücken im Umgang mit KI herauszuarbeiten, ohne Vorkenntnisse spezifischer Modelle zu unterstellen.
+Die Gespräche wurden per Microsoft Teams geführt und mit Zustimmung transkribiert; die Auswertung erfolgte mittels qualitativer Inhaltsanalyse (deduktive Codes: K1–K12; induktive Zusatzcodes).
+Aussagen werden anonymisiert als Interviewcodes referenziert (z.\,B.\ \emph{I-CISO-14.08}).
 
+\paragraph{Einbindung in die Bewertung}
+Interviewaussagen dienen als Evidenz zur Justierung der Literatur-baseline:
+\begin{itemize}
+  \item \emph{Score-Anpassung:} Konsistente Interviewbefunde (≥2 Quellen) heben/senken den Basisscore um \(\pm 1\) Punkt; Begründung mit Interviewcodes.
+  \item \emph{Confidence-Flag:} Pro Kriterium wird die Evidenzlage als \emph{hoch/mittel/niedrig} markiert (Triangulation: Literatur, Interviews, interne Artefakte).
+  \item \emph{Dokumentation:} Jede Score-Zelle enthält 1–2 Begründungssätze (Kapitelstelle/Interviewcode).
+\end{itemize}
+
+\subsection{Sensitivitäts- und Szenarioanalyse}
+\label{subsec:sensitivitaet}
+Zur Prüfung der Robustheit werden Gewichte szenariobasiert variiert:
+(A) \emph{Streng reguliertes Umfeld} (+10\,\% auf K1/K2, −10\,\% verteilt); 
+(B) \emph{KMU/Lean Setup} (+10\,\% auf K8/K7); 
+(C) \emph{GPAI-intensiver Einsatz} (+10\,\% auf K11/K5).
+Verändert sich die Rangfolge der Modelle, wird dies berichtet und kurz begründet.
+
+\subsection{Darstellung der Ergebnisse}
+\label{subsec:darstellung}
+Die Resultate werden als Matrix (Zeilen=Modelle, Spalten=K1–K12) mit Farbskala (1–5) dargestellt; pro Zelle eine Kurzbegründung mit Kapitel-/Interviewverweis.
+Ergänzend werden Radar-Profile je Modell und ein Balkendiagramm der gewichteten Gesamtscores gezeigt.
+Ein kurzes Narrativ fasst die Stärken/Schwächen je Modell zusammen und leitet zu Kapitel~5 über.
