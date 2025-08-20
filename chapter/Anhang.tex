@@ -10,9 +10,23 @@
 \endgroup
 \restoregeometry
 \newpage
-\section[Appendix]{Interviewleitfaden}
+\section[Appendix]{Interviews}
+Dieser Anhang dokumentiert drei leitfadengestützte, halbstrukturierte Expertengespräche zur unternehmensinternen KI-Governance.
+Ziel ist es, rollenbasierte Anforderungen, Chancen und Risiken zu erfassen und die im Hauptteil bewerteten Governance-Ansätze zu fundieren.
+Der finale Leitfaden (\ref{appendix:interviewleitfaden}) ging allen Gesprächen voraus; die nachfolgenden Transkripte (A.2–A.4) sind anonymisiert und zum Lesefluss minimal redaktionell geglättet.
+Das CIO-Interview wurde per Microsoft Teams geführt, die Gespräche mit IT-Security und Datenschutz fanden vor Ort statt.
+Alle Teilnehmenden gaben eine Einwilligung zur Aufzeichnung und Transkription; die Aussagen spiegeln persönliche, rollenbezogene Einschätzungen wider.
+
+\subsection[Appendix]{Interviewleitfaden}
 \label{appendix:interviewleitfaden}
-\subsection{Einleitung}
+
+Der folgende Leitfaden bildet die methodische Grundlage der drei Expertengespräche zur unternehmensinternen KI-Governance.
+Er strukturiert die Interviews in thematische Blöcke (u. a. Rolle/Kontext, Ist-Stand und Ziele, Prozesse/Kontrollen entlang des KI-Lebenszyklus, Risiken/Security/Compliance, Referenzrahmen, Enablement) und stellt offene Beispielfragen bereit.
+Die Gestaltung ist bewusst halbstrukturiert: Reihenfolge und Vertiefung wurden situativ angepasst; gezielte Nachfragen (Probing) waren vorgesehen, ohne die Antworten inhaltlich zu lenken.
+Der Leitfaden wurde in allen drei Gesprächen angewendet.
+Vor Beginn lag jeweils eine Einwilligung zur Aufzeichnung und Transkription vor.
+
+
 \glqq{}Vielen Dank, dass Sie sich Zeit für dieses Interview genommen haben.
 Ziel ist es, Ihre Perspektive auf die Governance von Künstlicher Intelligenz im Unternehmen zu verstehen.
 Die Ergebnisse werden anonymisiert und ausschließlich im Rahmen meiner wissenschaftlichen Seminararbeit verwendet.
@@ -35,7 +49,7 @@ Ich würde gerne das Gespräch mitschneiden bzw. das Teams-Transkript verwenden 
 	\begin{enumerate}
 		\item Was sind aus Ihrer Sicht die wichtigsten Anforderungen an eine gute Governance von KI?
 		\item Welche Mindestprozesse/Entscheidungstore brauchen wir (vor Start, vor Go-Live, im Betrieb)?
-		\item Welche Nachweise/Metriken/Dokumente bräuchten Sie für ein „Go“?
+		\item Welche Nachweise/Metriken/Dokumente bräuchten Sie für ein \glqq{}Go\grqq{}?
 		\item Wer sollte aus Ihrer Sicht eingebunden sein (z.B. Fachbereichte, IT, Datenschutz, Geschäftsführung)?
 	\end{enumerate}
 \item Block D - Risiken \& Herausforderungen
@@ -85,6 +99,570 @@ Ich würde gerne das Gespräch mitschneiden bzw. das Teams-Transkript verwenden 
 	\end{itemize}
 \end{itemize}
 \newpage
+
+\def\Interviewee{%
+    \item[%
+        \color{Interviewee}%
+        \( \blacktriangleleft \) %
+        CIO%
+    ]%
+    \def\Interviewee{%
+        \item[%
+            \color{Interviewee}%
+            \( \blacktriangleleft \)%
+        ]%
+    }%
+}
+
+
+
+\subsection{Interview 1 (CIO, via Teams)
+\label{appendix:interview1}}
+
+\begin{description}
+\Interviewer
+Vielen Dank, dass Sie sich Zeit für das Interview genommen haben.
+Das Ziel ist es, Ihre Perspektive auf die Governance von Künstlicher Intelligenz im Unternehmen zu verstehen.
+Die Ergebnisse werden anonymisiert und ausschließlich im Rahmen meiner wissenschaftlichen Seminararbeit verwendet.
+Das Interview dauert circa 30 bis 45 Minuten, je nachdem, wie schnell wir sind.
+
+\Interviewee
+Sehr gern.
+
+\Interviewer
+Der Mitschnitt läuft ja schon.
+Wie sieht Ihre aktuelle Rolle und Verantwortung im Unternehmen aus?
+
+\Interviewee
+Meine Rolle ist CIO der [Division] im Unternehmen [Unternehmen] und meine Verantwortung ist, aus noch lokalen IT-Departments eine globale IT zu formen und damit die IT in sämtlichen Ländern und Geschäftsbereichen der [Division] zu verantworten.
+
+\Interviewer
+Inwiefern haben Sie derzeit Berührungspunkte mit dem Thema Künstliche Intelligenz?
+
+\Interviewee
+In mehrfacher Hinsicht. Seit bestimmt anderthalb Jahren gibt es aus diversen Nachbarabteilungen Rückfragen, wann wir KI einsetzen können und wie sie uns helfen kann.
+Außerdem ist die IT in einer KI-Testgruppe und in einem KI-Gremium Mitglied, um die ersten Schritte strukturiert und kontrolliert hinsichtlich KI bei [Unternehmen] zu orchestrieren, zumindest in der [Division].
+
+\Interviewer
+Welche Entwicklungen oder Herausforderungen beobachten Sie im Unternehmen oder in Ihrer Funktion im Kontext von KI?
+
+\Interviewee
+Die größte Herausforderung ist vermutlich das Erwartungsmanagement: Mit KI wird unwahrscheinlich viel verbunden, sodass wir über systemische, prozessorale oder reifegradbedingte Schwächen hinwegsehen und hoffen, dass KI das schon richten wird.
+Dieser Erwartungshaltung müssen wir begegnen.
+Außerdem mussten wir uns zunächst mit Governance und Richtlinien beschäftigen, um das Ganze kontrolliert und strukturiert zu ermöglichen.
+Ich finde es gut, dass sich [Unternehmen] dem Thema KI nicht verschließt, es aber professionell aufnimmt.
+
+\Interviewer
+Gehen wir zum nächsten Block, Ist-Zustand und Wahrnehmung. Nennen Sie mir bitte zwei bis drei konkrete KI-Anwendungsfälle.
+
+\Interviewee
+Die, die de facto umgesetzt wurden oder angestrebt werden?
+
+\Interviewer
+Je nachdem.
+
+\Interviewee
+Konkret: der Anwendungsfall Microsoft Copilot aus dem Microsoft-365-Bereich, den ich gerade erst einmal als eine Art persönlichen Assistenten sehe.
+Das wird an vielen Stellen gefordert und könnte eine Hilfestellung sein.
+Darüber hinaus gibt es weitere, aber noch nicht näher spezifizierte Anforderungen, beispielsweise aus dem Finance-Bereich, vermutlich basierend auf Dynamics 365.
+Die Plattform bietet viele Möglichkeiten, wo KI angreifen kann, aber schlussendlich muss es konkrete Use Cases geben.
+Wir können nicht einfach sagen: \glqq{}Wir schalten KI an\grqq{} und damit ist der Finanzbereich effizienter und die Qualität höher.
+Es muss Anforderungen geben, etwa im Order-to-Cash-Prozess oder Ähnliches, wo wir uns eine KI-Funktionalität vorstellen, die etwas beschleunigt, die Qualität verbessert, vielleicht ein Vier-Augen-Prinzip ersetzt.
+Im Bereich M\&A hoffe ich, dass wir uns nicht verleiten lassen, dem jetzigen Stand der KI zu vertrauen und M\&A-Aktivitäten rein darauf zu basieren oder Entscheidungen ausschließlich auf KI-Output zu stützen.
+KI in Form von Copilot ist einigermaßen verständlich und nahbar und hat direkte Berührungspunkte mit Endanwendern.
+Ein zweiter Schritt wird sicher KI im Finance/Controlling sein, aber da brauchen wir noch Zeit.
+
+\Interviewer
+Wie werden die Anwendungsfälle initiiert, freigegeben oder betrieben?
+
+\Interviewee
+In circa 14 Tagen wird [Unternehmen] eine Richtlinie erlassen, wie es zu Anwendungsfällen hinsichtlich KI kommen kann.
+Es kann nicht einfach umgesetzt werden, sondern wird in einem KI-Gremium, das sich aus diversen Abteilungen zusammensetzt -– beispielsweise Datenschutz, IT-Security etc. –- vorgelegt und dann freigegeben, sodass es umgesetzt werden kann.
+Gleichzeitig verlangt die Richtlinie beispielsweise eine Beschreibung des Use Cases und dass Trainings angeboten werden. Das passt zu der schon angesprochenen strukturierten und kontrollierten Vorgehensweise.
+
+\Interviewer
+In dem Kontext: Was läuft gut und wo hakt es typischerweise?
+
+\Interviewee
+Gut läuft meines Erachtens, dass wir an dem Punkt angekommen sind, an dem sich das Unternehmen dem Thema KI widmet und eine Richtlinie erarbeitet hat, die in Kürze vorgestellt wird.
+Damit haben wir einen Prozess, der den Einsatz ermöglicht – dort, wo er unter Datenschutzgesichtspunkten etc. auch erlaubt ist.
+Typische Haken sind das Change-Management und – wie bei allem – Dokumentations- und Abstimmungsaufwände, um diese Funktion in unserer Division anbieten zu können.
+Zusätzlich ist es eine Herausforderung, die angefragten Use Cases im Hinblick auf Datenschutzkonformität etc. überhaupt zu evaluieren.
+Oft sind wir bei Cloud-Services unterwegs, wo wir nicht hinter die Kulissen schauen können.
+Wir müssen uns darauf verlassen, dass die Datenverarbeitung in Europa stattfindet oder unsere Daten nicht zum Training der KI-Engines herangezogen werden.
+Dieser \glqq{}Dunkelbereich\grqq{} bleibt, weil es nicht on-prem betrieben wird, sondern überwiegend in der Cloud.
+Damit müssen wir umgehen und hoffentlich dem vertrauen, was die Dienstleister – überwiegend Microsoft – zur Verfügung stellen.
+
+\Interviewer
+Weiter in den Bereich Anforderungen/Governance-Bedarf: Was sind aus Ihrer Sicht die wichtigsten Anforderungen an eine gute Governance von KI?
+
+\Interviewee
+Zunächst eine grundsätzliche Offenheit. Ohne Kontrolle, ohne Governance besteht die Gefahr einer Schatten-IT für KI.
+Vieles ist nur einen Klick entfernt – freie Derivate im Browser – und das lässt sich nicht vollständig technisch unterbinden.
+Wenn ich eine Eingabemaske nutze, um z. B. ChatGPT Geschäftsdaten anzuvertrauen oder mir Code generieren zu lassen, kann das gefährlich sein.
+Deshalb begrüße ich, dass wir eine entsprechende Governance aufsetzen und damit zeigen, dass wir nicht blocken wollen.
+Es muss ordnungsgemäß laufen – im Hinblick auf Security, Datenschutz etc. – und kein lähmender Prozess sein, sondern eine geordnete Governance, die Nutzung ermöglicht, Hilfestellung leistet und sicherstellt, dass wir uns gesetzlich nicht in Felder begeben, die schaden könnten.
+Das Ganze muss in der Corporate IT umgesetzt werden: Prozesse zum Genehmigen, Umsetzen, Kontrollieren und Integrieren von KI sind nicht losgelöst, sondern müssen verankert sein und entsprechend hoch aufgehängt werden.
+
+\Interviewer
+Welche Mindestprozesse oder Entscheidungstore brauchen Sie – zum Beispiel vom Start, über die Freigabe bis zum Go-Live und Betrieb?
+
+\Interviewee
+Zunächst die Anforderungen in Form einer beschriebenen Use-Case-Beschreibung, oft aus dem Business – bleiben wir beim Beispiel Finance.
+Jemand Fachkundiges muss beschreiben, wo KI helfen soll: Dunkelverarbeitung, Report-Erstellung oder Ähnliches.
+Dann das Entscheidungstor: Entweder wird der Use Case abgelehnt oder darf umgesetzt werden.
+Dabei spielen Themen wie Datenschutz (Auftragsverarbeitung), IT-Security, Datenhaltung, Kosten, technologische Umsetzbarkeit und Architektur-Fit eine Rolle.
+Kommt es zu einem PoV (Proof of Value) und Integrationsaufwand, ergeben sich Projekte, die orchestriert und strukturiert angegangen werden.
+Am Ende wollen wir sagen können: Diese KI-Anforderung wurde nach bestem Wissen und Gewissen mit unseren Demand- und Projektmanagement-Prozessen sowie unseren IT-Security-Prozessen umgesetzt.
+Diese Lösungen müssen fortlaufend kontrolliert werden – etwa wenn der Anbieter sagt, er verlagert von Europa nach Amerika oder Asien, weil es dort günstiger ist; das hätte Auswirkungen auf unser vorheriges Approval.
+Vor der produktiven Nutzung müssen die Endanwendergruppen durch Trainings an die Lösung herangeführt werden, es braucht entsprechende Dokumentation auch für den Datenschutz.
+Es gibt einige Qualitätsparameter, die erfüllt sein müssen, damit wir live gehen können.
+
+\Interviewer
+Welche Nachweise, Metriken oder Dokumente bräuchten Sie, um ein \glqq{}Go\grqq{} geben zu können?
+
+\Interviewee
+Eine Use-Case-Beschreibung und aus jeder involvierten Funktion im KI-Gremium ein klares \glqq{}Daumen hoch\grqq{} oder \glqq{}Daumen runter\grqq{}.
+Wenn z. B. IT-Security keine Bedenken hat, weil Verschlüsselungsprotokolle eingehalten werden und die Schnittstelle architektonisch passt, der Datenschutz aber sagt: \glqq{}Das geht nicht, weil außerhalb der EU/EWR\grqq{}, reicht dieses Veto.
+Es braucht also ein einstimmiges Approval, damit wir umsetzen.
+Nach der schriftlichen Darstellung des Anwendungsfalls braucht es schriftliche Stellungnahmen aller involvierten Abteilungen, ein gemeinsames Tool für die Nachhaltung und gegebenenfalls die Einbindung der Demand- und Projektmanagement-Prozesse mit entsprechender Dokumentation.
+Für den späteren Live-Betrieb oder die Übergabe an den Betrieb braucht es Dokumentation und eine benannte verantwortliche Person – hier: eine KI-Verantwortliche Person –, die beurteilen kann, wenn sich signifikant etwas ändert, etwa eine Verlagerung der Engine in eine Region, die wir nicht sehen wollen.
+
+\Interviewer
+Wer sollte aus Ihrer Sicht eingebunden sein – Fachbereiche, IT, Datenschutz, Geschäftsführung?
+
+\Interviewee
+Für die grundlegende Richtlinie – wie in unserem Fall – das Compliance-Board mit Vorstand.
+Das muss pro Land passieren, da es unterschiedliche Anforderungen an KI, Datenschutz und Governance geben könnte, auch wenn wir überwiegend in der EU sind.
+Grundsätzlich: der Fachbereich, denn nur er kann seine Prozesse verstehen, dokumentieren und verbessern.
+KI ist aus meiner Sicht eine IT-Funktionalität, also ist IT involviert – inklusive Security, Architektur, Governance.
+Bei größeren Vorhaben kann es in Richtung Projektmanagement gehen, am Ende in den Betrieb und Support; wenn on-prem gehostet wird, auch Infrastruktur.
+Also große Teile der IT können involviert sein.
+Darüber hinaus Datenschutz/Compliance.
+Je nach Fall brauchen wir Trainingsexperten, Kommunikation/Marketing und ggf. jemanden für Audits oder Wirtschaftsprüfergespräche, um KI-gestützte Funktionen zu erklären.
+Von Anwendungsfall zu Anwendungsfall muss man entscheiden; der Kern sind IT, Fachbereich und Datenschutz.
+
+\Interviewer
+Weiter zum Thema Risiken und Herausforderungen: Welche Risiken sehen Sie im Zusammenhang mit KI aus Ihrer fachlichen Perspektive?
+
+\Interviewee
+Wie vorhin angesprochen: falsche oder überzogene Erwartungshaltungen, befeuert durch Marketing und den allgegenwärtigen KI-Diskurs.
+Es vergeht kein Tag, an dem nicht auch Nicht-IT-ler mit Buzzwords wie AI/KI, Large Language Models, GPT etc. in Berührung kommen.
+Smartphone-Hersteller, Microsoft, Einkaufsportale – alle werben mit KI; dadurch entsteht der Eindruck einer \glqq{}eierlegenden Wollmilchsau\grqq{}.
+Das ist aktuell nicht der Fall. Ein weiteres Risiko ist die Umsetzungserwartung in einer \glqq{}supermodernen\grqq{} Welt vernetzter Systeme mit geringer Komplexität; tatsächlich sind Landschaften oft heterogen und Integration ist anspruchsvoll. Drittens: unkontrolliert auf den Zug aufspringen, mit Risiken für Kostenkontrolle und Change. Ohne Richtlinie droht ein unkontrollierter Blumenstrauß an Lösungen, inklusive solcher, die wir wegen Sicherheit/Datenschutz gar nicht nutzen dürften. Die Richtlinie adressiert das, ausschließen kann man es nicht – ein Restrisiko bleibt.
+
+\Interviewer
+Wo sehen Sie potenzielle Zielkonflikte, z. B. zwischen Datenschutz, Security und Innovationsfähigkeit, oder zwischen IT und Fachbereichen?
+
+\Interviewee
+Zwischen Datenschutz und IT sehe ich grundsätzlich keinen Widerspruch, wir haben ein gutes gemeinsames Verständnis. Datenschutz wird manches strenger sehen, auch testweise. Ein Konflikt entsteht, wenn Anfragen abgelehnt werden. Dann kommt schnell der Vergleich: \glqq{}Warum geht das anderswo?\grqq{} Gründe können EU-Recht, Altsysteme oder Komplexität sein. Weitere Konflikte können entstehen, wenn wir über Effizienzgewinne durch KI reden: Welche Auswirkungen hat das auf die Belegschaft? Andere Unternehmen berichten von Einsparungen; das birgt Konfliktpotenzial.
+
+\Interviewer
+Was müsste vermieden werden, damit eine Governance-Struktur tatsächlich funktioniert?
+
+\Interviewee
+Es darf keinen Weg links und rechts an der Governance vorbei geben und es braucht ein breites, offenes Verständnis für KI und ihre Herausforderungen im Unternehmenskontext. Governance ist zwingend notwendig.
+
+\Interviewer
+Zum vorletzten Block: Lieferkette und General-Purpose-/Gen-AI. Wie gehen Sie mit Anbieterdokumentation (Model Cards, Datenherkunft) oder Intellectual Property um?
+
+\Interviewee
+Gute Frage. Ganz grundsätzlich: Was für uns gilt, muss für unsere Partner ebenfalls gelten. Wenn wir mit jemandem zusammenarbeiten, der nachweislich KI einsetzt, sollte das dokumentiert sein – Verarbeitung nach unseren Richtlinien, IP-Sicherheit gebend wie nehmend. Entscheidungen in der Lieferkette sollten nicht komplett der KI überlassen werden; die KI arbeitet für uns, aber die Entscheidungshoheit liegt bei uns und den Partnern. Da sind wir noch ein Stück entfernt.
+
+\Interviewer
+Was brauchen Sie von Anbietern (extern) oder Prozessverantwortlichen (intern), um Entscheidungen treffen zu können?
+
+\Interviewee
+Dokumentation: Welche Daten werden wo verarbeitet, welchem Rechtsrahmen unterliegt die Verarbeitung? Wo findet die Datenhaltung statt – EU/EWR? Können wir Regionen wählen? Können wir bestimmen, welche Daten verarbeitet werden und welche nicht? Können wir das auditieren, wird es dokumentiert? Wie sieht das Änderungsmanagement aus und welche Auswirkungen haben Änderungen (Engine erweitert/eingeschränkt)? Was passiert mit Daten – insbesondere kein Training mit unseren Daten im professionellen Kontext –, welche Löschfristen gelten, wie können wir konfigurativ einwirken? Für KI-Lösungen ist das ein ganzer Blumenstrauß an Informationen, die ich brauche, um abzuwägen, ob ich intern genehmigen, vertrauen und am Ende betreiben kann. Es nützt nichts, 2025 etwas zu genehmigen und danach keine Einsicht mehr zu haben, was wo wie verarbeitet wird und wie Änderungen aussehen.
+
+\Interviewer
+Dankeschön. Welche Erfahrungen haben Sie mit generativen-AI-Tools in Bezug auf Kennzeichnung, Informationspflichten, Vertragsklauseln?
+
+\Interviewee
+Bis jetzt keine.
+
+\Interviewer
+Gut, dann zum Block Ressourcen, Kompetenzen und Kultur: Wo fehlen Ressourcen oder Kompetenzen, etwa Tooling oder Schulungen?
+
+\Interviewee
+Ganz grundsätzlich – ich spreche für IT, glaube aber, es gilt fürs ganze Unternehmen – sind wir an einigen Stellen nicht auf einem Level der Prozess- und Dokumentationsreife, das nötig ist. In der IT gelten die gleichen Punkte. Wir verbessern uns im Zuge einer IT-Transformation, um prozessstärker zu werden und uns Lösungen professionell widmen zu können. An Kompetenzen fehlen Digitalisierungs-/KI-Treiber nicht nur in der IT, sondern auch im Business, etwa Finance oder Controlling, um mit KI warm zu werden und Anforderungen beschreiben zu können. Gut ist, dass sich das Unternehmen dem Themengebiet widmet; dedizierte Rollen gibt es aber noch nicht – irgendwo muss man anfangen.
+
+\Interviewer
+Welche Schulungen, Guides oder Checklisten würden helfen?
+
+\Interviewee
+Zunächst unsere Richtlinie, die wir in Kürze verabschieden – fundamental, um den Rahmen zu legen. Dann lösungsspezifische Trainings: Wie nutze ich ein Tool wie Copilot? Wie integriere ich es in den Alltag? Später, für KI im Finanzbereich: Was ist zu beachten, wie gehe ich damit um? Grundsätzlich fände ich auch ein generelles Training analog zu Datenschutztrainings sinnvoll, um Risiken von KI aufzuklären – eine möglichst objektive Darstellung mit Vorteilen (Unterstützung im Alltag, Effizienz, Qualität) und Risiken (Fehlentscheidungen auf falschen Daten, Verlust wertvoller Informationen). So versteht jeder KI besser als vielleicht aus dem privaten Umfeld.
+
+\Interviewer
+Was sollte vermieden werden, damit Governance nicht blockiert?
+
+\Interviewee
+Eine grundsätzlich ablehnende Haltung. Das sehe ich aktuell nicht, denn alle involvierten Bereiche hinterlassen einen engagierten, wohlwollenden Eindruck. Wenn ich sehr ablehnend reagiere, wirble ich den Stellenwert der Governance durcheinander – das darf nicht passieren. Das heißt nicht, dass alles genehmigt werden darf, vielmehr braucht Governance ein klares Mandat. Wichtig ist, dass Governance etabliert ist, feste Bestandteile hat, regelmäßige Aufwände einkalkuliert und die entsprechenden Kapazitäten vorhanden sind – in Zusammenarbeit entlang von Prozessen, die nach und nach geschärft werden. In einem guten Business-IT-Alignment kann das sehr zielführend sein.
+
+\Interviewer
+Zum letzten Teil, etwas spezifischer zu Ihrer Rolle: Wie sollte das Zusammenspiel zwischen IT, Fachbereichen und der Governance beim Thema KI aussehen?
+
+\Interviewee
+Sehr offen und regelmäßig, mit klarer Darstellung, warum es Governance gibt und warum ein KI-Gremium Anwendungsfälle genehmigt oder verneint. Es darf keine Einbahnstraße sein, sondern ein Dialog. Nicht nur der Fachbereich soll als Anforderer agieren und Hürden nehmen; auch die IT sollte proaktiv Impulse geben – wenn beispielsweise [Suite/Plattform] etwas Neues bietet –, auf den Fachbereich zugehen und als Türöffner wirken. Das geht nur im gemeinsamen Dialog.
+
+\Interviewer
+Wo sehen Sie die Rolle der IT im Rahmen eines AI-Governance-Modells?
+
+\Interviewee
+Am Ende ist IT der Betreiber von Lösungen – auch von KI-Lösungen, egal ob on-prem (Server-, Netzwerk-, Applikations-Landschaft) oder als Subscription. Die IT trägt die Verantwortung, diese Lösungen datenschutz- und sicherheitskonform zu betreiben und mit einem Service zu versehen, der den internen Endanwendern zur Verfügung steht. Dafür braucht es innerhalb der IT eine entsprechende interne Governance: Zusammenarbeit der notwendigen Departments, klare Produkte, Einhaltung der Prozesse, Gremien und Entscheidungen. Governance muss auch die IT selbst regelmäßig \glqq{}abholen\grqq{}, was es heißt, KI-Systeme auszuwählen, freizugeben, zu betreiben und permanent zu kontrollieren. Das sehe ich als Notwendigkeit – insbesondere im Hinblick auf IT.
+
+\Interviewer
+Vielen Dank. Gibt es sonst noch Aspekte, die für Sie besonders relevant sind und die wir nicht angesprochen haben?
+
+\Interviewee
+Mich treibt um, wie ich künftig die Übersicht behalte, wo KI eingesetzt wird, wo sie wirkt und wo ich eingreifen muss: bei Qualität, Kosten, zu komplexen Anwendungsfällen oder wenn Sachbearbeiter nicht mehr sinnvoll interagieren können. Wann besteht Notwendigkeit zum Handeln? Vorne haben wir die Genehmigung eines Anwendungsfalls, aber was passiert hinterher im Lifecycle? Welche Merkmale zeigen mir – aus IT-Security-, Endanwender-, Fachabteilungs- oder Datenschutzsicht –, dass ich aktiv werden muss? Wie sieht der Review-Prozess aus? Der kann auch bedeuten, eine KI-Unterstützung im Finanzbereich zurückzunehmen, wenn sich signifikant etwas ändert oder die Qualität nicht mehr stimmt. Wie komme ich in einen Prozess, der sicherstellt, dass alles stabil läuft, ich mich darauf verlassen kann und Kostenkontrolle habe?
+
+\Interviewer
+Dürfte ich Sie gegebenenfalls bei Rückfragen später noch einmal kontaktieren?
+
+\Interviewee
+Auf jeden Fall.
+
+\Interviewer
+Gut, Dankeschön.
+
+\Interviewee
+Bitte sehr.
+\end{description}
+
+\newpage
+\def\Interviewee{%
+    \item[%
+        \color{Interviewee}%
+        \( \blacktriangleleft \) %
+        Head of IT-Security%
+    ]%
+    \def\Interviewee{%
+        \item[%
+            \color{Interviewee}%
+            \( \blacktriangleleft \)%
+        ]%
+    }%
+}
+
+\subsection{Interview 2 (Head of IT-Security, vor Ort)}
+\label{appendix:interview2}
+
+\begin{description}
+\Interviewer
+Alles gut. Wie siehst du das Thema KI aktuell – Entwicklungen oder Herausforderungen in deiner Funktion?
+
+\Interviewee
+Ich habe mich aus Interesse mit KI beschäftigt, aber andere sind tiefer drin. Vieles nervt, weil Erwartungen unrealistisch sind. Leute schreiben ellenlange Texte, die niemand liest und lassen sie anschließend von KI zusammenfassen – da frage ich mich, ob Informationen noch ankommen. Privat war ich aber positiv überrascht: Für eine PV-Anlage konnte ChatGPT zügig Rohrdurchmesser abschätzen – für Recherche ist KI wirklich hilfreich.
+
+\Interviewer
+Welche Entwicklungen oder Herausforderungen beobachtest du im Unternehmen?
+
+\Interviewee
+Die Erwartungen gehen weit auseinander und sind oft überzogen. Zudem schreiben Hersteller überall \glqq{}KI\grqq{} drauf; früher waren es Skripte und Automatisierungen, heute heißt alles KI. Praktisch spielt KI in unserer täglichen Arbeit noch keine große Rolle. Spannend war eine Demo zu Microsoft Security Copilot: Bei kompromittierten Konten könnte er Recherchezeit drastisch reduzieren.
+
+\Interviewer
+Nenne zwei bis drei konkrete Anwendungsfälle.
+
+\Interviewee
+Quer durchs Haus: Recherche, Zusammenfassen und Aufbereiten von Informationen – von Logfiles bis Internetrecherche. Für das Unternehmen wären Predictive-Maintenance-Szenarien sehr sinnvoll: Aus großen Flotten an Maschinendaten kann KI Muster erkennen und Ausfälle prognostizieren.
+
+\Interviewer
+Wie werden Anwendungsfälle initiiert, freigegeben und betrieben?
+
+\Interviewee
+Aktuell noch gar nicht – wir stehen kurz vor einer Richtlinie und einem Freigabeprozess über ein KI-Gremium mit Datenschutz, Sicherheit und weiteren. Dann werden wir zügig erste Fälle freigeben und leben.
+
+\Interviewer
+Was läuft gut, wo hakt es?
+
+\Interviewee
+Derzeit ist vieles unreglementiert, während gleichzeitig \glqq{}KI-Dienste\grqq{} geblockt werden, die unsere Firewall erkennt. Es gibt legitime, freigegebene Dienste, in denen KI steckt, die wir aber nicht reglementieren können. Wir erhalten viele Anfragen à la \glqq{}Ich komme auf Dienst X nicht drauf\grqq{}, die wir auf die ausstehende Richtlinie verweisen – teils unter Druck. Ein Beispiel war ein Adobe-Dienst zur Bildretusche (keine Generierung). Auch hier warten wir auf die Richtlinie.
+
+\Interviewer
+Was sind die wichtigsten Anforderungen an eine gute Governance?
+
+\Interviewee
+Zentral ist Aufklärung: Welche Daten dürfen Nutzer wo verarbeiten lassen – öffentliches KI-System vs. intern betriebene KI?
+M\&A-Ideen gehören nicht in öffentliche Dienste.
+Wir brauchen klare, einsehbare Regeln (\glqq{}Was darf ich wo eingeben?\grqq{}) und Schulungen.
+
+\Interviewer
+Welche Prozesse oder Entscheidungstore braucht ihr – Start, Go-Live, Betrieb?
+
+\Interviewee
+Aus IT-Sicherheitssicht spielt KI derzeit keine große Sonderrolle.
+Angreifer nutzen zwar KI, aber das ist nicht unser Hauptproblem.
+Wichtiger ist, dass wir zuverlässig wissen, was freigeschaltet werden darf.
+Die klassische Schnittstelle zu Datenschutz ist eng – vieles ist dort zu prüfen.
+
+\Interviewer
+Welche Nachweise oder Dokumente braucht ihr für ein \glqq{}Go\grqq{}?
+
+\Interviewee
+Ein dokumentierter Service-Request, aus dem hervorgeht, dass alle Beteiligten freigegeben haben. In der Prüfung sehen wir uns u. a. an: Datenspeicherung, Absicherung des Systems, Zugriff, Verschlüsselung. Das machen wir grundsätzlich für alle externen Dienste, nicht nur für KI.
+
+\Interviewer
+Wer sollte eingebunden sein?
+
+\Interviewee
+Die Anforderungen kommen aus dem Business. In die Entscheidung gehören Datenschutz, IT-Sicherheit, Governance sowie IT-Bereiche, die später den Betrieb übernehmen. Und es braucht Rückendeckung aus dem Management.
+
+\Interviewer
+Welche Risiken siehst du aus Security-Sicht?
+
+\Interviewee
+Primär Datenabfluss: Mitarbeitende könnten Dokumente und Interna in Systeme kippen; das größere Risiko sind jedoch Datenlecks bei Anbietern, durch die Anfragen öffentlich werden. Ein weiterer Punkt: KI macht es einfacher, intern auf Daten zuzugreifen, die zwar technisch berechtigt, praktisch aber \glqq{}versteckt\grqq{} waren – etwa per Abfrage \glqq{}Zeig mir alle Gehaltsabrechnungen, auf die ich Zugriff habe\grqq{}. Zudem kennen wir LLM-spezifische Angriffsvektoren wie Jailbreaks; Systeme werden besser, aber das bleibt ein Thema.
+
+\Interviewer
+Wo siehst du Zielkonflikte zwischen Datenschutz, IT-Sicherheit und Innovation?
+
+\Interviewee
+Mit IT-Sicherheit sehe ich derzeit wenig Konfliktpotenzial; beim Datenschutz eher, weil nicht immer klar ist, welche Daten wohin fließen. Gleichzeitig gibt es Anwendungsfälle, die man nicht \glqq{}wegregulieren\grqq{} sollte – wir sollten Wege finden, sie sicher zu ermöglichen.
+
+\Interviewer
+Was müsste vermieden werden, damit Governance funktioniert?
+
+\Interviewee
+\glqq{}Feldwege\grqq{} und Umgehungen. Wir müssen konsequent bleiben und nicht ad hoc Freischaltungen machen. Shadow IT bleibt ein Dauerthema.
+
+\Interviewer
+Wie gehen wir mit Model Cards, Datenherkunft oder Intellectual Property um?
+
+\Interviewee
+Das ist einer der Knackpunkte. Die Praxis großer Anbieter (Training auf frei verfügbaren Inhalten) wirft Fragen auf. Hier braucht es gesellschaftliche und regulatorische Lösungen; die Entwicklung der nächsten Jahre wird spannend.
+
+\Interviewer
+Was braucht ihr von Anbietern und Prozessverantwortlichen?
+
+\Interviewee
+Beschaffungsunterlagen sollten KI-spezifische Fragen enthalten. Langfristig erwarte ich Standard-Nachweise und Zertifizierungen ähnlich wie in der IT-Sicherheit – das wäre sinnvoll.
+
+\Interviewer
+Erfahrungen mit Kennzeichnung, Informationspflichten oder Vertragsklauseln?
+
+\Interviewee
+Wenig bis keine; vereinzelt als \glqq{}KI-generiert\grqq{} gekennzeichnete Inhalte, aber vernachlässigbar.
+
+\Interviewer
+Wo fehlen Ressourcen oder Kompetenzen? Welche Schulungen/Guides helfen?
+
+\Interviewee
+Schulungen werden über das KI-Gremium aufgebaut und sollten Nutzern schnell zeigen, was wo eingegeben werden darf – eine knackige Checkliste hilft. Sinnvoll fände ich zudem Rollen, die gezielt nach KI-Hebeln in Prozessen und Produktion suchen; aktuell sehe ich diese Kompetenz bei uns nicht klar verankert.
+
+\Interviewer
+Was sollte vermieden werden, damit Governance nicht blockiert?
+
+\Interviewee
+Die Governance darf nicht ausufern. Antragsprozesse müssen für den Großteil der Mitarbeitenden handhabbar sein; sonst brauchen sie Unterstützung. Gesetzliche Vorgaben sind einzuhalten – das sollte genügen, um Innovation nicht unnötig zu bremsen.
+
+\Interviewer
+Spezifische Bedrohungen oder Schwachstellen?
+
+\Interviewee
+Neben Datenlecks und internen Berechtigungsproblemen sind klassische Angriffe weiterhin dominant (Social Engineering, Phishing). Mindestanforderungen sind Datenspeicherung, -sicherheit, Speicherfristen und die Frage, ob Anbieter Daten fürs Training nutzen.
+
+\Interviewer
+Gibt es weitere Aspekte?
+
+\Interviewee
+Ich sehe die Gefahr, dass riesige Datentöpfe entstehen, die missbraucht werden können – ein gesellschaftliches Thema. Und die Frage, wie viele Jobs betroffen sein werden, begleitet mich: Übersetzung, Grafik – hier könnte es größere Umwälzungen geben.
+\end{description}
+
+\newpage
+\def\Interviewee{%
+    \item[%
+        \color{Interviewee}%
+        \( \blacktriangleleft \) %
+        Datenschutzbeauftragter%
+    ]%
+    \def\Interviewee{%
+        \item[%
+            \color{Interviewee}%
+            \( \blacktriangleleft \)%
+        ]%
+    }%
+}
+
+
+
+\subsection{Interview 3 (Datenschutzbeauftragter, vor Ort)}
+\label{appendix:interview3}
+
+\begin{description}
+\Interviewer
+Danke, dass Sie sich die Zeit für das Interview nehmen.
+Ziel ist es, Ihre Perspektive auf die Governance von Künstlicher Intelligenz im Unternehmen zu verstehen; die Ergebnisse werden anonymisiert und ausschließlich im Rahmen meiner wissenschaftlichen Arbeit verwendet.
+Das Gespräch dauert circa 30 bis 50 Minuten und wie besprochen, zeichne ich es auf.
+Wie sieht Ihre aktuelle Rolle und Verantwortung im Unternehmen aus?
+
+\Interviewee
+Ich habe im [Konzern] eine Doppelfunktion.
+Zum einen bin ich Head of Data Protection und leite die zentrale Datenschutzabteilung mit aktuell zwei Mitarbeitenden plus mir.
+Zusätzlich gibt es zahlreiche Datenschutzkoordinatorinnen und -koordinatoren in den operativen Bereichen auf Gesellschaftsebene; je nach Größe sind das auch mehrere pro Gesellschaft.
+In meiner zweiten Funktion bin ich Konzern-Datenschutzbeauftragter für alle deutschen Gesellschaften – mit entsprechender Verantwortung und Haftung.
+
+\Interviewer
+Inwiefern haben Sie Berührungspunkte mit dem Thema Künstliche Intelligenz?
+
+\Interviewee
+Der Vorstand hat im Compliance Board beschlossen, dass wir KI im Konzern fördern und KI-Tools künftig einführen wollen.
+Weil sich viele Mechanismen mit dem Datenschutzrecht überschneiden, habe ich den Auftrag erhalten, eine Governance aufzusetzen, damit wir KI-Tools rechtlich sauber einführen können.
+
+\Interviewer
+Welche Entwicklungen oder Herausforderungen beobachten Sie im Unternehmen oder in Ihrer Funktion im Kontext von KI?
+
+\Interviewee
+Es gibt mehrere Ebenen.
+Übergeordnet sehe ich ein gesellschaftliches Thema: das Verständnis von KI.
+Fragt man zehn Personen, erhält man zwanzig Antworten – auch Führungskräfte sind da sehr unterschiedlich unterwegs, von \glqq{}brauche ich nicht\grqq{} bis \glqq{}ohne KI verlieren wir den Wettbewerb\grqq{}.
+Wichtig ist ein gemeinsames Verständnis, wofür wir KI einsetzen wollen.
+Daneben gibt es zahlreiche rechtliche Fallstricke: Jedes Tool muss individuell geprüft werden – nach deutschem und europäischem Recht.
+Technisch braucht es Proofs of Concept: Werbebroschüren versprechen viel, am Ende zählt, ob ein Tool in unserer Landschaft funktioniert.
+Zusätzlich kommen IT-Sicherheit und weitere Compliance-Themen hinzu.
+Diese Bausteine aus verschiedenen Fachbereichen müssen in einer Governance zusammengebracht werden.
+
+\Interviewer
+Nennen Sie zwei bis drei konkrete Anwendungsfälle.
+
+\Interviewee
+Wir arbeiten an Microsoft Copilot zur Erleichterung der Büroarbeit: Texte schreiben und zusammenfassen, Tabellen analysieren – universell einsetzbar.
+Außerdem gibt es ein Adobe-Tool, das Bilder automatisch nachjustiert (z. B. Tonwerte), was uns aus dem Marketing gemeldet wurde.
+Das sind aktuelle Anwendungsfälle auf dem Tisch.
+
+\Interviewer
+Wie werden diese initiiert, freigegeben und später betrieben?
+
+\Interviewee
+Wir haben eine feste Instanz per Richtlinie errichtet: das KI-Gremium.
+Darin sitzen u.a. IT, IT-Sicherheit, Compliance und Datenschutz.
+Das Gremium gibt im Kollektiv frei – über einen etablierten Prozess mit Checkliste pro Fachbereich.
+Aus Datenschutzsicht ist z.B. ein Auftragsverarbeitungsvertrag mit dem Anbieter wesentlich.
+Die Antragstellung läuft über ein Ticketsystem; die Checkliste wird von A bis Z abgearbeitet und am Ende entscheiden wir, ob die KI eingesetzt wird.
+
+\Interviewer
+Was läuft gut und wo hakt es typischerweise?
+
+\Interviewee
+Gut funktionieren pragmatische, einheitliche Prozesse, die für alle gleich sind.
+Darüber hinaus braucht es aber Raum für Diskussionen: Manche Tools lassen sich nicht 1:1 einsetzen, können aber technisch begrenzt oder in Funktionen reduziert werden, sodass Einsatz rechtlich und technisch möglich ist.
+Hier müssen wir argumentativ stark werden und bereichsübergreifend nachjustieren.
+
+\Interviewer
+Was sind die wichtigsten Anforderungen an eine gute KI-Governance?
+
+\Interviewee
+KI muss risikobasiert betrachtet werden und Governance muss einheitlich, pragmatisch und nachvollziehbar sein.
+Feste Prozesse, klare Checklisten und ein vollständiges Anforderungsprofil aus allen Fachbereichen sind entscheidend – und diese Bausteine müssen zusammengefügt werden.
+
+\Interviewer
+Welche Mindestprozesse oder Entscheidungstore brauchen Sie – vor dem Start, für den Go-Live und im Betrieb?
+
+\Interviewee
+Erstens entscheidet bereits der Einkauf anhand einer Checkliste, was überhaupt beschafft werden darf.
+Bestimmte KI-Kategorien – etwa für Manipulation oder Social Scoring – sind als \glqq{}KO\grqq{} definiert.
+Zweitens folgt die fachliche und rechtliche Prüfung im KI-Gremium entlang der Checkliste.
+Drittens führen wir einen Proof of Concept mit Testdaten durch.
+Funktioniert es nicht, lehnen wir ab.
+Viertens, nach Produktivsetzung mit Echtdaten, kontrollieren wir regelmäßig.
+Die Frequenz richtet sich nach Risiko und Anwendungsfall; bei Copilot sehen wir z. B. quartalsweise Reviews vor, auch wegen Updates.
+Das Risiko wird fortlaufend neu bewertet; wird es zu hoch, stellen wir ab.
+
+\Interviewer
+Welche Nachweise, Metriken oder Dokumente brauchen Sie für ein \glqq{}Go\grqq{} bzw. den Weiterbetrieb?
+
+\Interviewee
+Verträge mit dem Anbieter sind Pflicht.
+Zertifikate und Nachweise der Dienstleister helfen, ersetzen aber nicht unsere eigenen Nachweise.
+Der PoC ist zentraler Beleg.
+Wenn später etwas passiert – etwa eine Diskriminierung durch ein Modell –, können wir zeigen, dass wir sauber getestet haben und Korrekturen einleiten.
+
+\Interviewer
+Wer sollte in den gesamten Prozess eingebunden sein?
+
+\Interviewee
+Alle Mitarbeitenden, die KI nutzen, überwachen oder einkaufen – und die Führungskräfte, die wissen müssen, dass und wie wir KI regeln.
+
+\Interviewer
+Welche Risiken sehen Sie im Zusammenhang mit KI?
+
+\Interviewee
+Das größte Risiko ist die begrenzte Erklärbarkeit und Vorhersagbarkeit dessen, was KI tut.
+Was man nicht voll erklären kann, birgt Gefahren.
+Ein weiteres Risiko ist unzureichende Sensibilisierung; daher brauchen wir individuelle Schulungen.
+
+\Interviewer
+Wo sehen Sie potenzielle Zielkonflikte, z. B. zwischen Datenschutz, IT-Sicherheit und Innovationsfähigkeit?
+
+\Interviewee
+DSGVO und KI-VO sind beide risikobasiert, ergänzen sich eher, können im Einzelfall aber zu unterschiedlichen Ergebnissen führen.
+Hinzu kommt die Aufsicht: Datenschutzbehörden vs. Bundesnetzagentur – unterschiedliche Bewertungen sind denkbar.
+Manchmal ist eine Lösung technisch unkritisch, aber rechtlich nicht konform; das müssen wir aussteuern.
+
+\Interviewer
+Was müsste vermieden werden, damit eine Governance-Struktur funktioniert?
+
+\Interviewee
+Offene Berechtigungsstrukturen und Sicherheitslücken.
+Datenqualität und Berechtigungen müssen stimmen, sonst greift KI auf falsche oder ungeschützte Daten zu.
+
+\Interviewer
+Wie gehen Sie mit Anbieter­dokumentation wie Model Cards, Datenherkunft oder Intellectual Property um?
+
+\Interviewee
+Wichtig ist, die Datenquellen zu trennen und transparent zu halten: freies Internet vs. Unternehmensdaten.
+Wenn wir diese Quellen sauber separieren, aber kontrolliert in die KI einfließen lassen, kommen wir in konforme Bahnen.
+
+\Interviewer
+Was benötigen Sie von Anbietern, IT oder Prozessverantwortlichen für Entscheidungen?
+
+\Interviewee
+Eine gebündelte Informationslage nach vorab definierten Kriterien: Sitz und Struktur des Anbieters, Fähigkeiten des Produkts, technische und rechtliche Eckdaten usw.
+Erst dann kann das Gremium entscheiden.
+
+\Interviewer
+Gibt es schon Erfahrungen mit Kennzeichnung, Informationspflichten oder Vertragsklauseln?
+
+\Interviewee
+Vereinzelt tauchen in Verträgen Klauseln auf, wonach Daten in KI-Systeme einfließen; präsent ist das Thema noch nicht.
+Wir selbst setzen bisher wenig KI ein.
+
+\Interviewer
+Wo fehlen Ressourcen oder Kompetenzen? Welche Schulungen, Guides oder Checklisten helfen?
+
+\Interviewee
+Schulungen sind der wichtigste Baustein – und zwar maßgeschneidert, nicht generische E-Learnings.
+Wir müssen klar definieren, welche KI wir einsetzen und wofür; daneben braucht es dauerhafte Ressourcen für Integration und Kontrolle.
+Hilfreich sind u. a. Hinweise der Bundesnetzagentur zur KI-Kompetenz. Schulungen müssen am Anwendungsfall ausgerichtet sein (bei Hochrisiko-KI entsprechend intensiver).
+
+\Interviewer
+Was sollte vermieden werden, damit Governance nicht blockiert?
+
+\Interviewee
+Governance soll KI ermöglichen, nicht kaputtregulieren.
+Kein kleinteiliges Klausel-Regime, sondern ein Rahmen, der Chancen eröffnet, Transparenz schafft und Vertrauen gibt.
+
+\Interviewer
+Welche datenschutzrechtlichen Herausforderungen sehen Sie bei KI-Anwendungen?
+
+\Interviewee
+Betroffenenrechte wie Auskunft: Es ist schwer, vollständig transparent darzustellen, welche personenbezogenen Daten vorhanden sind, woher sie stammen und in welcher Chronologie neue Daten generiert wurden.
+
+\Interviewer
+Gibt es Fallstricke bei Transparenz, Zweckbindung oder Datenminimierung?
+
+\Interviewee
+Transparenz ist herausfordernd. Zweckbindung gelingt am besten über klar definierte Anwendungsfälle (\glqq{}Bitte nur dafür nutzen\grqq{}). Weite Zwecke wie \glqq{}für den Arbeitsalltag\grqq{} laden zum Anything-Goes ein; hier sollte man präziser formulieren.
+
+\Interviewer
+Gibt es noch Aspekte, die besonders relevant sind?
+
+\Interviewee
+Governance sollte generisch und gesund aufgesetzt werden – nicht per Hauruck oder mit Schablonen. Wir brauchen einen ernsthaften, bereichsübergreifenden Dialog darüber, wo KI echten Mehrwert bringt und müssen das Thema im laufenden Betrieb präsent halten.
+\end{description}
+\newpage
+
+
 \section[Appendix]{Interview mit Leiter Controlling}
 \label{appendix:interviewcontrolling}
 Im folgenden ist das Transkript des Interviews mit der Leitung des Controllings der SARIA in Deutschland.
@@ -210,7 +788,7 @@ Wir wir ermitteln einmal im Mittel einmal ein ein Verrechnungssatz und und da wi
 Also wenn ich jetzt sage, ihr habt jetzt in der IT ca. 9.000.000€ kosten.
 Dann würde ich sagen hier berechnen. Dann rechnen wir jeden Monat 240.000€ ab.
 So jetzt ist die Frage wer kriegt die Kosten? Ne?
-Ja, und dann ist dann gibt es den Unterschied, ja, die lokale IT die wird ja nur innerhalb von Deutschland verrechnet an die Tochterunternehmen.
+Ja und dann ist dann gibt es den Unterschied, ja, die lokale IT die wird ja nur innerhalb von Deutschland verrechnet an die Tochterunternehmen.
 Wo wir währenddessen halt die Group IT halt internationaler tätig ist, ne, das heißt wir haben auch unterschiedliche Verteilungsschlüssel.
 Hier ist es nur Deutschland für die Group IT ist es komplett alle Länder, die Halt in dem Scope der Group IT sind.
 \\
