@@ -1,2 +1,79 @@
 \section{Empfehlungen für die Gestaltung von AI-Governance}
 \label{sec:6fazit}
+
+Dieses Kapitel bündelt handlungsleitende, kontextunabhängige Empfehlungen für die Ausgestaltung von AI-Governance. Grundlage sind die in der Arbeit analysierten Referenzrahmen (EU AI Act, ISO/IEC 42001, NIST AI RMF, Multilevel Framework, Hourglass Model) sowie die synthetisierten Erkenntnisse aus Kapitel 4–5.
+
+\subsection{Leitprinzipien und Zielbild}
+AI-Governance sollte ein klar definiertes Zielbild verfolgen: rechtliche Mindestanforderungen verlässlich erfüllen, Risiken über den gesamten Lebenszyklus steuern, Legitimität gegenüber Betroffenen sichern und Innovation ermöglichen. Normativer Anker ist der risikobasierte EU AI Act (Einstufung, Pflichten u. a. zu Risikomanagement, Datenqualität, Dokumentation, Protokollierung und menschlicher Aufsicht), ergänzt um Prinzipien vertrauenswürdiger KI (Transparenz, Fairness, Rechenschaft, Sicherheit). Diese Prinzipien sind in mess- und auditierbare Prozesse, Rollen und Artefakte zu übersetzen.
+
+\subsection{Zielarchitektur: Schicht- und Kombinationslogik}
+Eine robuste Governance entsteht durch das Zusammenspiel komplementärer Bausteine:
+
+Rechtsrahmen (EU AI Act) als verbindlicher Sockel für Mindestanforderungen, inkl. GPAI-Pflichten.
+
+Managementsystem (ISO/IEC 42001) zur organisatorischen Verankerung (PDCA-Logik, Verantwortlichkeiten, Ressourcen, interne Audits).
+
+Operatives Risiko-/Messgerüst (NIST AI RMF) zur Lebenszyklus-Operationalisierung (GOVERN–MAP–MEASURE–MONITOR).
+
+Werte-/Kontextspur (Hourglass, Multilevel) zur systematischen Berücksichtigung von Stakeholder-Belangen und Grundrechten.
+
+\subsection{Rollen- und Gremienmodell}
+Empfohlen wird ein mehrschichtiges Rollenmodell mit klarer Zuordnung von Entscheidungskompetenzen und Nachweisen (RACI):
+
+Mandat & Aufsicht: Vorstand/Leitung (Policy-Freigabe, Risikobereitschaft), unabhängige interne Revision.
+
+AI-Governance-Board: interdisziplinäres Gremium (Recht/DSB, IT-Sicherheit, Domäne, Produkt, Daten, MLOps) mit Freigabe- und Eskalationskompetenzen.
+
+Verantwortliche im Lifecycle: Use-Case-Owner, Data Stewards, Model/Service Owner, Security- und Compliance-Ansprechpersonen.
+
+Operative Linien: Mess-/Monitoring-Team (Modellleistung, Drift, Bias), Incident-Response.
+Die Rollen leiten sich aus der GOVERN-Funktion des NIST RMF (Rollen, Policies, Verantwortlichkeiten) und der AIMS-Logik von ISO/IEC 42001 ab.
+
+\subsection{Kernprozesse und Artefakte entlang des KI-Lebenszyklus}
+Intake & Scoping: zentraler Use-Case-Katalog; Vorprüfung inkl. Risikoklassifikation (EU-Kategorien, Betroffenenbezug, Umfeld). Artefakte: Use-Case-Steckbrief, initiale Risikoabschätzung.
+
+Daten-Governance: Datensatz-Steckbriefe (Provenienz, Qualität, Rechte), Zugriffskontrollen, Datenminimierung.
+
+Entwurf & Entwicklung: Risiko-/Kontrollregister, Explainability- und Privacy-Anforderungen, Testplan; Sicherung von Reproduzierbarkeit (Pipelines, Seeds).
+
+Pre-Deployment-Freigabe: technische Dokumentation/„Technical File“, Human-Oversight-Plan, Protokollierungskonzept; formales Gate im Governance-Board.
+
+Betrieb & Monitoring: kontinuierliche Messung (Leistung, Drift, Fairness, Sicherheit), Wirksamkeitsreviews, Änderungsmanagement; Schwellenwerte mit vordefinierten Eingriffen.
+
+Vorfall- und Rückrufmanagement: Meldewege, Ursachenanalyse, Lessons Learned; bei Hochrisiko/GPAI: gesetzlich geforderte Vorfallsberichte.
+
+Außerbetriebnahme: Dokumentierte Abschaltung, Archivierung/Deletion, Kommunikationsplan.
+
+\subsection{Metriken, Schwellenwerte und Evidenz}
+Mess- und Nachweisebene sind konstitutiv: Definieren Sie pro Use-Case ein KPI-Set (Reliabilität/Qualität, Fairness, Privacy/Leakage, Sicherheit/Robustheit, Erklärbarkeit, Nutzen), Schwellenwerte (Stop-/Rollback-Kriterien) und Testabdeckung (Daten/Stress/Adversarial/Red Teaming). Die NIST-Funktion MEASURE bietet hierfür Struktur; Ergebnisse werden in Model/ System Cards und Audit-Trails hinterlegt.
+
+\subsection{GPAI und Drittparteien (Lieferkette)}
+
+Für GPAI-Modelle und Fremdkomponenten sind Lieferanten- und Modell-Due-Diligence, Downstream-Informationen, Urheberrechts-/Datenherkunftsnachweise, Kennzeichnung/Transparenz und Sicherheits-/Vorfallprozesse vorzusehen. Vertragswerke sollen technische Dokumentation, Nutzungsgrenzen, Logs sowie Update-/Vulnerability-Pflichten absichern.
+
+\subsection{Sicherheits- und Missbrauchsresilienz}
+
+AI-Security ist integraler Bestandteil: Bedrohungsmodellierung (Prompt-Injection, Data Poisoning, Model Stealing), Härtung (Rate-Limits, Input-/Output-Filter, Policy-Enforcement), Secret-/Key-Management, Lieferkettensicherheit (Artefakt-Signaturen), kontinuierliches Monitoring und Red Teaming. Diese Kontrollen verankern die NIST-Eigenschaften vertrauenswürdiger KI (u. a. Sicherheit, Resilienz) in den Betrieb.
+
+\subsection{Shadow-AI: Enablement statt reiner Verbote}
+
+Unkontrollierte Nutzung externer KI-Dienste erhöht Angriffsfläche, Compliance- und Datenabflussrisiken; zugleich kann sie Innovation beschleunigen. Wir empfehlen einen kontrollierten Enablement-Ansatz:
+– Acceptable-Use-Policy und Registrierungspflicht für KI-Tools,
+– „AI-Sandbox“ mit sicherer Testumgebung und automatisierter Vorprüfung (Security/Compliance-Checks),
+– Whitelisting geprüfter Tools, Telemetry/Erkennung unerlaubter Nutzung,
+– Schulung/Anreize für Nutzung autorisierter Alternativen.
+Der Forschungsstand betont registrieren-monitoren-validieren statt pauschal zu verbieten; Sandbox-Ansätze mindern Risiko bei gleichzeitiger Innovationsförderung.
+
+\subsection{Assurance und Audit}
+
+Prüfbarkeit ist zweistufig zu sichern: interne Assurance (risikobasierte Audits, Kontrolltests, Wirksamkeitsreviews) und externe Assurance (Konformitätsbewertung gem. EU AI Act; perspektivisch Zertifizierung des AIMS nach ISO/IEC 42001). Erforderlich sind nachvollziehbare Artefakte (Technical File, Model/ System Cards, Log-/Decision-Trails) und ein Audit-Kalender, gebunden an Risiko- und Änderungsintensität.
+
+\subsection{Umsetzungspfad und Reifegrad}
+
+Ein pragmatischer Pfad reduziert Einführungsrisiken:
+
+Sofortmaßnahmen (0–3 Monate): Policy-Set (Acceptable Use, Daten, Human Oversight), Use-Case-/Modell-Register, Governance-Board etablieren, minimale Mess-/Monitoring-Schleife für produktive Fälle.
+
+Systematisierung (3–12 Monate): AIMS-Baselines (Rollen, Reviews, interne Audits), NIST-Profile je Domäne, GPAI-Lieferkettenkontrollen, Shadow-AI-Sandbox.
+
+Skalierung (12+ Monate): Reifegrad-KPIs in Management-Reviews, externe Assurance (Konformität/ Zertifizierung), kontinuierliche Verbesserung (Lessons Learned, Red-Team-Zyklen, Metrik-Weiterentwicklung).

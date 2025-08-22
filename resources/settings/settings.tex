@@ -152,3 +152,32 @@ backend=biber]{biblatex}
 \NewDocumentCommand{\Other}{ O{SkyBlue} m }{%
     \item[\color{#1} #2]%
 }
+
+\usepackage{booktabs,tabularx,longtable,threeparttable}
+\usepackage[table]{xcolor} % für rowcolors
+\usepackage{makecell,multirow} % \thead, Zeilen-/Spaltenzusammenfassung
+\usepackage{siunitx} % saubere Zahlen
+\usepackage{caption}
+
+% Siunitx für DE/EN: Komma oder Punkt – passe bei Bedarf an
+\sisetup{
+  detect-all,
+  group-separator = {\,},
+  group-minimum-digits = 4,
+  table-number-alignment = center,
+  input-decimal-markers = {. ,}
+}
+
+% Bequeme Spaltentypen
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}     % flexibler Text
+\newcolumntype{Z}{>{\raggedright\arraybackslash}p{3.0cm}} % feste Breite (Beispiel)
+\newcolumntype{d}[1]{S[table-format=#1]}               % Zahlenformat, z.B. d{3.2}
+
+% Optik
+\renewcommand{\arraystretch}{1.2}
+\captionsetup[table]{labelfont=bf,font=small,skip=6pt}
+\rowcolors{3}{black!2}{white} % zarte Zebra-Streifen ab Zeile 3
+
+% Quelle/Anmerkungen unter die Tabelle
+\newcommand{\tablesource}[1]{\caption*{\textit{Quelle:} #1}}
+\newcommand{\tabnote}[1]{\caption*{\footnotesize \textit{Anmerkung:} #1}}
