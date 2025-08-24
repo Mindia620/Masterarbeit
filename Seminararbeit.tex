@@ -114,6 +114,7 @@ c}
 \acro{IaaS}[IaaS]{Infrastructure as a Service}
 \acro{iec}[IEC]{International Electrotechnical Commission}
 \acro{iis}[IIS]{Informationsinfrastruktur}
+\acro{ip}[IP]{Intellectual Property}
 \acro{ikt}[IKT]{Informations- und Kommunikationstechnologie}
 \acro{int}[Int]{Integer}
 \acro{iso}[ISO]{International Organization for Standardization}
@@ -144,11 +145,12 @@ Die Wiedergabe von Marken- und/oder Warenzeichen in dieser Arbeit berechtigt nic
 Alle erwähnten Marken- und/oder Warenzeichen unterliegen uneingeschränkt den länderspezifischen Schutzbestimmungen und den Besitzrechten der jeweiligen eingetragenen Eigentümer.
 \newpage
 
+\begin{comment}
 \listoffigures
 \vfill
 Alle Abbildungen befinden sich ebenfalls im Anhang.
 \newpage
-
+\end{comment}
 
 % Kapitel einfügen
 \pagenumbering{arabic}
@@ -164,7 +166,13 @@ Alle Abbildungen befinden sich ebenfalls im Anhang.
 \newpage
 \input{chapter/6_Anforderungen}
 \newpage
-%\input{chapter/7_Fazit}
+\input{chapter/7_Fazit}
+
+\newpage
+%Appendix
+\input{chapter/Anhang}
+
+\newpage
 
 % Bibliografie einfügen
 \printbibliography[
@@ -172,9 +180,6 @@ heading=bibintoc,
 title={Literaturverzeichnis}
 ]
 \newpage
-
-%Appendix
-\input{chapter/Anhang}
 
 % Eidesstattliche Erklärung erzeugen
 \renewcommand{\thesection}{\arabic{chapter}}

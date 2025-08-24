@@ -11,11 +11,16 @@
 \usepackage{csquotes}
 
 %Ermöglicht Zitierung und Literaturverzeichnis
-\usepackage[style=authoryear-comp,
-%sorting = nty,
-%block = nbpar,
-%backref = true,
-backend=biber]{biblatex}
+
+\usepackage[
+  backend=biber,
+  style=authoryear,   % Basis: Author–Year
+  giveninits=false,   % volle Vornamen
+  maxbibnames=99,
+  uniquename=false,
+  date=year,          % nur Jahr drucken
+  doi=false,isbn=false,url=false,eprint=false
+]{biblatex}
 
 
 %Prints the "Bibliography" in the table of cont ents
@@ -76,19 +81,15 @@ backend=biber]{biblatex}
 \setlength{\emergencystretch}{1em}
 
 %Unterstützung der H Positionierung (keine automatische Verschiebung eingefügter Elemente)
-\usepackage{float}
 
 %Erlaubt Umbrüche innerhalb von Tabellen
-\usepackage{tabularx}
 
 %Erlaubt Seitenumbrüche innerhalb von Tabellen
-\usepackage{longtable}
 
 %Erlaubt die Darstellung von Sourcecode mit Highlighting
 \usepackage{listings}
 
 %Definition eigener Farben bei Nutzung eines selbst vergebene Namens
-\usepackage[table,xcdraw]{xcolor}
 
 %Vektorgrafiken
 \usepackage{tikz}
@@ -112,10 +113,9 @@ backend=biber]{biblatex}
 \usepackage{comment}
 
 \usepackage{amssymb}% for the \blacktriangleleft symbol
-\usepackage[dvipsnames]{xcolor}
 
-\colorlet{Interviewer}{BurntOrange}
-\colorlet{Interviewee}{ForestGreen}
+\colorlet{Interviewer}{orange}
+\colorlet{Interviewee}{green}
 
 \NewDocumentCommand{\Comment}{ O{Interviewer} +m }{
     \colorbox{#1}{%
@@ -153,15 +153,25 @@ backend=biber]{biblatex}
     \item[\color{#1} #2]%
 }
 
-\usepackage{booktabs,tabularx,longtable,threeparttable}
-\usepackage[table]{xcolor} % für rowcolors
-\usepackage{makecell,multirow} % \thead, Zeilen-/Spaltenzusammenfassung
-\usepackage{siunitx} % saubere Zahlen
-\usepackage{caption}
+\usepackage{array}
+\usepackage[table,dvipsnames]{xcolor} % Farben + Tabellenunterstützung (lädt colortbl)
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage[section]{placeins}
+\usepackage{float}
+
+
 
 % Siunitx für DE/EN: Komma oder Punkt – passe bei Bedarf an
 \sisetup{
-  detect-all,
+  locale = DE,
+  mode = match,
+  propagate-math-font = true,
   group-separator = {\,},
   group-minimum-digits = 4,
   table-number-alignment = center,
@@ -171,6 +181,7 @@ backend=biber]{biblatex}
 % Bequeme Spaltentypen
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}     % flexibler Text
 \newcolumntype{Z}{>{\raggedright\arraybackslash}p{3.0cm}} % feste Breite (Beispiel)
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breite C{..}
 \newcolumntype{d}[1]{S[table-format=#1]}               % Zahlenformat, z.B. d{3.2}
 
 % Optik
