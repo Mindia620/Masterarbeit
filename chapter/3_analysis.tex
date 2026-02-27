@@ -1,12 +1,66 @@
 \newpage
 \section{Analysis of existing IT Governance Frameworks}
 \label{sec:AnalysisOfExistingITGovernanceFrameworks}
+This chapter examines the predominant IT governance frameworks and standards currently employed in enterprise contexts, with particular attention to their applicability and limitations when applied to organizational transformation scenarios.
+The analysis begins with an overview of major frameworks (Section \ref{subsec:OverviewOfExistingGovernanceFrameworks}), including COBIT 2019, ISO/IEC 38500, ITIL 4 and TOGAF, establishing their core principles, structural components and intended use cases.
+Subsequently, the chapter critically evaluates the strengths and limitations of these frameworks in steady-state operational environments (Section \ref{subsec:StrengthsOfExistingApproaches}), followed by a detailed assessment of their inherent gaps when applied to transformation-specific governance challenges (Section \ref{subsec:LimitationsInTransitionContexts}).
+This structured analysis provides the theoretical foundation for understanding why existing frameworks require adaptation or extension to adequately support enterprise transitioning from local to global IT operating models.
 
 \subsection{Overview of existing Governance Frameworks}
 \label{subsec:OverviewOfExistingGovernanceFrameworks}
+The landscape of IT governance is characterized by several well-established frameworks and international standards, each addressing specific dimensions of governance, management and operational control.
+These frameworks have emerged over multiple decades, reflecting the evolution of IT's strategic role within enterprises and the increasing complexity of technology environments.
+This subsection provides an introduction to the major frameworks referenced throughout this research, establishing their fundamental purposes, structural approaches and positioning withing the broader governance ecosystem.
+
+\subsubsection{Control Objectives for Information and Related Technologies}
+\label{subsubsec:COBIT2019}
+\ac{COBIT} represents one of the most comprehensive and widely adopted frameworks for the governance and management of enterprise information and technology.\footcite[13]{isacaCOBIT2019Framework2018}
+Developed by \ac{ISACA} and building on more than 25 years of continuous development, \ac{COBIT} has evolved from its origins in the IT audit community into a broader governance and management framework applicable across all enterprise sizes and sectors.\footcite[2]{informationsystemsauditandcontrolassociationCOBIT5Business2012}
+The framework makes a fundamental distinction between governance, which ensures that stakeholder needs, conditions and options are evaluated to determine balanced enterprise objectives and that direction is set through prioritization and management, which plans, builds, runs and monitors activites in alignment with governance direction to achieve enterprise objectives.\footcite[13]{isacaCOBIT2019Framework2018}
+\\
+The \ac{COBIT} 2019 iteration structures governance and management into 40 objectives organized across five domains: \ac{EDM} for governance and \ac{APO}, \ac{BAI}, \ac{DSS} and \ac{MEA} for management.\footcite[17]{isacaCOBIT2019Framework2018a}
+The framework provides comprehensive guidance on governance system components including processes, organizational structures, information flows, policies and procedures, culture and behavior, skills and competencies and services and infrastructure.\footcite[21-22]{isacaCOBIT2019Framework2018}
+COBIT's goals cascade mechanism enables enterprises to translate stakeholder needs into actionable enterprise goals, IT-related goals and enabler goals, providing a structured approach to alignment between business strategy and IT activities.\footcite[17-18]{informationsystemsauditandcontrolassociationCOBIT5Business2012}
+
+\subsubsection{ISO/IEC 38500: Corporate Governance of Information Technology}
+\label{subsubsec:ISO38500}
+The \ac{ISO/IEC} 38500 provides a standard for corporate governance of IT, establishing principles, definitions and a model for evaluating, directing and monitoring the use of IT within organizations.\footcite[57]{internationalorganizationforstandardizationISOIEC3850020182018}
+The standard is built upon six core principles: responsibility, strategy, acquisition, performance, conformance and human behavior, which together provide a high-level framework for board-level governance of IT.\footcite[57-60]{internationalorganizationforstandardizationISOIEC3850020182018}
+It emphasizes the \glqq{}Evaluate, Direct and Monitor\grqq{} (EDM) governance model, positioning IT governance as an integral component of corporate governance rather than a purely technical management concern.
+\ac{ISO/IEC} 38500 is intentionally principle-based and non-prescriptive, providing guidance suitable for enterprises of all sizes while requiring organizations to develop specific implementations tailored to their contexts.\footcite[57]{internationalorganizationforstandardizationISOIEC3850020182018}
+
+\subsubsection{ITIL 4 (IT Infrastructure Library Version 4)}
+\label{subsubsec:ITIL4}
+\ac{ITIL} 4 represents the latest evolution of the world's most widely adopted service management framework, shifting from \ac{ITIL} v3's process model to a holistic \ac{SVS} that integrates all organizational components for value co-creation in dynamic environments.\footcite[36]{axelosITIL4Foundation2019}
+AXELOS developed \ac{ITIL} 4 based on years of global \ac{itsm} best practices, so \ac{ITIL} 4 addresses modern challenges such as digital transformation, agility and ecosystem collaboration by emphasizing flexible value streams over siloed processes.\footcite[2-3]{axelosITIL4Foundation2019}
+The framework distinguishes between service providers, who enable value through capabilities and service consumers, who co-create value through active participation, recognizing that value emerges from interdependent relationships rather than unidirectional delivery.\footcite[7-8]{axelosITIL4Foundation2019}
+\\
+The \ac{itil} 4 \ac{SVS} comprises five interconnected elements: seven Guiding Principles (e.g. focus on value, progress iteratively with feedback, collaborate and promote visibility) that shape organizational culture and decision-making; Governance for strategic direction and oversight; the Service Value Chain with six configurable activities (Plan, Improve, Engage, Design \& Transition, Obtain/Build and Deliver \& Support) enabling adadptive value streams; Practices (34 sets across general, service and technical management) providing versatile tools; and Continual Improvement via a seven-step model.\footcite[36-74]{axelosITIL4Foundation2019}
+The four dimensions model, with organizations and people, information and technology, partners and suppliers and value streams and processes, ensures a holistic application, balancing external factors like \Gls{PESTLE} influences.\footcite[23-34]{axelosITIL4Foundation2019}
+\ac{ITIL} 4's transformation focus, particularly through Organizational Change Management practice (p. 89), supports stakeholder alignment, leadership commitment and sustained adaption, which are critical for hybrid governance during local-to-global IT shifts.\footcite[89]{axelosITIL4Foundation2019}
+
+\subsubsection{The Open Group Architecture Framework (TOGAF)}
+\label{subsubsec:TOGAF}
+\ac{TOGAF} is a comprehensive, vendor neutral methodology for enterprise architecture development and governance, emphasizing structured alignment between business strategy and IT capabilities across multi-domain landscapes.\footcite[607]{krcmarInformationsmanagement2015}
+Maintained by The Open Group and in its 10th edition, \ac{TOGAF} has established itself as the de facto standard for architecture governance, complementing service frameworks like \ac{ITIL} by focusing on architectural decision rights and evolutionary change.\footcite[622]{krcmarInformationsmanagement2015}
+The framework delineates three governance layers: Corporate (board-level strategy), technology (asset standardization) and IT (operational delivery), to manage interdependencies in complex, multi-country environments.\footcite[607]{krcmarInformationsmanagement2015}
+\\
+\ac{TOGAF}'s iterative \ac{ADM} cycles through phases including Vision (stakeholder alignment), Implementation Governance (oversight) and Change management (adaptation), providing escalation structures and principles (discipline, transparency, accountability) for decision rights during transitions\footcite[607-608]{krcmarInformationsmanagement2015}.
+It structures governance domains, such as business, data, application and technology architectures, to ensure scalable standardization while accommodating local variations, directly supporting hybrid models.\footcite[622]{krcmarInformationsmanagement2015}
+\ac{TOGAF} integrates with \ac{ITIL} for operationalizing architectural decisions and with \ac{COBIT} for governance oversight, offering a principle based model that remains adaptable across enterprise scales.\footcite[608]{krcmarInformationsmanagement2015}
 
 \subsection{Strengths of Existing Approaches}
 \label{subsec:StrengthsOfExistingApproaches}
+The established IT governance frameworks examined in the preceding section possess significant capabilities that have proven valuable for enterprises seeking to formalize and improve their IT governance practices in operational steady-state contexts.
+Understanding these strengths provides essential context for subsequently identifying the gaps that emerge when these frameworks are applied to transformation scenarios.
+
+\subsubsection{Comprehensive and Structured Approach to IT Governance}
+\label{subsubsec:ComprehensiveAndStructuredApproachToITGovernance}
+A primary strength of contemporary IT Governance frameworks lies in their provision of comprehensive, structured methodologies that encompass multiple dimensions of IT governance simultaneously.\footcite[13]{isacaCOBIT2019Framework2018a}
+\ac{COBIT} 2019, for instance, offers 40 governance and management objectives organized across five domains, providing detailed guidance on all aspects of IT governance from strategic alignment to performance measurement.\footcite[17]{isacaCOBIT2019Framework2018a}
+This comprehensiveness ensures that organizations address IT governance holistically rather than focusing narrowly on isolated aspects such as technical infrastructure or project delivery alone.
+\\
+
 
 \subsection{Limitations in Transition Contexts}
 \label{subsec:LimitationsInTransitionContexts}
