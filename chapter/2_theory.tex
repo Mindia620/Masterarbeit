@@ -1,0 +1,106 @@
+\newpage
+\section{Theoretical Foundations}
+\label{sec:TheoreticalFoundations}
+The following sections provide an overview of the theoretical foundations relevant to this research.
+It covers key concepts and definitions related to IT Governance, IT Operating Models and the specific challenges faced by multi-country enterprises in governing their IT functions.
+Furthermore, it delves into the aspects of decision rights, accountability and control mechanisms that are essential for effective IT Governance.
+\subsection{IT Governance - Definition and Objectives}
+\label{subsec:ITGovernanceDefinitionAndObjectives}
+Governances constitutes the overarching framework of authority, decision making and accountability through which organizations pursue their strategic objectives and fulfill stakeholder expectations.
+It encompasses strategic direction-setting, tactical alignment of activities and operational oversight of execution, operationalized through mechanisms such as organizational structures (e.g. boards and comitees), processes (e.g. policy formulation and planning) and controls (e.g. audits and performance metrics).\footcite[12]{isacaCOBIT2019Framework2018}\footcite[2]{emryITGovernanceGuide2024}
+\\
+IT Governance applies these principles specifically to \ac{IandT}, comprising leadership, organizational structures and processes that direct, evaluate and monitor (EDM) \ac{IT} to support and extend enterprise strategies and objectives.
+Formally defined in frameworks like COBIT 2019, it establishes decision rights for IT investments, architecture and risk management, while ensuring transparency, accountability and alignment with business imperatives.
+As articulated in \ac{iso}/\ac{iec} 38500, IT Governance evaluates stakeholder needs, sets direction via prioritization and monitors compliance and performance.\footcite[12]{isacaCOBIT2019Framework2018}\footcite[2]{emryITGovernanceGuide2024}
+\\
+IT Governance directs IT-related decisions to deliver value while balancing innovation, risk and compliance.
+It oversees processes within the \ac{EDM} domain, confirming adherence to legal, regulatory and contractual obligations.\footcite[29-33]{isacaCOBIT2019Framework2018a}
+In multi-country enterprises, it harmonizes disparate local IT practices into a cohesive global framework, mitigating fragmentation during transitions from localized to centralized operations.\footcite[3-4]{ionitaITGovernanceGlobal2009}
+\\
+IT Governance and management are complementary yet distinct.
+Governance focuses on \textit{what} decisions are made (direction, principles, objectives), while management executes \textit{how} those decisions are implemented (planning, building, running, monitoring).
+COBIT delineates governance with \Gls{EDM} processes (board-level accountability) and management across \Gls{APO}, \Gls{BAI}, \Gls{DSS} and \Gls{MEA} domains (executive responsibility).\footcite[11-13]{isacaCOBIT2019Framework2018}
+\\
+IT Governance emerges from \ac{IT}'s evolution into a strategic asset rather than a mere support function.
+In global enterprises, unchecked decentralization can lead to inefficiencies, security gaps and misalignment with corporate goals.\footcite[3-5]{ionitaITGovernanceGlobal2009}
+\\
+It exists to enforce accountability, optimize resource allocation and embed IT within enterprise governance, preventing value attrition through siloed decisions or uncontrolled innovation.\footcite[12]{isacaCOBIT2019Framework2018}
+
+\subsection{IT Operating Models}
+\label{subsec:ITOperatingModels}
+\subsubsection{Definition and Purpose}
+An \ac{itom} is \glqq{}an interdependent combination of data, people, process and technology, composed in an organization model to produce \Gls{IT product}/\Gls{IT service} under a defined funding model by working in an appropriate culture and collaborating with different ecosystems in order to implement IT and digital strategy and deliver, sustain and improve value over time.\grqq{}\footcite[17]{sulemanITOperatingModels2025}
+This contemporary definition builds on Ross's \cite[1]{rossForgetStrategyFocus2005} foundational view of operating models as \glqq{}the necessary level of business process integration and standardization for delivering goods and services to customers\grqq{}, extending it to encompass holistic IT execution.
+\\
+The objective of an \ac{itom} is to implement IT strategy, connecting enterprise goals with IT execution.
+It guarantees strategy alignment, efficient resource allocation, risk mitigation and adaptability, which are essential during transitions from local to global IT in multinational corporations.
+By delineating the collaboration of IT services across borders, \ac{itom}s reduce fragmentation, facilitate scalability and enhance value realization during transitions from autonomous national units to centralized governance.\footcite[6]{sulemanITOperatingModels2025}\footcite[3-4]{rossForgetStrategyFocus2005}
+
+\subsubsection{Core Dimensions/Components}
+\label{subsubsec:ITOperatingModelsCoreDimensions}
+\cite{sulemanITOperatingModels2025}, through a systematic literature review of 77 sources, identify 13 \ac{itom} components across five dimensions.
+For multi-country transitions, three core dimensions are particularly relevant:
+\begin{itemize}
+    \item \textbf{Management and Control:} Encompasses decision-making rules for IT investments, standardized IT/business processes (e.g. \ac{itil} for service management, Agile/DevOps for delivery) and governance mechanisms for alignment, risk oversight and accountability. This dimension addresses decision rights centralization during global shifts.\footcite[14-15]{sulemanITOperatingModels2025}
+    \item \textbf{Organization and Culture:} Includes organization design (centralized, decentralized, federated/hybrid structures), people and talent (skills for global roles), location (geographic IT distribution) and culture (behavioral norms fostering collaboration). In multi-country settings, it manages local-central tensions.\footcite[15]{sulemanITOperatingModels2025}
+    \item \textbf{Financial:} Covers funding models evolving from local budgets to enterprise-wide allocation, enabling cost transparency and optimization in transitions.\footcite[16]{sulemanITOperatingModels2025}
+\end{itemize}
+
+These dimensions form the foundation for archetypes and governance, directly influencing decision rights and control structures.
+
+\subsubsection{Operating Model Archetypes for Multi-Country Enterprises}
+\label{subsubsec:ITOperatingModelArchetypes}
+\cite{rossForgetStrategyFocus2005} taxonomy, based on process standardization and integration, yields four archetypes, with federated/hybrid models being most relevant for multi-country enterprises transitioning from local to global IT\footcite[5-6]{sulemanITOperatingModels2025}:
+\begin{tabular}{p{3cm}p{4cm}p{4cm}}
+    \toprule
+    \textbf{Archetype} & \textbf{Standardization} & \textbf{Integration} & \textbf{Multi-Country Relevance} \\
+    \midrule
+    \textbf{Diversified} & Low & Low & Initial local autonomy; risk silos/duplication \\
+    \textbf{Coordinated} & Low & High & Shared data/compliance across countries; local processes \\
+    \textbf{Replicated} & High & Low & Standardized processes; local execution; risk of misalignment \\
+    \textbf{Unified} & High & High & Full centralization; efficiency but limited local flexibility \\
+    \bottomrule
+\end{tabular}
+
+Federated models, such with central standards (e.g. security, architecture) with local execution, best support transitions, as evidenced by cases aligning global operations with local entities via targeted \ac{itom} redesign \cite[see Kettunen and Winkler (2016)][p.~4]{Suleman2025}.
+They preserve regional responsiveness while driving synergies, reducing shadow IT and costs.
+
+\subsubsection{Governance Implications}
+\label{subsec:GovernanceImplications}
+\ac{itom}s embed governance in the management and control dimension, integrating COBIT's APO01 (IT management framework) for structures/processes and APO03 (enterprise architecture) for standards \cite[23-28,33]{isacaCOBIT2019Framework2018}.
+For multi-country transitions, federated \ac{itom}s necessitate redefined decision rights, (\Gls{EDM} domain), escalating from local to central bodies while clarifying accountability.\footcite[55-57]{isacaCOBIT2019Framework2018a}
+\\
+This bridges the decision rights frameworks: governance must specify authority allocation across the organization and location dimensions, preventing power vacuums.
+\ac{cobit}s EDM03/EDM04 optimize risks and resources, ensuring transparency (EDM05) amid hybrid structures by setting the stage for detailed analysis of decision rights, accountability and control mechanisms in the next subsection.\footcite[6-7]{sulemanITOperatingModels2025}\footcite[33]{isacaCOBIT2019Framework2018}
+
+\subsection{IT Governance in Multi-Country Enterprises}
+\label{subsec:ITGovernanceInMultiCountryEnterprises}
+IT Governance in multi-country enterprises requrires tailored frameworks to balance centralized control with local responsiveness amid diverse regulatory, cultural and operational contexts.
+This section examines key challanges, models and theoretical foundations relevant to transitioning from local to global IT structures.\footcite{ionitaITGovernanceGlobal2009}
+
+\subsubsection{Key Challenges}
+\label{subsubsec:KeyChallenges}
+Multi-country enterprises face fragmented IT landscapes due to varying national regulations, data privacy laws and compliance requirements, leading to increased security risks and limits visibility into local operations\footcite{teamMostCommonIT2026}.
+Cultural differences and time zone discrepancies intensify power imbalances between central and local IT, promoting shadow IT and redundant systems that compromise enterprise-wide standardization.\footcite[26]{klotzCausingFactorsOutcomes2019}
+Additionally, inconsistent data management and regulatory complexity hinder strategic alignment and cost transparency across borders.\footcite{5ProblemsManaging}
+
+\subsubsection{Governance Models}
+Centralized models enforce uniform standards for core processes like security and architecture, enhancing control and efficiency, while decentralized models devolve authority to local units for agility in regulatory and cultural contexts\footcite{weillITGovernanceHow2004}.
+Federated (or hybrid) models, most suitable for multi-country transitions, balance global standardization in infrastructure and compliance with local execution of services and demand management, mitigating fragmentation and shadow IT\footcite{ionitaITGovernanceGlobal2009}\footcite{cobit2019Framework2018a}.
+COBIT 2019 supports this through EDM01 (Ensured Governance Framework Setting and Maintenance), prescribing decision-making models and authority delegation across layers, with APO01 enabling tailored management frameworks\footcite[33]{isacaCOBIT2019Framework2018}.
+\\
+In multi-country enterprises, federated archetypes per \cite{rossForgetStrategyFocus2005} predominate, as evidenced in \cite{ionitaITGovernanceGlobal2009} analysis of maturity diagnostics for phased centralization.
+These models address power imbalances by clarifying escalation paths, fostering acceptance during shifts from local autonomy to global oversight\footcite[3]{emryITGovernanceGuide2024}.
+Empirical studies confirm superior value delivery in federated structures via joint business-IT decision rights\footcite[1391-1392]{iloriComprehensiveReviewIt2024}
+
+\subsection{Decision Rights, Accountability and Control Mechanisms}
+\label{subsec:DecisionRightsAccountabilityControlMechanisms}
+Decision rights specify who holds authority choices across domains like investments, architecture and operations, forming the core of governance in multi-country enterprises.\footcite[10-11]{weillITGovernanceHow2004}
+In transition from local to global IT, rights shift from decentralized (local approval) to federated models, with global bodies retaining veto on standards and escalation paths for exceptions, as per COBIT'S EDM01 which mandates clear \Gls{RACI} matrices for delegation.\footcite[33]{isacaCOBIT2019Framework2018a}\footcite[5-6]{ionitaITGovernanceGlobal2009}
+This allocation prevents vacuums, aligns with ambidexterity (global integration, local differentiation) and mitigates shadow IT by empowering locals within boundaries.\footcite[9]{emryITGovernanceGuide2024}
+\\
+Accountability ensures decision-makers are answerable via performance metrics and reporting, operationalize in COBIT through EDM05 (Stakeholder Engagement) and APO12 (Risk Management), requiring transparent \ac{kpi}s and audits across borders\footcite[33]{isacaCOBIT2019Framework2018}
+In multi-country contexts, hybrid structures like IT governance committees balance central oversight with local representation, fostering trust during power shifts\footcite[7-8]{emryITGovernanceGuide2024}.
+Control mechanisms, including preventive (policies), detective (monitoring) and corrective (escalation) controls, enforce rights, with COBIT \Gls{MEA} domain enabling conformance checks amid regulatory diversity\footcite[271-297]{isacaCOBIT2019Framework2018a}\footcite[1395]{iloriComprehensiveReviewIt2024}
+\\
+These mechanisms address the gap in steady-state frameworks by providing transition-aware clarity, supporting \ac{DSR} artefact design for scalable, acceptance-driven governance.\footcite[75-77]{hevnerDesignScienceResearch2004}
