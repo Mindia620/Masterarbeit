@@ -1,18 +1,165 @@
 \newpage
-\section{Case context local to global IT transition}
+\section{Case Context: Local-to-Global IT Transition at EnterpriseX}
 \label{sec:CaseContextLocalToGlobalITTransition}
+This chapter provides a comprehensive description of the organizational context in which the governance artifact developed in this thesis is grounded.
+It presents EnterpriseX — a large, family-owned European industrial group — as the application domain for the \ac{DSR} artifact, documenting the historical IT structure from which the transition departs, the strategic drivers that triggered the centralization initiative, the current state of the transition across eight functional IT domains, and the key governance challenges that the artifact must address.
+The enterprise was selected as the application context because it exhibits precisely the structural and governance characteristics that motivate this research; a detailed justification of this selection is provided in Section \ref{subsec:CaseSelectionAndContextOverview}.
 
 \subsection{Organizational Background}
 \label{subsec:OrganizationalBackground}
+EnterpriseX is a large, family-owned international group headquartered in Germany and operating in the circular economy sector.
+The group specializes in the collection, processing and valorization of organic and animal by-products into sustainable secondary materials, energy carriers and industrial inputs.
+With more than 13,000 employees, over 200 processing sites and active operations across 26 countries, EnterpriseX represents a sizeable and organizationally complex enterprise by European industrial standards.
+\\
+The organizational structure of EnterpriseX is layered and reflects the group's growth through acquisition and regional expansion.
+The central holding entity fulfills a service and coordination function — providing group-level shared services, strategic governance and financial oversight — while the actual operational business is conducted by a set of legally and operationally distinct daughter companies, each responsible for a specific segment of the business or geographic region.
+This means that the group does not operate as a single unified entity but rather as a portfolio of subsidiaries coordinated from the center, with each daughter company retaining a degree of operational autonomy in its day-to-day business management.
+% TODO: If you want to add any further detail about how many daughter companies there are, or how they are grouped (e.g. by business line vs. by geography), add it here — but it is not essential.
+\\
+This decentralized organizational logic historically extended to IT: each country subsidiary or daughter company operated its own IT function, reporting to local management rather than to any group-level IT authority.
+For the purposes of this research, the enterprise is referred to throughout as EnterpriseX to preserve full confidentiality in accordance with the ethical safeguards described in Section \ref{subsubsec:EthicalSafeguards}.
 
 \subsection{Historical IT Structure}
 \label{subsec:HistoricalITStructure}
+Prior to the centralization initiative, seven European country organizations — Germany, Denmark, the United Kingdom, Spain, France, Italy and Poland — each maintained a fully autonomous IT function.
+These functions operated independently in every material respect: separate application portfolios, non-standardized infrastructure configurations, country-specific vendor contracts, locally managed IT budgets and no formal accountability to any group-level IT authority.
+This configuration corresponds to the \textit{diversified} operating model archetype described by Ross et al., characterized by minimal cross-country process standardization and low integration, and associated with the governance fragmentation and cost duplication this thesis seeks to address.\footcite[3-4]{rossForgetStrategyFocus2005}
+\\
+In total, approximately 120 IT staff were employed across the seven country organizations prior to the centralization initiative.
+Headcount distribution was markedly asymmetric, reflecting differences in country size and operational complexity.
+Germany, as the largest country organization and location of group headquarters, employed approximately 40 local IT staff.
+France maintained a medium-sized local IT team, while Denmark and Spain had smaller contingents.
+The United Kingdom and Poland each operated with a limited number of IT colleagues, and Italy functioned with as few as two IT staff members.
+\\
+The competency profile of these staff was predominantly generalist rather than specialist.
+In the smaller country organizations in particular, individual IT colleagues were responsible for the full spectrum of local IT operations — user support, infrastructure maintenance, application management, vendor relations and local security — without defined domain specialization.
+Each country IT function was headed by a local IT manager reporting exclusively to country-level business or operations management.
+\\
+Cross-country IT coordination was virtually non-existent prior to the transition.
+Approximately two years before the formal centralization mandate was issued, a loose collaborative structure was established with the intention of enabling cross-country knowledge sharing and coordination.
+However, this initiative never became fully operational and had no meaningful effect on the independently managed local IT functions, as each country remained strongly focused on its own operational priorities.
+It was only with the formal transition initiative that structured cross-country IT collaboration began to emerge, initially through two foundational projects: a group-wide Microsoft tenant migration to establish a common collaboration infrastructure, and the implementation of a single shared \ac{ITSM} suite to replace the heterogeneous collection of local ticketing and service management tools.
+These two projects represent the first substantive steps toward a technically integrated IT environment and serve as an important reference point for understanding the governance complexity of the transition.
 
 \subsection{Drivers for Transition to Global IT}
 \label{subsec:DriversForTransitionToGlobalIT}
+The transition from a decentralized, country-led IT model to a unified global IT function was initiated by a strategic group-level restructuring decision from the holding organization.
+Three converging pressures drove this decision.
+\\
+The first driver was a \textbf{cost efficiency imperative}.
+The fully decentralized IT model had produced substantial duplication of systems, contracts, software licenses and personnel effort across country organizations.
+Group-level management identified this redundancy as avoidable expenditure that could be eliminated through consolidation and centralization of IT procurement, vendor management and infrastructure operations.
+\\
+The second driver was \textbf{regulatory compliance pressure}.
+Obligations arising from the European \ac{GDPR} and, more recently, the \ac{NIS2} Directive required consistent data governance, security controls and incident reporting capabilities to be implemented and auditable on a group-wide basis.
+Notably, the initial response to \ac{NIS2} was itself fragmented: each country organization began addressing the directive independently, without cross-country coordination, replicating the very compliance inefficiency that the centralization initiative was designed to eliminate.
+The fragmented local IT structures were structurally unable to provide the cross-country visibility and control consistency that these regulatory requirements demand.
+\\
+The third driver was a \textbf{strategic alignment requirement}.
+The business of EnterpriseX increasingly requires cross-country operational coordination: daughter companies in different countries collaborate on shared business processes, and group-level digital initiatives require a common technical foundation that country-level IT silos are structurally unable to provide.
+Two initiatives illustrate this need concretely.
+The Microsoft tenant migration — the most significant active technical project of the transition — aims to consolidate multiple country-level Microsoft environments into a single shared tenant, establishing a unified identity, collaboration and communication infrastructure across all country organizations.
+In parallel, EnterpriseX is establishing a shared group-wide data platform to enable cross-country data integration and analytics.
+Both initiatives were effectively impossible to execute under the previous decentralized model and represent the operational trigger for recognizing that IT governance must be redesigned at the group level.
+ERP systems, by contrast, remain country-specific at the time of this research, reflecting the complexity of harmonizing deeply embedded operational systems and the deliberate sequencing of the transition.
 
 \subsection{Current Transition State}
 \label{subsec:CurrentTransitionState}
+The centralization initiative was formally launched in early 2025 and is structured around eight functional IT departments, each representing a distinct governance domain within the target operating model.
+The organizational restructuring — meaning the formal transfer of colleagues to central reporting structures — is targeted for completion by the end of 2026.
+The technical transition, encompassing the actual migration of systems, infrastructure and operational processes to centrally governed structures, does not carry a defined completion horizon and is expected to extend substantially beyond the organizational milestone.
+\\
+Table \ref{tab:TransitionStateCh5} documents the transition status of each department at the time of this research.
+
+\begin{table}[H]
+\centering
+\caption{Transition State of IT Departments at EnterpriseX (at time of research)}
+\label{tab:TransitionStateCh5}
+\begin{tabularx}{\textwidth}{p{3.8cm} p{2.8cm} X}
+\toprule
+\textbf{IT Department} & \textbf{Status} & \textbf{Description} \\
+\midrule
+CIO Office & Established & All colleagues formally transferred; covers Governance \& Compliance, IT Asset \& License Management, IT Budgeting \& Financials, CIO Office Support and Enterprise Architecture \\
+\addlinespace
+Security \& Networks & Established & Most colleagues formally transferred to central team \\
+\addlinespace
+Business IT Alignment & Established & Team fully constituted and formally in place \\
+\addlinespace
+Data Solutions & Established & Team fully constituted and formally in place \\
+\addlinespace
+Modern Workplace & Partial & Partially transferred; some country colleagues remain under local structures \\
+\addlinespace
+Service Management & In Transition & Each country retains its own first- and second-level support team; no formal transfer to central management yet \\
+\addlinespace
+Applications & Not Started & Country-level responsibility maintained; central team structure not yet operationalized \\
+\addlinespace
+Infrastructure & Not Started & Country-level responsibility maintained; central team structure not yet operationalized \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+An important distinction governs the interpretation of this table: a department classified as \glqq{}Established\grqq{} refers exclusively to the formal organizational transfer of colleagues to the new central reporting structure.
+It does not indicate that the associated tasks and responsibilities have been operationally transferred.
+In practice, colleagues who have moved to central departments continue to perform their pre-existing local IT tasks, because the operational handover processes — including knowledge transfer, process documentation and role redesign — have not yet been completed.
+This produces a governance state in which formal accountability has shifted organizationally but operational responsibility remains locally embedded, creating ambiguity in decision rights, accountability gaps and unclear escalation paths that the governance artifact developed in Chapter \ref{sec:ArtifactDesign} is specifically designed to address.
 
 \subsection{Challenges Faced During Transition}
 \label{subsec:ChallengesFacedDuringTransition}
+The transition at EnterpriseX has surfaced a set of governance challenges that collectively motivate the need for the artifact developed in this thesis.
+These challenges are not idiosyncratic to EnterpriseX; rather, they represent a concrete instantiation of the structural governance gaps identified in the literature review in Chapter \ref{sec:AnalysisOfExistingITGovernanceFrameworks}.
+
+\subsubsection{Ambiguous Decision Rights}
+\label{subsubsec:AmbiguousDecisionRights}
+The co-existence of a formally established central IT structure alongside persistent local operational responsibility has produced pervasive ambiguity in decision rights.
+Colleagues who have been formally transferred to central departments continue to receive and act on instructions from local country management, while central IT leadership lacks the operational visibility to enforce group-wide decisions.
+The result is a dual-accountability structure in which neither the central nor the local authority can exercise unambiguous governance.
+\\
+At EnterpriseX, this ambiguity is visible in day-to-day operations: most operational IT decisions continue to be handled locally, as the established processes and informal authority structures from the pre-transition period remain in place.
+At the same time, group-level IT initiatives — including cross-country infrastructure projects — require decisions to be taken centrally.
+In the absence of a formal and broadly understood decision rights framework, it is frequently unclear which authority is responsible for a given decision, resulting in delays, parallel decision-making processes and inconsistent outcomes across country organizations.
+This gap between the formal organizational structure and the actual exercise of decision authority is a defining characteristic of EnterpriseX's current governance state and a primary motivation for the artifact developed in this thesis.
+
+\subsubsection{Shadow IT Proliferation}
+\label{subsubsec:ShadowITProlif}
+The absence of a functional central IT governance structure has created conditions conducive to shadow IT proliferation.
+Country-level business units, accustomed to the rapid local IT responsiveness of the previous decentralized model, have in several cases independently procured or deployed technology solutions when the central IT function lacked the capacity or speed to meet their requirements.
+\\
+At EnterpriseX, shadow IT is an ongoing and actively growing concern.
+Under the previous decentralized model, local IT managers had the autonomy to evaluate and adopt tools independently, and business units had direct access to a local IT decision-maker who could respond quickly to their needs.
+As the transition shifts authority toward the central IT function — which has not yet developed the service capacity or governance processes to fully replace local responsiveness — some stakeholders have begun circumventing the new standards, preferring to retain locally established tools and solutions rather than migrate to group-wide alternatives.
+This behavior is not primarily driven by deliberate non-compliance; rather, it reflects the governance vacuum that arises when central authority is established formally before it is established operationally.
+This dynamic is consistent with the governance vacuum model of shadow IT described in Chapter \ref{sec:AnalysisOfExistingITGovernanceFrameworks}, and it is expected to intensify as the transition progresses and the gap between formal mandates and operational service capacity becomes more visible to business stakeholders.
+
+\subsubsection{From Generalists to Specialists}
+\label{subsubsec:GeneralistToSpecialistTransition}
+The target operating model organizes IT capability by functional specialization, with each of the eight central departments requiring domain-focused expertise.
+However, the legacy workforce — particularly in smaller country organizations — consists predominantly of generalists who have historically managed all IT domains simultaneously.
+This generalist-to-specialist transformation represents a governance problem as much as a skills development challenge: \ac{RACI} assignments and decision rights in the target model presuppose domain-specialized staff, yet the actual workforce in transition is mixed.
+During this transformation period, governance gaps arise wherever specialist accountability is formally assigned but the designated role-holder continues to operate as a generalist across multiple domains.\footcite[26-27]{klotzCausingFactorsOutcomes2019}
+\\
+At EnterpriseX, this challenge is compounded by the fact that the organizational transition itself is still incomplete: a portion of colleagues have not yet formally moved into the new central structure at the time of this research.
+Those who have formally transferred are already nominally assigned to specialist roles within a central department, yet in practice continue to fulfill the full range of local IT responsibilities in their country — because no one else has taken these over and no operational handover has occurred.
+The result is a workforce that is formally organized as specialized but functionally operating as generalist, creating a persistent misalignment between the governance model's role assumptions and the operational reality on the ground.
+
+\subsubsection{Governance Legitimacy and Stakeholder Acceptance}
+\label{subsubsec:GovernanceLegitimacy}
+A recurring challenge in centralization initiatives is the resistance of country-level stakeholders who perceive the shift in decision authority as a loss of local control and responsiveness.
+At EnterpriseX, this dynamic has manifested in several observable ways.
+Local country leaders and business management who previously exercised direct authority over their IT function have in some cases responded to the new divisional IT structure by continuing to direct work through local IT colleagues, bypassing the central governance structure, excluding central IT representatives from relevant project meetings, or independently assigning IT tasks to local staff without coordination with central IT leadership.
+\\
+A further dimension of resistance concerns the perception of the governance-building effort itself.
+As the central IT function begins to establish group-wide processes — including in areas where individual countries had only recently developed their own local process structures — some stakeholders have questioned the necessity of this work, and in some cases have expressed concern that the central function is displacing locally developed capabilities rather than building on them.
+This perception, while not always grounded in the operational intent of the central team, reflects a legitimacy deficit that the governance model must actively address: if affected stakeholders do not recognize the authority and value of the central governance structure, compliance will remain voluntary and inconsistent.
+This challenge has direct implications for the acceptance dimension of the artifact evaluation conducted in Chapter \ref{sec:EvaluationAndValidation}, as a governance model that lacks stakeholder legitimacy will fail in practice regardless of its structural quality.
+
+\subsubsection{Incomplete Process and Knowledge Transfer}
+\label{subsubsec:IncompleteKnowledgeTransfer}
+The formal organizational transfer of colleagues to central departments has not been accompanied by the systematic transfer of process knowledge, documentation or operational responsibility.
+In many cases, country-specific IT processes remain undocumented and reside implicitly in the knowledge of individual colleagues who have formally joined the central structure but continue to operate locally.
+This creates a fragile governance state in which the central IT function holds formal accountability for domains it does not yet operationally control, and in which the departure of individual colleagues could result in irreversible knowledge loss.
+\\
+At EnterpriseX, this challenge is pervasive across country organizations.
+The lack of process documentation is a recognized risk: the organization has responded by establishing a dedicated project specifically aimed at systematically capturing and documenting IT processes across country units.
+The existence of this initiative as a formal organizational response confirms that the knowledge transfer gap is not merely an academic observation but an operationally acknowledged problem with tangible consequences for governance continuity.
+Until this documentation effort is complete, the central IT function cannot assume full operational responsibility for the domains it governs in name, and the governance model must account for this transitional state explicitly.
+
