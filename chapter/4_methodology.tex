@@ -27,32 +27,34 @@ Hevner's three-cycle model of \ac{DSR} provides the theoretical justification fo
 The three cycles operate as follows and are each instantiated explicitly in this work:
 \\
 The \textbf{Relevance Cycle} connects the research to its application domain by establishing that the problem being studied is real, current and important.
-This thesis investigates the relecance cycle within the context of the enterprise described in Chapter \ref{sec:CaseContextLocalToGlobalITTransition}.
+This thesis investigates the relevance cycle within the context of the enterprise described in Chapter \ref{sec:CaseContextLocalToGlobalITTransition}.
 This enterprise, a multi-national organization operating in Europe, is currently undergoing a local-to-global IT transition.
 The absence of a governance model that considers the transition has led to a fragmentation of governance, an increase in shadow IT and unresolved conflicts over decision rights.
 \\
-The \textbf{Rigor Cycle} connects the research to the existing knowledge base — the theoretical and empirical literature from which the artifact design draws.
+The \textbf{Rigor Cycle} is the connection of the research with the existing knowledge base.
 Chapters \ref{sec:TheoreticalFoundations} and \ref{sec:AnalysisOfExistingITGovernanceFrameworks} fulfill this function, providing the theoretical grounding in IT governance frameworks, operating model archetypes, decision rights theory and shadow IT governance from which the artifact components are derived.
 \\
-The \textbf{Design Cycle} is the iterative core of the research, in which the artifact is constructed, evaluated against domain requirements and refined.
+The \textbf{Design Cycle} is the iterative core of the research, in which the artifact is constructed, evaluated against domain requirements and refined further.
 This cycle corresponds to the artifact design in Chapter \ref{sec:ArtifactDesign} and its evaluation through expert interviews in Chapter \ref{sec:EvaluationAndValidation}.
 
 \subsubsection{Adherence to DSR Guidelines}
 \label{subsubsec:AdherenceToDSRGuidelines}
 Hevner et al. formulate seven guidelines for conducting and evaluating DSR.\footcite[83-90]{hevnerDesignScienceInformation2004}
-Four guidelines are of particular relevance to this thesis and are addressed explicitly:
+Four guidelines are of particular relevance to this thesis:
 \\
-\textbf{Design as an Artifact} requires that \ac{DSR} produce a viable artifact — a construct, model, method or instantiation.
+\textbf{Design as an Artifact} requires that \ac{DSR} produces a viable artifac, which essentialy is a construct, model, method or instantiation.
 This thesis produces a governance model, which constitutes a \textit{model} artifact in the classification of March and Smith, providing an abstracted representation of the designed governance system that can be evaluated and applied.\footcite[84]{hevnerDesignScienceInformation2004}
 \\
 \textbf{Problem Relevance} requires that the artifact addresses an important and unsolved business problem.
-As demonstrated in Section \ref{subsec:ResearchGapSummary}, no existing framework provides transition-aware governance guidance for the local-to-global IT shift in multi-country enterprises, and the consequences of this gap — fragmented IT landscapes, shadow IT, unresolved decision rights — impose measurable organizational costs.\footcite[84-85]{hevnerDesignScienceInformation2004}
+As demonstrated in Section \ref{subsec:ResearchGapSummary}, no existing framework provides transition-aware governance guidance for the local-to-global IT shift in multi-country enterprises.
+This consequences of this gap, such as a fragmented IT landscapes, shadow IT and unresolved decision rights, impose measurable organizational costs.\footcite[84-85]{hevnerDesignScienceInformation2004}
 \\
 \textbf{Design Evaluation} requires that the utility, quality and efficacy of the artifact be rigorously evaluated.
-This thesis conducts evaluation through semi-structured expert interviews with practitioners directly involved in IT governance transitions, applying Mayring's structuring content analysis to assess the artifact against four criteria: applicability, scalability, completeness and acceptance.\footcite[86-87]{hevnerDesignScienceInformation2004}
+This thesis conducts evaluation through semi-structured expert interviews with practitioners directly involved in IT governance transitions, applying Mayring's structuring content analysis.
+The interviews are used to assess the artifact against four criteria: applicability, scalability, completeness and acceptance.\footcite[86-87]{hevnerDesignScienceInformation2004}
 \\
 \textbf{Research Contributions} requires that \ac{DSR} contribute beyond the specific artifact to the broader knowledge base.
-This thesis contributes a generalizable governance model applicable to European multi-country enterprises, a structured treatment of transition-phase governance gaps, and a reusable expert evaluation protocol for governance artifact assessment.\footcite[87-88]{hevnerDesignScienceInformation2004}
+%This thesis contributes a generalizable governance model applicable to European multi-country enterprises, a structured treatment of transition-phase governance gaps, and a reusable expert evaluation protocol for governance artifact assessment.\footcite[87-88]{hevnerDesignScienceInformation2004}
 
 \subsection{Research Design and Process}
 \label{subsec:ResearchDesignAndProcess}
@@ -142,45 +144,47 @@ These six phases are instantiated in this thesis as described in Figure \ref{fig
 
 The research was conducted in one primary design cycle followed by an expert-driven refinement stage.
 In the primary cycle, the artifact was constructed through a systematic derivation from the theoretical knowledge base established in Chapters \ref{sec:TheoreticalFoundations} and \ref{sec:AnalysisOfExistingITGovernanceFrameworks}, producing an initial governance model addressing the identified gaps.
-In the refinement stage, this model was presented to domain experts in semi-structured interviews, and the feedback obtained was incorporated into a revised version of the artifact that constitutes the final output of this research.
-This iterative approach reflects the formative evaluation logic embedded in the \ac{DSR} paradigm, in which successive design cycles progressively improve artifact quality against defined requirements.\footcite[2-4]{bennerwicknerLeitfadenNutzungDesign2020}
+In the refinement stage, this model was presented to domain experts in semi-structured interviews and the feedback obtained was used to create a revised version of the model, which constitutes the final output of this research.
+This iterative approach reflects the evaluation logic embedded in the \ac{DSR} approach, in which successive design cycles progressively improve artifact quality against defined requirements.\footcite[2-4]{bennerwicknerLeitfadenNutzungDesign2020}
 
 \subsection{Case Selection and Context Overview}
 \label{subsec:CaseSelectionAndContextOverview}
-\ac{DSR} requires that the artifact be evaluated within a relevant application domain that is representative of the class of problems being addressed.\footcite[85]{hevnerDesignScienceInformation2004}
+\ac{DSR} requires that the artifact is evaluated within a relevant application domain that is representative of the class of problems being addressed.\footcite[85]{hevnerDesignScienceInformation2004}
 The enterprise selected for this purpose is a European group operating in the circular economy sector, specializing in the collection, processing and valorization of organic and animal by-products into sustainable secondary materials, energy carriers and industrial inputs.
 To preserve confidentiality, the enterprise is referred to throughout this thesis as \glqq{}EnterpriseX\grqq{}.
 It is a large, family-owned international group with more than 13,000 employees, over 200 processing sites and operations across 26 countries, organized under a group-level holding structure.
-
+%Check for better wording to not make it too obvious which company it is, the sector and ranges probably fit better
 \subsubsection{Case Selection Rationale}
 \label{subsubsec:CaseSelectionRationale}
 The selection of EnterpriseX follows the purposive sampling logic appropriate for \ac{DSR}: rather than seeking statistical representativeness, the criterion is that the case exhibits the precise problem characteristics the artifact is designed to address.\footcite[54]{peffersDesignScienceResearch2007}
-EnterpriseX satisfies this criterion comprehensively.
-Prior to the transition, seven of its European country organizations — Germany, Denmark, the United Kingdom, Spain, France, Italy and Poland — each operated a fully autonomous IT function with independent staff, systems, budgets and management structures reporting to local country leadership rather than to any central IT authority.
-This configuration corresponds exactly to the diversified IT operating model archetype described by Ross and Suleman et al., characterized by low process standardization and low cross-country integration, and associated with the governance fragmentation, cost duplication and shadow IT proliferation that motivate this research.\footcite[3-4]{rossForgetStrategyFocus2005}\footcite[5-6]{sulemanITOperatingModels2025}
-Furthermore, the researcher's professional role within the organization enables insider access to governance processes, organizational structures and transition documentation that would not be available to an external researcher, while the requirement for full anonymization ensures that this access does not compromise research integrity.
+EnterpriseX satisfies this criterion.
+Prior to the transition, seven of its European country organizations (Germany, Denmark, the United Kingdom, Spain, France, Italy and Poland) each operated a fully autonomous IT department with independent staff, systems, budgets and management structures.
+These IT functions reported to local country leadership rather than to any central IT authority.
+This configuration corresponds exactly to the diversified IT operating model archetype described by Ross and Suleman et al., characterized by low process standardization and low cross-country integration.
+Additionally the current status can be associated with governance fragmentation over all countries, cost duplication and shadow IT proliferation that motivate this research.\footcite[3-4]{rossForgetStrategyFocus2005}\footcite[5-6]{sulemanITOperatingModels2025}
 
 \subsubsection{Pre-Transition IT Structure}
 \label{subsubsec:PreTransitionITStructure}
 Across the seven country organizations in scope, EnterpriseX employed approximately 120 IT staff in total prior to the centralization initiative.
-Headcount distribution reflects significant asymmetry: Germany, as the largest and headquarters country, employed approximately 40 local IT staff, while France maintained a medium-sized local team, Denmark and Spain had smaller contingents, the United Kingdom and Poland a limited number, and Italy operated with as few as two IT colleagues.
+Headcount distribution reflects significant asymmetry: Germany, as the largest and headquarters country, employed approximately 60 local IT staff, while France, Denmark and Spain had smaller contingents, while others opperated with only two IT colleagues.
 \\
 Critically, the profile of these staff was predominantly generalist rather than specialist.
-In the smaller country organizations in particular, individual IT colleagues were responsible for the full spectrum of local IT operations — covering user support, infrastructure maintenance, application management, vendor relations and local security — without defined domain specialization.
-Each country IT function was headed by a local IT manager who reported to country-level business or operations management, with no formal accountability to any central IT authority and no common governance framework shared across countries.
-This structure produced entirely independent IT landscapes: separate application portfolios, non-standardized infrastructure configurations, country-specific vendor contracts and locally managed IT budgets, with no cross-country visibility or coordination.
-
+In the smaller country organizations in particular, individual IT colleagues were responsible for the full spectrum of local IT operations, which included covering user support, infrastructure maintenance, application management, vendor relations and local security.
+Each country IT function was headed by a local IT manager who reported to country-level business or operations management.
+Essentially this meant no formal accountability to any central IT authority and no common governance framework shared across countries.
+This structure produced entirely independent IT landscapes: separate application portfolios, non-standardized infrastructure configurations, country-specific vendor contracts and locally managed IT budgets, without cross-border coordination.
+%Do I need references anonymized?
 \subsubsection{Transition Trigger}
 \label{subsubsec:TransitionTrigger}
 The transition was initiated by a strategic group-level restructuring decision from the holding organization, establishing a mandate to centralize IT across the seven country organizations into a unified global IT function.
 This top-down mandate was driven by three converging pressures.
 First, a cost efficiency imperative: the fully decentralized IT model produced substantial duplication of systems, contracts, licenses and personnel effort across countries that group-level management identified as avoidable expenditure.
 Second, a regulatory compliance pressure: obligations arising from the European \ac{GDPR} and sector-relevant security directives required consistent data governance and security controls that fragmented local IT structures could not reliably implement or audit on a group-wide basis.
-Third, a strategic alignment requirement: the growing need to support cross-border business processes and group-wide digital initiatives demanded an IT operating capability that country-level silos, each optimized for local operations, were structurally unable to provide.
+Third, a strategic alignment requirement: the growing need to support cross-border business processes and group-wide digital initiatives demanded an IT operating capability that country-level silos were structurally unable to provide.
 
 \subsubsection{Current Transition State}
 \label{subsubsec:CurrentTransitionState}
-The centralization initiative is structured around eight functional IT departments, each representing a governance domain of the target operating model.
+The centralization initiative is structured around eight functional IT departments, each representing a domain of the target operating model.
 Table \ref{tab:TransitionState} documents the current transition state of each department at the time of research.
 
 \begin{table}[H]
@@ -211,27 +215,27 @@ Infrastructure & Not Started & Country-level responsibility maintained; central 
 \end{table}
 
 An important distinction governs the interpretation of this table: a department being classified as \glqq{}Established\grqq{} refers exclusively to the formal organizational transfer of colleagues to the new central reporting structure.
-It does not indicate that the associated tasks and responsibilities have been transferred.
-In practice, colleagues who have moved to central departments continue to perform their pre-existing local IT tasks, because the operational handover processes — including knowledge transfer, process documentation and role redesign — have not yet been completed.
+It does not indicate that the associated tasks and responsibilities have been fully transferred.
+In practice, colleagues who have moved to central departments continue to perform their pre-existing local IT tasks, because the operational handover processes, including knowledge transfer, process documentation and role redesign, have not yet been completed.
 This creates a governance state in which formal accountability has shifted organizationally but operational responsibility remains locally embedded, producing ambiguity in decision rights, accountability gaps and unclear escalation paths that the governance artifact developed in Chapter \ref{sec:ArtifactDesign} is specifically designed to address.
 
 \subsubsection{Key Governance Challenge: From Generalists to Specialists}
 \label{subsubsec:GeneralistToSpecialistChallenge}
-Beyond the structural complexity of the transition, EnterpriseX faces a distinctive human capital challenge with direct governance implications.
-The target operating model organizes IT capability by functional specialization — Infrastructure colleagues focus exclusively on infrastructure, Security colleagues on security, and so forth.
+Beyond the structural complexity of the transition, EnterpriseX faces a distinctive human capital challenges.
+The target operating model organizes IT capability by functional specialization , which leads to Infrastructure colleagues focusing exclusively on infrastructure, Security colleagues on security, and so forth.
 However, the legacy workforce, particularly in smaller country organizations, consists of generalists who have historically managed all IT domains simultaneously.
 \\
 This generalist-to-specialist transformation represents more than a skills development challenge; it is a governance problem.
 Roles, responsibilities and \ac{RACI} assignments in the target model presuppose domain-specialized staff, yet the actual workforce profile in transition is mixed, with some colleagues capable of assuming specialist roles immediately and others requiring time and support to develop focused domain competency.
 During this transformation period, governance gaps arise wherever specialist accountability is formally assigned but the designated role-holder continues to operate as a generalist across multiple domains.
-This dimension of the transition — the misalignment between governance design and workforce reality — is a practical constraint that the artifact must accommodate and that existing frameworks do not acknowledge.\footcite[26-27]{klotzCausingFactorsOutcomes2019}
+This misalignment between governance design and workforce reality is a practical constraint that the governance model must accommodate and that existing frameworks do not acknowledge.\footcite[26-27]{klotzCausingFactorsOutcomes2019}
 \\
 A full description of the organizational background, historical IT structure and transition dynamics at EnterpriseX is provided in Chapter \ref{sec:CaseContextLocalToGlobalITTransition}.
 
 \subsection{Data Collection: Expert Interviews}
 \label{subsec:DataCollectionExpertInterviews}
 The evaluation of the governance artifact will be conducted through semi-structured expert interviews, which represent the primary data collection instrument in this research.
-This method is consistent with the \ac{DSR} evaluation strategy of obtaining expert judgment on artifact utility and design quality, and aligns with the qualitative evaluation approach recommended for governance artifacts in the IS research community.\footcite[86-87]{hevnerDesignScienceInformation2004}
+This is consistent with the \ac{DSR} evaluation strategy of obtaining expert judgment on artifact utility and design quality and aligns with the qualitative evaluation approach recommended for governance artifacts in the IS research community.\footcite[86-87]{hevnerDesignScienceInformation2004}
 
 \subsubsection{Expert Selection and Sampling}
 \label{subsubsec:ExpertSelectionAndSampling}
@@ -243,7 +247,6 @@ Three expert groups have been defined, each contributing a distinct governance p
     \item \textbf{CISOs and Security Governance Leads:} Information security professionals responsible for aligning country-level security practices with global standards. This group assesses the artifact's adequacy in governing the security and compliance dimensions of the local-to-global transition.
 \end{itemize}
 A target of six to ten interviews is planned, with a minimum of two representatives from each expert group, ensuring balanced coverage of the three governance perspectives.\footcite[55]{peffersDesignScienceResearch2007}
-Theoretical saturation, understood as the point at which additional interviews yield no substantively new evaluation insights, serves as the stopping criterion for data collection.
 
 \subsubsection{Interview Design and Protocol}
 \label{subsubsec:InterviewDesignAndProtocol}
@@ -251,18 +254,18 @@ Interviews will be conducted in a semi-structured format, combining predetermine
 Prior to each interview, participants will receive a concise summary of the governance model artifact and its key components, enabling them to form substantive evaluative judgments.
 The interview protocol will be structured around four evaluation dimensions, which operationalize the \ac{DSR} design evaluation guideline:\footcite[86]{hevnerDesignScienceInformation2004}
 \begin{itemize}
-    \item \textbf{Applicability:} Does the governance model reflect the challenges and structural dynamics that the expert has encountered in real local-to-global IT transition scenarios? Are the defined governance mechanisms grounded in operational reality?
+    \item \textbf{Applicability:} Does the governance model reflect the challenges and structural dynamics that have been encountered in real local-to-global IT transition scenarios? Are the defined governance mechanisms grounded in operational reality?
     \item \textbf{Scalability:} Can the model be applied effectively across enterprises of different sizes and across country entities with varying IT maturity levels? Does it accommodate both large and small country units without requiring fundamental redesign?
-    \item \textbf{Completeness:} Does the model cover all relevant governance domains, decision rights and process dimensions? Are there identifiable gaps in coverage that would limit its practical utility?
-    \item \textbf{Acceptance and Practicability:} Would affected stakeholders — both central IT leadership and local IT units — realistically adopt and operate under this model? Are the \ac{RACI} assignments and escalation structures workable in a politically complex organizational environment?
+    \item \textbf{Completeness:} Does the artifact cover all relevant governance domains, decision rights and process dimensions? Are there identifiable gaps in coverage that would limit its practical utility?
+    \item \textbf{Acceptance and Practicability:} Would affected stakeholders (central IT leadership and local IT units) realistically adopt and operate under this model? Are the \ac{RACI} assignments and escalation structures workable in a politically complex organizational environment?
 \end{itemize}
-Interviews will be conducted in German or English according to participant preference, audio-recorded with informed consent and subsequently transcribed verbatim to enable systematic content analysis.
+Interviews will be conducted in English, audio-recorded and subsequently transcribed verbatim to enable systematic content analysis.
 The full interview guideline, including all thematic question blocks and supplementary probing questions, is provided in the Appendix (see Section \ref{sec:Appendix}).
 
-\subsection{Data Analysis Approach}
+\subsection{Data Analysis Approach - check writing, too much AI}
 \label{subsec:DataAnalysisApproach}
 Interview data will be analyzed using Mayring's structuring content analysis, a systematic qualitative method that enables the structured interpretation of textual data against a pre-defined category system.\footcite[69-75]{mayringQualitativeContentAnalysis2014}
-Structuring content analysis is the appropriate variant for this research because the evaluation criteria — applicability, scalability, completeness and acceptance — constitute a theoretically derived category system that can be applied deductively to the interview transcripts, rather than being inductively generated from the data.\footcite[75-77]{mayringQualitativeContentAnalysis2014}
+It is the appropriate variant for this research because the evaluation criteria — applicability, scalability, completeness and acceptance — constitute a theoretically derived category system that can be applied deductively to the interview transcripts, rather than being inductively generated from the data.\footcite[75-77]{mayringQualitativeContentAnalysis2014}
 \\
 The analysis will proceed in five stages consistent with Mayring's procedural model.
 First, the material is defined: the unit of analysis is the individual interview transcript, and the direction of analysis is the assessment of the governance artifact across the four evaluation dimensions.
@@ -273,17 +276,17 @@ Fifth, the per-category summaries are synthesized into an overall artifact asses
 \\
 Inter-coder reliability will be addressed by conducting a second coding pass on a randomly selected subset of ten percent of the coded passages after a minimum interval of two weeks, comparing initial and revised codings to identify and resolve interpretive inconsistencies.
 
-\subsection{Ethical Considerations and Limitations}
+\subsection{Ethical Considerations and Limitations - check sentencing}
 \label{subsec:EthicalConsiderationsAndLimitations}
 
 \subsubsection{Ethical Safeguards}
 \label{subsubsec:EthicalSafeguards}
 All research activities involving human participants will be conducted in accordance with established principles of research ethics.
 Informed consent will be obtained from each interview participant prior to the interview, covering the purpose of the research, the intended use of the data, the audio-recording procedure and the participant's right to withdraw at any time without consequence.
-The enterprise and all individual participants will be fully anonymized in the thesis: the enterprise is referred to throughout as EnterpriseX, and interviewees are identified only by their governance role (e.g. \glqq{}Local IT Manager, Country Unit\grqq{} or \glqq{}Global IT Architecture Lead\grqq{}) without reference to their names, nationalities or organizational affiliation.
+The enterprise and all individual participants will be fully anonymized in the thesis: the enterprise is referred to throughout as EnterpriseX and interviewees are identified only by their role (e.g. \glqq{}Local IT Manager, Country Unit\grqq{} or \glqq{}Global IT Architecture Lead\grqq{}) without reference to their names, nationalities or organizational affiliation.
 Interview recordings and raw transcripts will be stored securely and will not be accessible to third parties.
 
-\subsubsection{Methodological Limitations}
+\subsubsection{Methodological Limitations -rewrite needed}
 \label{subsubsec:MethodologicalLimitations}
 This research operates within several methodological boundaries that must be acknowledged to appropriately scope its contributions.
 \\
@@ -291,7 +294,7 @@ The artifact is designed and evaluated within the context of a single enterprise
 While the problem characteristics — multi-country operation, decentralized IT legacy, centralization mandate and regulatory pressure — are representative of a broad class of European enterprises, the generalizability of the artifact to organizations in fundamentally different sectors, regulatory environments or geographic contexts cannot be assumed without further validation.\footcite[87-88]{hevnerDesignScienceInformation2004}
 \\
 The evaluation method relies exclusively on expert judgment elicited through interviews, which constitutes a formative and qualitative evaluation approach.
-This means the artifact's efficacy is assessed in terms of perceived utility and design quality rather than through longitudinal measurement of governance outcomes in a live deployment.
+This means the artifact's efficiency is assessed in terms of perceived utility and design quality rather than through longitudinal measurement of governance outcomes in a live deployment.
 This is a recognized limitation of \ac{DSR} artifact evaluation in master's thesis contexts, where full-scale operational testing is outside the feasible scope.\footcite[3]{bennerwicknerLeitfadenNutzungDesign2020}
 \\
 Finally, the governance model addresses the transition phase specifically, providing guidance for the period during which an enterprise moves from a decentralized to a centralized or federated operating model.
